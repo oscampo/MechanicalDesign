@@ -2,11 +2,9 @@
 #25feb2015
 from numpy import *
 from sympy import solve, Symbol, init_printing, Function, Pow, sympify
-from IPython.display import Latex
-%pylab --no-import-all
 
 def fsin(x,a,n): #defnición de una función de singularidad
-	return pow((x-a),n)*(x>a)*(n>=0)
+	return around(pow((x-a),n)*(x>a)*(n>=0), decimals=3)
 
 def ifsin(m): #definición de la integral de fsin
 	return vstack([m[0,:]/pow(m[2,:]+1,(m[2,:]+1)>0),m[1,:],m[2,:]+1])
