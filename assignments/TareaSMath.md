@@ -1,3 +1,7 @@
+---
+Date: 5ago2016
+---
+
 # Tarea SMath
 
 Resuelva mediante el uso de SMath, el problema asignado a su grupo:
