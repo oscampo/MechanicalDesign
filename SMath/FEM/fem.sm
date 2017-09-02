@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<?application progid="SMath Studio Desktop" version="0.98.6398.26177"?>
+<?application progid="SMath Studio Desktop" version="0.98.6437.24887"?>
 <regions xmlns="http://smath.info/schemas/worksheet/1.0">
   <settings>
     <shortcut>fem</shortcut>
     <identity>
       <id>8662e066-0136-4b54-83fe-9ca72bbcb170</id>
-      <revision>37</revision>
+      <revision>40</revision>
     </identity>
     <metadata lang="spa">
       <title>Utilidades FEM</title>
@@ -25,17 +25,17 @@
       <backgrounds />
     </pageModel>
     <dependencies>
-      <assembly name="SMath Studio Desktop" version="0.98.6398.26177" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
-      <assembly name="Math Region" version="0.98.6398.26177" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
-      <assembly name="Text Region" version="1.10.6398.26182" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
+      <assembly name="SMath Studio Desktop" version="0.98.6437.24887" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="Math Region" version="0.98.6437.24887" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="Text Region" version="1.10.6437.24889" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
     </dependencies>
   </settings>
-  <region id="0" left="27" top="18" width="964" height="104" border="true" color="#000000" bgColor="#ffff00" fontSize="10">
+  <region id="0" left="27" top="18" width="854" height="120" border="true" color="#000000" bgColor="#ffff00" fontSize="10">
     <text lang="eng">
-      <p>------------ Revisión 31ago2017 -----------Adicionada la función femtruss() para calcular esfuersos y deformaciones "en un paso"Adicionada la función Gauss() para hacer solución de sistema de ecuaciones mediante reducción de GaussModificada la función δ() para solucionar las deformaciones usando la inversa de K ó reducción de Gauss</p>
+      <p>------------ Revisión 2sep2017 ------------La función plotfem() ahora coloca las etiquetas de los elementos además de las etiquetas de los nodos------------ Revisión 31ago2017 -----------Adicionada la función femtruss() para calcular esfuersos y deformaciones "en un paso"Adicionada la función Gauss() para hacer solución de sistema de ecuaciones mediante reducción de GaussModificada la función δ() para solucionar las deformaciones usando la inversa de K ó reducción de Gauss</p>
     </text>
   </region>
-  <region id="1" left="27" top="126" width="372" height="45" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="1" left="27" top="180" width="372" height="45" color="#000000" bgColor="#ffffff" fontSize="10">
     <math optimize="2">
       <description active="true" position="Top" lang="eng">
         <p>Cálculo de longitud del elemento</p>
@@ -74,7 +74,7 @@
       </input>
     </math>
   </region>
-  <region id="2" left="27" top="207" width="200" height="51" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="2" left="27" top="261" width="200" height="51" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <description active="true" position="Top" lang="eng">
         <p>coseno del ángulo del elem </p>
@@ -100,7 +100,7 @@
       </input>
     </math>
   </region>
-  <region id="3" left="252" top="207" width="200" height="51" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="3" left="252" top="261" width="200" height="51" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <description active="true" position="Top" lang="eng">
         <p>seno del ángulo del elem</p>
@@ -126,7 +126,7 @@
       </input>
     </math>
   </region>
-  <region id="4" left="27" top="306" width="401" height="49" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="4" left="27" top="360" width="401" height="49" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <description active="true" position="Top" lang="eng">
         <p>matriz de transformación</p>
@@ -158,7 +158,7 @@
       </input>
     </math>
   </region>
-  <region id="5" left="27" top="405" width="242" height="45" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="5" left="27" top="459" width="242" height="45" color="#000000" bgColor="#ffffff" fontSize="10">
     <math optimize="2">
       <description active="true" position="Top" lang="eng">
         <p>matriz de rigidez lineal</p>
@@ -188,7 +188,7 @@
       </input>
     </math>
   </region>
-  <region id="6" left="27" top="504" width="341" height="37" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="6" left="27" top="558" width="341" height="37" color="#000000" bgColor="#ffffff" fontSize="10">
     <math optimize="2">
       <description active="true" position="Top" lang="eng">
         <p>matriz de rigidez 2D para elementos tipo cercha</p>
@@ -214,7 +214,7 @@
       </input>
     </math>
   </region>
-  <region id="7" left="27" top="603" width="612" height="227" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="7" left="27" top="657" width="619" height="227" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <description active="true" position="Top" lang="eng">
         <p>Ensamblaje de la matriz de rigidez globalnod: matriz de coordenadas de los nodos para cada elementocon: matriz de conectividad de los elementos en coord nodalesfree: vector de GDL libres</p>
@@ -340,7 +340,7 @@
       </input>
     </math>
   </region>
-  <region id="8" left="27" top="927" width="390" height="227" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="8" left="27" top="981" width="396" height="227" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <description active="true" position="Top" lang="eng">
         <p>Cálculo del vector global de deformaciones</p>
@@ -395,7 +395,7 @@
       </input>
     </math>
   </region>
-  <region id="9" left="18" top="1188" width="658" height="312" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="9" left="18" top="1242" width="660" height="312" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <description active="true" position="Top" lang="eng">
         <p>Cálculo de esfuerzos en todos los elementos.δ: vector global de deformaciones</p>
@@ -521,7 +521,7 @@
       </input>
     </math>
   </region>
-  <region id="10" left="45" top="1593" width="458" height="338" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="10" left="45" top="1647" width="467" height="338" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <description active="true" position="Top" lang="eng">
         <p>Halla los grados de libertad libres a partir de un vector de restricciones y el número total de gdl de la estructura</p>
@@ -608,7 +608,7 @@
       </input>
     </math>
   </region>
-  <region id="11" left="36" top="2016" width="532" height="202" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="11" left="18" top="2106" width="541" height="202" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <description active="true" position="Top" lang="eng">
         <p>Crea una matriz para ser graficada.nod: matriz de coordenadas nodalescon: matriz de conectividad lblswitch: valor Booleano para indicar que se desea o no        graficar las etiquetas de los nodos</p>
@@ -658,7 +658,8 @@
         <e type="operator" args="2">≠</e>
         <e type="operand">qq</e>
         <e type="operand">nod</e>
-        <e type="function" args="1">lbl</e>
+        <e type="operand">con</e>
+        <e type="function" args="2">lbl</e>
         <e type="operand">2</e>
         <e type="operand">1</e>
         <e type="function" args="4">sys</e>
@@ -671,7 +672,7 @@
       </input>
     </math>
   </region>
-  <region id="12" left="27" top="2322" width="947" height="38" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="12" left="9" top="2412" width="966" height="38" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <description active="true" position="Top" lang="eng">
         <p>Modifica las coordenadas nodales según las deformaciones contenidas en el vector def.La deformación es incrementada por el valor scale</p>
@@ -714,18 +715,27 @@
       </input>
     </math>
   </region>
-  <region id="13" left="36" top="2439" width="403" height="93" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="13" left="18" top="2529" width="772" height="207" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <description active="true" position="Top" lang="eng">
         <p>crea etiquetas para cada nodo que se grafica con plotfem</p>
       </description>
       <input>
         <e type="operand">nod</e>
-        <e type="function" args="1">lbl</e>
-        <e type="operand">lbl</e>
+        <e type="operand">con</e>
+        <e type="function" args="2">lbl</e>
+        <e type="operand">lbln</e>
         <e type="operand" style="string">1</e>
         <e type="operand">12</e>
         <e type="operand" style="string">red</e>
+        <e type="operand">1</e>
+        <e type="operand">3</e>
+        <e type="function" args="5">mat</e>
+        <e type="operator" args="2">:</e>
+        <e type="operand">lble</e>
+        <e type="operand" style="string">(1)</e>
+        <e type="operand">12</e>
+        <e type="operand" style="string">green</e>
         <e type="operand">1</e>
         <e type="operand">3</e>
         <e type="function" args="5">mat</e>
@@ -735,8 +745,8 @@
         <e type="operand">nod</e>
         <e type="function" args="1">rows</e>
         <e type="function" args="2">range</e>
-        <e type="operand">lbl</e>
-        <e type="operand">lbl</e>
+        <e type="operand">lbln</e>
+        <e type="operand">lbln</e>
         <e type="operand">i</e>
         <e type="function" args="1">num2str</e>
         <e type="operand">12</e>
@@ -747,17 +757,63 @@
         <e type="function" args="2">stack</e>
         <e type="operator" args="2">:</e>
         <e type="function" args="3">for</e>
-        <e type="operand">nod</e>
-        <e type="operand">lbl</e>
-        <e type="function" args="2">augment</e>
-        <e type="operand">3</e>
+        <e type="operand">i</e>
+        <e type="operand">2</e>
+        <e type="operand">con</e>
+        <e type="function" args="1">rows</e>
+        <e type="function" args="2">range</e>
+        <e type="operand">lble</e>
+        <e type="operand">lble</e>
+        <e type="operand" style="string">(</e>
+        <e type="operand">i</e>
+        <e type="function" args="1">num2str</e>
+        <e type="operand" style="string">)</e>
+        <e type="function" args="3">concat</e>
+        <e type="operand">12</e>
+        <e type="operand" style="string">green</e>
         <e type="operand">1</e>
-        <e type="function" args="5">line</e>
+        <e type="operand">3</e>
+        <e type="function" args="5">mat</e>
+        <e type="function" args="2">stack</e>
+        <e type="operator" args="2">:</e>
+        <e type="function" args="3">for</e>
+        <e type="operand">nod</e>
+        <e type="operand">lbln</e>
+        <e type="function" args="2">augment</e>
+        <e type="operand">nod</e>
+        <e type="operand">con</e>
+        <e type="operand">1</e>
+        <e type="function" args="2">col</e>
+        <e type="operand">1</e>
+        <e type="operand">2</e>
+        <e type="operand">2</e>
+        <e type="operand">1</e>
+        <e type="function" args="4">mat</e>
+        <e type="function" args="3">el</e>
+        <e type="operand">nod</e>
+        <e type="operand">con</e>
+        <e type="operand">2</e>
+        <e type="function" args="2">col</e>
+        <e type="operand">1</e>
+        <e type="operand">2</e>
+        <e type="operand">2</e>
+        <e type="operand">1</e>
+        <e type="function" args="4">mat</e>
+        <e type="function" args="3">el</e>
+        <e type="operator" args="2">+</e>
+        <e type="operand">2</e>
+        <e type="operator" args="2">/</e>
+        <e type="operand">lble</e>
+        <e type="function" args="2">augment</e>
+        <e type="function" args="2">stack</e>
+        <e type="operand">5</e>
+        <e type="operand">1</e>
+        <e type="function" args="7">line</e>
         <e type="operator" args="2">:</e>
       </input>
     </math>
   </region>
-  <region id="14" left="36" top="2601" width="563" height="118" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="14" left="18" top="2772" width="574" height="118" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">nod</e>
@@ -806,13 +862,13 @@
       </input>
     </math>
   </region>
-  <region id="15" left="45" top="2790" width="354" height="431" color="#000000" bgColor="#ffffff" fontSize="10">
+  <region id="15" left="45" top="2907" width="354" height="431" color="#000000" bgColor="#ffffff" fontSize="10">
     <math>
       <input>
         <e type="operand">M</e>
         <e type="operand">b</e>
         <e type="function" args="2">Gauss</e>
-        <e type="operand" style="string">Eliminsación hacia adelante</e>
+        <e type="operand" style="string">Eliminación hacia adelante</e>
         <e type="operand">n</e>
         <e type="operand">M</e>
         <e type="function" args="1">rows</e>
