@@ -1,0 +1,1392 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Studio Desktop" version="1.0.8253.4763"?>
+<worksheet xmlns="http://smath.info/schemas/worksheet/1.0">
+  <settings ppi="96">
+    <identity>
+      <id>d20a9c5a-3fd6-4779-9660-bb5db922c972</id>
+      <revision>2</revision>
+    </identity>
+    <metadata lang="eng">
+      <author>Oscar Campo</author>
+    </metadata>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <trailingZeros>false</trailingZeros>
+      <significantDigitsMode>false</significantDigitsMode>
+      <roundingMode>0</roundingMode>
+      <approximateEqualAccuracy>0</approximateEqualAccuracy>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="false" viewMode="1" printGrid="false" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true">
+      <paper id="1" orientation="Portrait" width="850" height="1100" />
+      <margins left="39" right="39" top="49" bottom="49" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Studio Desktop" version="1.0.8253.4763" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="MathRegion" version="1.11.8253.4763" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="SpecialFunctions" version="1.12.8253.4763" guid="2814e667-4e12-48b1-8d51-194e480eabc5" />
+      <assembly name="X-Y Plot Region (JXCharts)" version="0.2.8209.38826" guid="c12231ec-4873-43c1-a7d0-a167ebd17066" />
+    </dependencies>
+  </settings>
+  <regions type="content">
+    <region left="0" top="0" width="309" height="29" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">LArrow</e>
+          <e type="operand" style="string">\</e>
+          <e type="operand" style="string">2190</e>
+          <e type="operand" style="string">\</e>
+          <e type="function" args="3">concat</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="378" top="0" width="309" height="29" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">RArrow</e>
+          <e type="operand" style="string">\</e>
+          <e type="operand" style="string">2192</e>
+          <e type="operand" style="string">\</e>
+          <e type="function" args="3">concat</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="54" width="309" height="29" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">LArrow</e>
+          <e type="operand" style="string">\</e>
+          <e type="operand" style="string">2B60</e>
+          <e type="operand" style="string">\</e>
+          <e type="function" args="3">concat</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="108" width="309" height="29" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">UArrow</e>
+          <e type="operand" style="string">\</e>
+          <e type="operand" style="string">2191</e>
+          <e type="operand" style="string">\</e>
+          <e type="function" args="3">concat</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="378" top="108" width="309" height="29" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">DArrow</e>
+          <e type="operand" style="string">\</e>
+          <e type="operand" style="string">2193</e>
+          <e type="operand" style="string">\</e>
+          <e type="function" args="3">concat</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="216" width="319" height="29" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">RMoment</e>
+          <e type="operand" style="string">\</e>
+          <e type="operand" style="string">27F2</e>
+          <e type="operand" style="string">\</e>
+          <e type="function" args="3">concat</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="378" top="216" width="319" height="29" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">LMoment</e>
+          <e type="operand" style="string">\</e>
+          <e type="operand" style="string">27F3</e>
+          <e type="operand" style="string">\</e>
+          <e type="function" args="3">concat</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="0" top="270" width="290" height="29" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">misc</e>
+          <e type="operand" style="string">\</e>
+          <e type="operand" style="string">2580</e>
+          <e type="operand" style="string">\</e>
+          <e type="function" args="3">concat</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="9" top="324" width="310" height="208" color="#000000" bgColor="#ffffff" fontSize="12">
+      <xyplot width="300" height="200" points="100" name="XYPlot">
+        <chartstyle backcolor="White" bordercolor="Black" />
+        <propertiessource index="1" sourcetype="PropertyGrid" />
+        <grid gridcolor="LightGray" gridpattern="Dash" gridthickness="1" isxgrid="true" isygrid="true" isy2grid="false" />
+        <xaxes xmin="-33.48898" xmax="19.52353" xtick="20" visible="True" decimalplaces="3" numberformat="General" />
+        <yaxes ymin="93.96974" ymax="96.74908" ytick="1" visible="True" decimalplaces="3" numberformat="General" />
+        <y2axes isy2axis="false" y2min="-1" y2max="1" y2tick="0.5" visible="True" decimalplaces="3" numberformat="General" />
+        <title2d title="" titlefont="Arial, 10pt" titlefontcolor="Black" />
+        <xylabel labelfont="Arial, 10pt" labelfontcolor="Black" tickfont="Arial, 8pt" tickfontcolor="Black" xlabel="x" ylabel="y" y2label="y2" />
+        <legend isbordervisible="true" islegendvisible="false" legendbackcolor="White" legendbordercolor="Black" legendfont="Arial, 8pt" legendposition="NorthEast" textcolor="Black" />
+        <traces>
+          <trace seriesname="" isy2data="false" isvisible="true" plotmethod="Labels" lineantialias="true" linecolor="Blue" linethickness="1" linepattern="Solid" symbolantialias="true" symbolsize="8" symboltype="None" symbolborderthickness="1" symbolbordercolor="Black" symbolfillcolor="White" />
+        </traces>
+        <input>
+          <e type="operand">0</e>
+          <e type="operand">96</e>
+          <e type="operand">LArrow</e>
+          <e type="operand">12</e>
+          <e type="operand" style="string">red</e>
+          <e type="operand">14</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">96</e>
+          <e type="operand">RArrow</e>
+          <e type="operand">12</e>
+          <e type="operand" style="string">blue</e>
+          <e type="operand">0</e>
+          <e type="operand">50</e>
+          <e type="operand">RMoment</e>
+          <e type="operand">12</e>
+          <e type="operand" style="string">red</e>
+          <e type="operand">0</e>
+          <e type="operand">25</e>
+          <e type="operand">misc</e>
+          <e type="operand">12</e>
+          <e type="operand" style="string">blue</e>
+          <e type="operand">4</e>
+          <e type="operand">5</e>
+          <e type="function" args="22">mat</e>
+        </input>
+      </xyplot>
+    </region>
+    <region left="522" top="396" width="395" height="31" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand" style="string">\</e>
+          <e type="operand" style="string">033F</e>
+          <e type="operand" style="string">\</e>
+          <e type="operand" style="string">x</e>
+          <e type="function" args="4">concat</e>
+          <e type="function" args="1">str2num</e>
+        </input>
+        <result action="symbolic">
+          <e type="operand">̿x</e>
+        </result>
+      </math>
+    </region>
+    <region left="531" top="441" width="319" height="29" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand" style="string">\</e>
+          <e type="operand" style="string">0303</e>
+          <e type="operand" style="string">\</e>
+          <e type="operand" style="string">x</e>
+          <e type="function" args="4">concat</e>
+        </input>
+        <result action="numeric">
+          <e type="operand" style="string">̃x</e>
+        </result>
+      </math>
+    </region>
+    <region left="639" top="495" width="51" height="27" color="#000000" fontSize="12">
+      <math error="0" errorLocation="1">
+        <input>
+          <e type="operand">̃x</e>
+          <e type="operand">#</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="531" top="531" width="385" height="31" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand" style="string">x</e>
+          <e type="operand" style="string">\</e>
+          <e type="operand" style="string">0308</e>
+          <e type="operand" style="string">\</e>
+          <e type="function" args="4">concat</e>
+          <e type="function" args="1">str2num</e>
+        </input>
+        <result action="symbolic">
+          <e type="operand">ẍ</e>
+        </result>
+      </math>
+    </region>
+    <region left="549" top="594" width="382" height="29" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand" style="string">x</e>
+          <e type="operand" style="string">\</e>
+          <e type="operand" style="string">0337</e>
+          <e type="operand" style="string">\</e>
+          <e type="operand" style="string">x</e>
+          <e type="function" args="5">concat</e>
+        </input>
+        <result action="numeric">
+          <e type="operand" style="string">x̷x</e>
+        </result>
+      </math>
+    </region>
+    <region left="45" top="711" width="647" height="31" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">idx</e>
+          <e type="operand" style="string">0</e>
+          <e type="operand" style="string">1</e>
+          <e type="operand" style="string">2</e>
+          <e type="operand" style="string">3</e>
+          <e type="operand" style="string">4</e>
+          <e type="operand" style="string">5</e>
+          <e type="operand" style="string">6</e>
+          <e type="operand" style="string">7</e>
+          <e type="operand" style="string">8</e>
+          <e type="operand" style="string">9</e>
+          <e type="operand" style="string">A</e>
+          <e type="operand" style="string">B</e>
+          <e type="operand" style="string">C</e>
+          <e type="operand" style="string">D</e>
+          <e type="operand" style="string">E</e>
+          <e type="operand" style="string">F</e>
+          <e type="operand">1</e>
+          <e type="operand">16</e>
+          <e type="function" args="18">mat</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="45" top="756" width="51" height="27" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">i</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="108" top="756" width="53" height="27" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">j</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="36" top="801" width="543" height="153" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand">a</e>
+          <e type="operand">1</e>
+          <e type="operand">idx</e>
+          <e type="function" args="1">length</e>
+          <e type="function" args="2">range</e>
+          <e type="operand">b</e>
+          <e type="operand">1</e>
+          <e type="operand">idx</e>
+          <e type="function" args="1">length</e>
+          <e type="function" args="2">range</e>
+          <e type="operand">uni</e>
+          <e type="operand">j</e>
+          <e type="operand">1</e>
+          <e type="function" args="3">el</e>
+          <e type="operand" style="string">20</e>
+          <e type="operand">idx</e>
+          <e type="operand">a</e>
+          <e type="function" args="2">el</e>
+          <e type="operand">idx</e>
+          <e type="operand">b</e>
+          <e type="function" args="2">el</e>
+          <e type="function" args="3">concat</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">uni</e>
+          <e type="operand">j</e>
+          <e type="operand">2</e>
+          <e type="function" args="3">el</e>
+          <e type="operand" style="string">x</e>
+          <e type="operand" style="string">\</e>
+          <e type="operand" style="string">20</e>
+          <e type="operand">idx</e>
+          <e type="operand">a</e>
+          <e type="function" args="2">el</e>
+          <e type="operand">idx</e>
+          <e type="operand">b</e>
+          <e type="function" args="2">el</e>
+          <e type="operand" style="string">\</e>
+          <e type="operand" style="string">x</e>
+          <e type="function" args="7">concat</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">j</e>
+          <e type="operand">j</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">3</e>
+          <e type="operand">1</e>
+          <e type="function" args="5">line</e>
+          <e type="function" args="3">for</e>
+          <e type="operand">1</e>
+          <e type="operand">1</e>
+          <e type="function" args="3">line</e>
+          <e type="function" args="3">for</e>
+        </input>
+      </math>
+    </region>
+    <region left="657" top="999" width="139" height="5571" color="#000000" fontSize="12">
+      <math>
+        <input>
+          <e type="operand" style="string">0300</e>
+          <e type="operand" style="string">x̀x</e>
+          <e type="operand" style="string">0301</e>
+          <e type="operand" style="string">x́x</e>
+          <e type="operand" style="string">0302</e>
+          <e type="operand" style="string">x̂x</e>
+          <e type="operand" style="string">0303</e>
+          <e type="operand" style="string">x̃x</e>
+          <e type="operand" style="string">0304</e>
+          <e type="operand" style="string">x̄x</e>
+          <e type="operand" style="string">0305</e>
+          <e type="operand" style="string">x̅x</e>
+          <e type="operand" style="string">0306</e>
+          <e type="operand" style="string">x̆x</e>
+          <e type="operand" style="string">0307</e>
+          <e type="operand" style="string">ẋx</e>
+          <e type="operand" style="string">0308</e>
+          <e type="operand" style="string">ẍx</e>
+          <e type="operand" style="string">0309</e>
+          <e type="operand" style="string">x̉x</e>
+          <e type="operand" style="string">030A</e>
+          <e type="operand" style="string">x̊x</e>
+          <e type="operand" style="string">030B</e>
+          <e type="operand" style="string">x̋x</e>
+          <e type="operand" style="string">030C</e>
+          <e type="operand" style="string">x̌x</e>
+          <e type="operand" style="string">030D</e>
+          <e type="operand" style="string">x̍x</e>
+          <e type="operand" style="string">030E</e>
+          <e type="operand" style="string">x̎x</e>
+          <e type="operand" style="string">030F</e>
+          <e type="operand" style="string">x̏x</e>
+          <e type="operand" style="string">0310</e>
+          <e type="operand" style="string">x̐x</e>
+          <e type="operand" style="string">0311</e>
+          <e type="operand" style="string">x̑x</e>
+          <e type="operand" style="string">0312</e>
+          <e type="operand" style="string">x̒x</e>
+          <e type="operand" style="string">0313</e>
+          <e type="operand" style="string">x̓x</e>
+          <e type="operand" style="string">0314</e>
+          <e type="operand" style="string">x̔x</e>
+          <e type="operand" style="string">0315</e>
+          <e type="operand" style="string">x̕x</e>
+          <e type="operand" style="string">0316</e>
+          <e type="operand" style="string">x̖x</e>
+          <e type="operand" style="string">0317</e>
+          <e type="operand" style="string">x̗x</e>
+          <e type="operand" style="string">0318</e>
+          <e type="operand" style="string">x̘x</e>
+          <e type="operand" style="string">0319</e>
+          <e type="operand" style="string">x̙x</e>
+          <e type="operand" style="string">031A</e>
+          <e type="operand" style="string">x̚x</e>
+          <e type="operand" style="string">031B</e>
+          <e type="operand" style="string">x̛x</e>
+          <e type="operand" style="string">031C</e>
+          <e type="operand" style="string">x̜x</e>
+          <e type="operand" style="string">031D</e>
+          <e type="operand" style="string">x̝x</e>
+          <e type="operand" style="string">031E</e>
+          <e type="operand" style="string">x̞x</e>
+          <e type="operand" style="string">031F</e>
+          <e type="operand" style="string">x̟x</e>
+          <e type="operand" style="string">0320</e>
+          <e type="operand" style="string">x̠x</e>
+          <e type="operand" style="string">0321</e>
+          <e type="operand" style="string">x̡x</e>
+          <e type="operand" style="string">0322</e>
+          <e type="operand" style="string">x̢x</e>
+          <e type="operand" style="string">0323</e>
+          <e type="operand" style="string">x̣x</e>
+          <e type="operand" style="string">0324</e>
+          <e type="operand" style="string">x̤x</e>
+          <e type="operand" style="string">0325</e>
+          <e type="operand" style="string">x̥x</e>
+          <e type="operand" style="string">0326</e>
+          <e type="operand" style="string">x̦x</e>
+          <e type="operand" style="string">0327</e>
+          <e type="operand" style="string">x̧x</e>
+          <e type="operand" style="string">0328</e>
+          <e type="operand" style="string">x̨x</e>
+          <e type="operand" style="string">0329</e>
+          <e type="operand" style="string">x̩x</e>
+          <e type="operand" style="string">032A</e>
+          <e type="operand" style="string">x̪x</e>
+          <e type="operand" style="string">032B</e>
+          <e type="operand" style="string">x̫x</e>
+          <e type="operand" style="string">032C</e>
+          <e type="operand" style="string">x̬x</e>
+          <e type="operand" style="string">032D</e>
+          <e type="operand" style="string">x̭x</e>
+          <e type="operand" style="string">032E</e>
+          <e type="operand" style="string">x̮x</e>
+          <e type="operand" style="string">032F</e>
+          <e type="operand" style="string">x̯x</e>
+          <e type="operand" style="string">0330</e>
+          <e type="operand" style="string">x̰x</e>
+          <e type="operand" style="string">0331</e>
+          <e type="operand" style="string">x̱x</e>
+          <e type="operand" style="string">0332</e>
+          <e type="operand" style="string">x̲x</e>
+          <e type="operand" style="string">0333</e>
+          <e type="operand" style="string">x̳x</e>
+          <e type="operand" style="string">0334</e>
+          <e type="operand" style="string">x̴x</e>
+          <e type="operand" style="string">0335</e>
+          <e type="operand" style="string">x̵x</e>
+          <e type="operand" style="string">0336</e>
+          <e type="operand" style="string">x̶x</e>
+          <e type="operand" style="string">0337</e>
+          <e type="operand" style="string">x̷x</e>
+          <e type="operand" style="string">0338</e>
+          <e type="operand" style="string">x̸x</e>
+          <e type="operand" style="string">0339</e>
+          <e type="operand" style="string">x̹x</e>
+          <e type="operand" style="string">033A</e>
+          <e type="operand" style="string">x̺x</e>
+          <e type="operand" style="string">033B</e>
+          <e type="operand" style="string">x̻x</e>
+          <e type="operand" style="string">033C</e>
+          <e type="operand" style="string">x̼x</e>
+          <e type="operand" style="string">033D</e>
+          <e type="operand" style="string">x̽x</e>
+          <e type="operand" style="string">033E</e>
+          <e type="operand" style="string">x̾x</e>
+          <e type="operand" style="string">033F</e>
+          <e type="operand" style="string">x̿x</e>
+          <e type="operand" style="string">0340</e>
+          <e type="operand" style="string">x̀x</e>
+          <e type="operand" style="string">0341</e>
+          <e type="operand" style="string">x́x</e>
+          <e type="operand" style="string">0342</e>
+          <e type="operand" style="string">x͂x</e>
+          <e type="operand" style="string">0343</e>
+          <e type="operand" style="string">x̓x</e>
+          <e type="operand" style="string">0344</e>
+          <e type="operand" style="string">ẍ́x</e>
+          <e type="operand" style="string">0345</e>
+          <e type="operand" style="string">xͅx</e>
+          <e type="operand" style="string">0346</e>
+          <e type="operand" style="string">x͆x</e>
+          <e type="operand" style="string">0347</e>
+          <e type="operand" style="string">x͇x</e>
+          <e type="operand" style="string">0348</e>
+          <e type="operand" style="string">x͈x</e>
+          <e type="operand" style="string">0349</e>
+          <e type="operand" style="string">x͉x</e>
+          <e type="operand" style="string">034A</e>
+          <e type="operand" style="string">x͊x</e>
+          <e type="operand" style="string">034B</e>
+          <e type="operand" style="string">x͋x</e>
+          <e type="operand" style="string">034C</e>
+          <e type="operand" style="string">x͌x</e>
+          <e type="operand" style="string">034D</e>
+          <e type="operand" style="string">x͍x</e>
+          <e type="operand" style="string">034E</e>
+          <e type="operand" style="string">x͎x</e>
+          <e type="operand" style="string">034F</e>
+          <e type="operand" style="string">x͏x</e>
+          <e type="operand" style="string">0350</e>
+          <e type="operand" style="string">x͐x</e>
+          <e type="operand" style="string">0351</e>
+          <e type="operand" style="string">x͑x</e>
+          <e type="operand" style="string">0352</e>
+          <e type="operand" style="string">x͒x</e>
+          <e type="operand" style="string">0353</e>
+          <e type="operand" style="string">x͓x</e>
+          <e type="operand" style="string">0354</e>
+          <e type="operand" style="string">x͔x</e>
+          <e type="operand" style="string">0355</e>
+          <e type="operand" style="string">x͕x</e>
+          <e type="operand" style="string">0356</e>
+          <e type="operand" style="string">x͖x</e>
+          <e type="operand" style="string">0357</e>
+          <e type="operand" style="string">x͗x</e>
+          <e type="operand" style="string">0358</e>
+          <e type="operand" style="string">x͘x</e>
+          <e type="operand" style="string">0359</e>
+          <e type="operand" style="string">x͙x</e>
+          <e type="operand" style="string">035A</e>
+          <e type="operand" style="string">x͚x</e>
+          <e type="operand" style="string">035B</e>
+          <e type="operand" style="string">x͛x</e>
+          <e type="operand" style="string">035C</e>
+          <e type="operand" style="string">x͜x</e>
+          <e type="operand" style="string">035D</e>
+          <e type="operand" style="string">x͝x</e>
+          <e type="operand" style="string">035E</e>
+          <e type="operand" style="string">x͞x</e>
+          <e type="operand" style="string">035F</e>
+          <e type="operand" style="string">x͟x</e>
+          <e type="operand" style="string">0360</e>
+          <e type="operand" style="string">x͠x</e>
+          <e type="operand" style="string">0361</e>
+          <e type="operand" style="string">x͡x</e>
+          <e type="operand" style="string">0362</e>
+          <e type="operand" style="string">x͢x</e>
+          <e type="operand" style="string">0363</e>
+          <e type="operand" style="string">xͣx</e>
+          <e type="operand" style="string">0364</e>
+          <e type="operand" style="string">xͤx</e>
+          <e type="operand" style="string">0365</e>
+          <e type="operand" style="string">xͥx</e>
+          <e type="operand" style="string">0366</e>
+          <e type="operand" style="string">xͦx</e>
+          <e type="operand" style="string">0367</e>
+          <e type="operand" style="string">xͧx</e>
+          <e type="operand" style="string">0368</e>
+          <e type="operand" style="string">xͨx</e>
+          <e type="operand" style="string">0369</e>
+          <e type="operand" style="string">xͩx</e>
+          <e type="operand" style="string">036A</e>
+          <e type="operand" style="string">xͪx</e>
+          <e type="operand" style="string">036B</e>
+          <e type="operand" style="string">xͫx</e>
+          <e type="operand" style="string">036C</e>
+          <e type="operand" style="string">xͬx</e>
+          <e type="operand" style="string">036D</e>
+          <e type="operand" style="string">xͭx</e>
+          <e type="operand" style="string">036E</e>
+          <e type="operand" style="string">xͮx</e>
+          <e type="operand" style="string">036F</e>
+          <e type="operand" style="string">xͯx</e>
+          <e type="operand" style="string">0370</e>
+          <e type="operand" style="string">xͰx</e>
+          <e type="operand" style="string">0371</e>
+          <e type="operand" style="string">xͱx</e>
+          <e type="operand" style="string">0372</e>
+          <e type="operand" style="string">xͲx</e>
+          <e type="operand" style="string">0373</e>
+          <e type="operand" style="string">xͳx</e>
+          <e type="operand" style="string">0374</e>
+          <e type="operand" style="string">xʹx</e>
+          <e type="operand" style="string">0375</e>
+          <e type="operand" style="string">x͵x</e>
+          <e type="operand" style="string">0376</e>
+          <e type="operand" style="string">xͶx</e>
+          <e type="operand" style="string">0377</e>
+          <e type="operand" style="string">xͷx</e>
+          <e type="operand" style="string">0378</e>
+          <e type="operand" style="string">x͸x</e>
+          <e type="operand" style="string">0379</e>
+          <e type="operand" style="string">x͹x</e>
+          <e type="operand" style="string">037A</e>
+          <e type="operand" style="string">xͺx</e>
+          <e type="operand" style="string">037B</e>
+          <e type="operand" style="string">xͻx</e>
+          <e type="operand" style="string">037C</e>
+          <e type="operand" style="string">xͼx</e>
+          <e type="operand" style="string">037D</e>
+          <e type="operand" style="string">xͽx</e>
+          <e type="operand" style="string">037E</e>
+          <e type="operand" style="string">x;x</e>
+          <e type="operand" style="string">037F</e>
+          <e type="operand" style="string">xͿx</e>
+          <e type="operand" style="string">0380</e>
+          <e type="operand" style="string">x΀x</e>
+          <e type="operand" style="string">0381</e>
+          <e type="operand" style="string">x΁x</e>
+          <e type="operand" style="string">0382</e>
+          <e type="operand" style="string">x΂x</e>
+          <e type="operand" style="string">0383</e>
+          <e type="operand" style="string">x΃x</e>
+          <e type="operand" style="string">0384</e>
+          <e type="operand" style="string">x΄x</e>
+          <e type="operand" style="string">0385</e>
+          <e type="operand" style="string">x΅x</e>
+          <e type="operand" style="string">0386</e>
+          <e type="operand" style="string">xΆx</e>
+          <e type="operand" style="string">0387</e>
+          <e type="operand" style="string">x·x</e>
+          <e type="operand" style="string">0388</e>
+          <e type="operand" style="string">xΈx</e>
+          <e type="operand" style="string">0389</e>
+          <e type="operand" style="string">xΉx</e>
+          <e type="operand" style="string">038A</e>
+          <e type="operand" style="string">xΊx</e>
+          <e type="operand" style="string">038B</e>
+          <e type="operand" style="string">x΋x</e>
+          <e type="operand" style="string">038C</e>
+          <e type="operand" style="string">xΌx</e>
+          <e type="operand" style="string">038D</e>
+          <e type="operand" style="string">x΍x</e>
+          <e type="operand" style="string">038E</e>
+          <e type="operand" style="string">xΎx</e>
+          <e type="operand" style="string">038F</e>
+          <e type="operand" style="string">xΏx</e>
+          <e type="operand" style="string">0390</e>
+          <e type="operand" style="string">xΐx</e>
+          <e type="operand" style="string">0391</e>
+          <e type="operand" style="string">xΑx</e>
+          <e type="operand" style="string">0392</e>
+          <e type="operand" style="string">xΒx</e>
+          <e type="operand" style="string">0393</e>
+          <e type="operand" style="string">xΓx</e>
+          <e type="operand" style="string">0394</e>
+          <e type="operand" style="string">xΔx</e>
+          <e type="operand" style="string">0395</e>
+          <e type="operand" style="string">xΕx</e>
+          <e type="operand" style="string">0396</e>
+          <e type="operand" style="string">xΖx</e>
+          <e type="operand" style="string">0397</e>
+          <e type="operand" style="string">xΗx</e>
+          <e type="operand" style="string">0398</e>
+          <e type="operand" style="string">xΘx</e>
+          <e type="operand" style="string">0399</e>
+          <e type="operand" style="string">xΙx</e>
+          <e type="operand" style="string">039A</e>
+          <e type="operand" style="string">xΚx</e>
+          <e type="operand" style="string">039B</e>
+          <e type="operand" style="string">xΛx</e>
+          <e type="operand" style="string">039C</e>
+          <e type="operand" style="string">xΜx</e>
+          <e type="operand" style="string">039D</e>
+          <e type="operand" style="string">xΝx</e>
+          <e type="operand" style="string">039E</e>
+          <e type="operand" style="string">xΞx</e>
+          <e type="operand" style="string">039F</e>
+          <e type="operand" style="string">xΟx</e>
+          <e type="operand" style="string">03A0</e>
+          <e type="operand" style="string">xΠx</e>
+          <e type="operand" style="string">03A1</e>
+          <e type="operand" style="string">xΡx</e>
+          <e type="operand" style="string">03A2</e>
+          <e type="operand" style="string">x΢x</e>
+          <e type="operand" style="string">03A3</e>
+          <e type="operand" style="string">xΣx</e>
+          <e type="operand" style="string">03A4</e>
+          <e type="operand" style="string">xΤx</e>
+          <e type="operand" style="string">03A5</e>
+          <e type="operand" style="string">xΥx</e>
+          <e type="operand" style="string">03A6</e>
+          <e type="operand" style="string">xΦx</e>
+          <e type="operand" style="string">03A7</e>
+          <e type="operand" style="string">xΧx</e>
+          <e type="operand" style="string">03A8</e>
+          <e type="operand" style="string">xΨx</e>
+          <e type="operand" style="string">03A9</e>
+          <e type="operand" style="string">xΩx</e>
+          <e type="operand" style="string">03AA</e>
+          <e type="operand" style="string">xΪx</e>
+          <e type="operand" style="string">03AB</e>
+          <e type="operand" style="string">xΫx</e>
+          <e type="operand" style="string">03AC</e>
+          <e type="operand" style="string">xάx</e>
+          <e type="operand" style="string">03AD</e>
+          <e type="operand" style="string">xέx</e>
+          <e type="operand" style="string">03AE</e>
+          <e type="operand" style="string">xήx</e>
+          <e type="operand" style="string">03AF</e>
+          <e type="operand" style="string">xίx</e>
+          <e type="operand" style="string">03B0</e>
+          <e type="operand" style="string">xΰx</e>
+          <e type="operand" style="string">03B1</e>
+          <e type="operand" style="string">xαx</e>
+          <e type="operand" style="string">03B2</e>
+          <e type="operand" style="string">xβx</e>
+          <e type="operand" style="string">03B3</e>
+          <e type="operand" style="string">xγx</e>
+          <e type="operand" style="string">03B4</e>
+          <e type="operand" style="string">xδx</e>
+          <e type="operand" style="string">03B5</e>
+          <e type="operand" style="string">xεx</e>
+          <e type="operand" style="string">03B6</e>
+          <e type="operand" style="string">xζx</e>
+          <e type="operand" style="string">03B7</e>
+          <e type="operand" style="string">xηx</e>
+          <e type="operand" style="string">03B8</e>
+          <e type="operand" style="string">xθx</e>
+          <e type="operand" style="string">03B9</e>
+          <e type="operand" style="string">xιx</e>
+          <e type="operand" style="string">03BA</e>
+          <e type="operand" style="string">xκx</e>
+          <e type="operand" style="string">03BB</e>
+          <e type="operand" style="string">xλx</e>
+          <e type="operand" style="string">03BC</e>
+          <e type="operand" style="string">xμx</e>
+          <e type="operand" style="string">03BD</e>
+          <e type="operand" style="string">xνx</e>
+          <e type="operand" style="string">03BE</e>
+          <e type="operand" style="string">xξx</e>
+          <e type="operand" style="string">03BF</e>
+          <e type="operand" style="string">xοx</e>
+          <e type="operand" style="string">03C0</e>
+          <e type="operand" style="string">xπx</e>
+          <e type="operand" style="string">03C1</e>
+          <e type="operand" style="string">xρx</e>
+          <e type="operand" style="string">03C2</e>
+          <e type="operand" style="string">xςx</e>
+          <e type="operand" style="string">03C3</e>
+          <e type="operand" style="string">xσx</e>
+          <e type="operand" style="string">03C4</e>
+          <e type="operand" style="string">xτx</e>
+          <e type="operand" style="string">03C5</e>
+          <e type="operand" style="string">xυx</e>
+          <e type="operand" style="string">03C6</e>
+          <e type="operand" style="string">xφx</e>
+          <e type="operand" style="string">03C7</e>
+          <e type="operand" style="string">xχx</e>
+          <e type="operand" style="string">03C8</e>
+          <e type="operand" style="string">xψx</e>
+          <e type="operand" style="string">03C9</e>
+          <e type="operand" style="string">xωx</e>
+          <e type="operand" style="string">03CA</e>
+          <e type="operand" style="string">xϊx</e>
+          <e type="operand" style="string">03CB</e>
+          <e type="operand" style="string">xϋx</e>
+          <e type="operand" style="string">03CC</e>
+          <e type="operand" style="string">xόx</e>
+          <e type="operand" style="string">03CD</e>
+          <e type="operand" style="string">xύx</e>
+          <e type="operand" style="string">03CE</e>
+          <e type="operand" style="string">xώx</e>
+          <e type="operand" style="string">03CF</e>
+          <e type="operand" style="string">xϏx</e>
+          <e type="operand" style="string">03D0</e>
+          <e type="operand" style="string">xϐx</e>
+          <e type="operand" style="string">03D1</e>
+          <e type="operand" style="string">xϑx</e>
+          <e type="operand" style="string">03D2</e>
+          <e type="operand" style="string">xϒx</e>
+          <e type="operand" style="string">03D3</e>
+          <e type="operand" style="string">xϓx</e>
+          <e type="operand" style="string">03D4</e>
+          <e type="operand" style="string">xϔx</e>
+          <e type="operand" style="string">03D5</e>
+          <e type="operand" style="string">xϕx</e>
+          <e type="operand" style="string">03D6</e>
+          <e type="operand" style="string">xϖx</e>
+          <e type="operand" style="string">03D7</e>
+          <e type="operand" style="string">xϗx</e>
+          <e type="operand" style="string">03D8</e>
+          <e type="operand" style="string">xϘx</e>
+          <e type="operand" style="string">03D9</e>
+          <e type="operand" style="string">xϙx</e>
+          <e type="operand" style="string">03DA</e>
+          <e type="operand" style="string">xϚx</e>
+          <e type="operand" style="string">03DB</e>
+          <e type="operand" style="string">xϛx</e>
+          <e type="operand" style="string">03DC</e>
+          <e type="operand" style="string">xϜx</e>
+          <e type="operand" style="string">03DD</e>
+          <e type="operand" style="string">xϝx</e>
+          <e type="operand" style="string">03DE</e>
+          <e type="operand" style="string">xϞx</e>
+          <e type="operand" style="string">03DF</e>
+          <e type="operand" style="string">xϟx</e>
+          <e type="operand" style="string">03E0</e>
+          <e type="operand" style="string">xϠx</e>
+          <e type="operand" style="string">03E1</e>
+          <e type="operand" style="string">xϡx</e>
+          <e type="operand" style="string">03E2</e>
+          <e type="operand" style="string">xϢx</e>
+          <e type="operand" style="string">03E3</e>
+          <e type="operand" style="string">xϣx</e>
+          <e type="operand" style="string">03E4</e>
+          <e type="operand" style="string">xϤx</e>
+          <e type="operand" style="string">03E5</e>
+          <e type="operand" style="string">xϥx</e>
+          <e type="operand" style="string">03E6</e>
+          <e type="operand" style="string">xϦx</e>
+          <e type="operand" style="string">03E7</e>
+          <e type="operand" style="string">xϧx</e>
+          <e type="operand" style="string">03E8</e>
+          <e type="operand" style="string">xϨx</e>
+          <e type="operand" style="string">03E9</e>
+          <e type="operand" style="string">xϩx</e>
+          <e type="operand" style="string">03EA</e>
+          <e type="operand" style="string">xϪx</e>
+          <e type="operand" style="string">03EB</e>
+          <e type="operand" style="string">xϫx</e>
+          <e type="operand" style="string">03EC</e>
+          <e type="operand" style="string">xϬx</e>
+          <e type="operand" style="string">03ED</e>
+          <e type="operand" style="string">xϭx</e>
+          <e type="operand" style="string">03EE</e>
+          <e type="operand" style="string">xϮx</e>
+          <e type="operand" style="string">03EF</e>
+          <e type="operand" style="string">xϯx</e>
+          <e type="operand" style="string">03F0</e>
+          <e type="operand" style="string">xϰx</e>
+          <e type="operand" style="string">03F1</e>
+          <e type="operand" style="string">xϱx</e>
+          <e type="operand" style="string">03F2</e>
+          <e type="operand" style="string">xϲx</e>
+          <e type="operand" style="string">03F3</e>
+          <e type="operand" style="string">xϳx</e>
+          <e type="operand" style="string">03F4</e>
+          <e type="operand" style="string">xϴx</e>
+          <e type="operand" style="string">03F5</e>
+          <e type="operand" style="string">xϵx</e>
+          <e type="operand" style="string">03F6</e>
+          <e type="operand" style="string">x϶x</e>
+          <e type="operand" style="string">03F7</e>
+          <e type="operand" style="string">xϷx</e>
+          <e type="operand" style="string">03F8</e>
+          <e type="operand" style="string">xϸx</e>
+          <e type="operand" style="string">03F9</e>
+          <e type="operand" style="string">xϹx</e>
+          <e type="operand" style="string">03FA</e>
+          <e type="operand" style="string">xϺx</e>
+          <e type="operand" style="string">03FB</e>
+          <e type="operand" style="string">xϻx</e>
+          <e type="operand" style="string">03FC</e>
+          <e type="operand" style="string">xϼx</e>
+          <e type="operand" style="string">03FD</e>
+          <e type="operand" style="string">xϽx</e>
+          <e type="operand" style="string">03FE</e>
+          <e type="operand" style="string">xϾx</e>
+          <e type="operand" style="string">03FF</e>
+          <e type="operand" style="string">xϿx</e>
+          <e type="operand">256</e>
+          <e type="operand">2</e>
+          <e type="function" args="514">mat</e>
+        </input>
+      </math>
+    </region>
+    <region left="36" top="1044" width="201" height="5571" color="#000000" fontSize="12">
+      <math matrixOptions="0,0,2,256">
+        <input>
+          <e type="operand">uni</e>
+        </input>
+        <result action="numeric">
+          <e type="operand" style="string">2000</e>
+          <e type="operand" style="string">x x</e>
+          <e type="operand" style="string">2001</e>
+          <e type="operand" style="string">x x</e>
+          <e type="operand" style="string">2002</e>
+          <e type="operand" style="string">x x</e>
+          <e type="operand" style="string">2003</e>
+          <e type="operand" style="string">x x</e>
+          <e type="operand" style="string">2004</e>
+          <e type="operand" style="string">x x</e>
+          <e type="operand" style="string">2005</e>
+          <e type="operand" style="string">x x</e>
+          <e type="operand" style="string">2006</e>
+          <e type="operand" style="string">x x</e>
+          <e type="operand" style="string">2007</e>
+          <e type="operand" style="string">x x</e>
+          <e type="operand" style="string">2008</e>
+          <e type="operand" style="string">x x</e>
+          <e type="operand" style="string">2009</e>
+          <e type="operand" style="string">x x</e>
+          <e type="operand" style="string">200A</e>
+          <e type="operand" style="string">x x</e>
+          <e type="operand" style="string">200B</e>
+          <e type="operand" style="string">x​x</e>
+          <e type="operand" style="string">200C</e>
+          <e type="operand" style="string">x‌x</e>
+          <e type="operand" style="string">200D</e>
+          <e type="operand" style="string">x‍x</e>
+          <e type="operand" style="string">200E</e>
+          <e type="operand" style="string">x‎x</e>
+          <e type="operand" style="string">200F</e>
+          <e type="operand" style="string">x‏x</e>
+          <e type="operand" style="string">2010</e>
+          <e type="operand" style="string">x‐x</e>
+          <e type="operand" style="string">2011</e>
+          <e type="operand" style="string">x‑x</e>
+          <e type="operand" style="string">2012</e>
+          <e type="operand" style="string">x‒x</e>
+          <e type="operand" style="string">2013</e>
+          <e type="operand" style="string">x–x</e>
+          <e type="operand" style="string">2014</e>
+          <e type="operand" style="string">x—x</e>
+          <e type="operand" style="string">2015</e>
+          <e type="operand" style="string">x―x</e>
+          <e type="operand" style="string">2016</e>
+          <e type="operand" style="string">x‖x</e>
+          <e type="operand" style="string">2017</e>
+          <e type="operand" style="string">x‗x</e>
+          <e type="operand" style="string">2018</e>
+          <e type="operand" style="string">x‘x</e>
+          <e type="operand" style="string">2019</e>
+          <e type="operand" style="string">x’x</e>
+          <e type="operand" style="string">201A</e>
+          <e type="operand" style="string">x‚x</e>
+          <e type="operand" style="string">201B</e>
+          <e type="operand" style="string">x‛x</e>
+          <e type="operand" style="string">201C</e>
+          <e type="operand" style="string">x“x</e>
+          <e type="operand" style="string">201D</e>
+          <e type="operand" style="string">x”x</e>
+          <e type="operand" style="string">201E</e>
+          <e type="operand" style="string">x„x</e>
+          <e type="operand" style="string">201F</e>
+          <e type="operand" style="string">x‟x</e>
+          <e type="operand" style="string">2020</e>
+          <e type="operand" style="string">x†x</e>
+          <e type="operand" style="string">2021</e>
+          <e type="operand" style="string">x‡x</e>
+          <e type="operand" style="string">2022</e>
+          <e type="operand" style="string">x•x</e>
+          <e type="operand" style="string">2023</e>
+          <e type="operand" style="string">x‣x</e>
+          <e type="operand" style="string">2024</e>
+          <e type="operand" style="string">x․x</e>
+          <e type="operand" style="string">2025</e>
+          <e type="operand" style="string">x‥x</e>
+          <e type="operand" style="string">2026</e>
+          <e type="operand" style="string">x…x</e>
+          <e type="operand" style="string">2027</e>
+          <e type="operand" style="string">x‧x</e>
+          <e type="operand" style="string">2028</e>
+          <e type="operand" style="string">x x</e>
+          <e type="operand" style="string">2029</e>
+          <e type="operand" style="string">x x</e>
+          <e type="operand" style="string">202A</e>
+          <e type="operand" style="string">x‪x</e>
+          <e type="operand" style="string">202B</e>
+          <e type="operand" style="string">x‫x</e>
+          <e type="operand" style="string">202C</e>
+          <e type="operand" style="string">x‬x</e>
+          <e type="operand" style="string">202D</e>
+          <e type="operand" style="string">x‭x</e>
+          <e type="operand" style="string">202E</e>
+          <e type="operand" style="string">x‮x</e>
+          <e type="operand" style="string">202F</e>
+          <e type="operand" style="string">x x</e>
+          <e type="operand" style="string">2030</e>
+          <e type="operand" style="string">x‰x</e>
+          <e type="operand" style="string">2031</e>
+          <e type="operand" style="string">x‱x</e>
+          <e type="operand" style="string">2032</e>
+          <e type="operand" style="string">x′x</e>
+          <e type="operand" style="string">2033</e>
+          <e type="operand" style="string">x″x</e>
+          <e type="operand" style="string">2034</e>
+          <e type="operand" style="string">x‴x</e>
+          <e type="operand" style="string">2035</e>
+          <e type="operand" style="string">x‵x</e>
+          <e type="operand" style="string">2036</e>
+          <e type="operand" style="string">x‶x</e>
+          <e type="operand" style="string">2037</e>
+          <e type="operand" style="string">x‷x</e>
+          <e type="operand" style="string">2038</e>
+          <e type="operand" style="string">x‸x</e>
+          <e type="operand" style="string">2039</e>
+          <e type="operand" style="string">x‹x</e>
+          <e type="operand" style="string">203A</e>
+          <e type="operand" style="string">x›x</e>
+          <e type="operand" style="string">203B</e>
+          <e type="operand" style="string">x※x</e>
+          <e type="operand" style="string">203C</e>
+          <e type="operand" style="string">x‼x</e>
+          <e type="operand" style="string">203D</e>
+          <e type="operand" style="string">x‽x</e>
+          <e type="operand" style="string">203E</e>
+          <e type="operand" style="string">x‾x</e>
+          <e type="operand" style="string">203F</e>
+          <e type="operand" style="string">x‿x</e>
+          <e type="operand" style="string">2040</e>
+          <e type="operand" style="string">x⁀x</e>
+          <e type="operand" style="string">2041</e>
+          <e type="operand" style="string">x⁁x</e>
+          <e type="operand" style="string">2042</e>
+          <e type="operand" style="string">x⁂x</e>
+          <e type="operand" style="string">2043</e>
+          <e type="operand" style="string">x⁃x</e>
+          <e type="operand" style="string">2044</e>
+          <e type="operand" style="string">x⁄x</e>
+          <e type="operand" style="string">2045</e>
+          <e type="operand" style="string">x⁅x</e>
+          <e type="operand" style="string">2046</e>
+          <e type="operand" style="string">x⁆x</e>
+          <e type="operand" style="string">2047</e>
+          <e type="operand" style="string">x⁇x</e>
+          <e type="operand" style="string">2048</e>
+          <e type="operand" style="string">x⁈x</e>
+          <e type="operand" style="string">2049</e>
+          <e type="operand" style="string">x⁉x</e>
+          <e type="operand" style="string">204A</e>
+          <e type="operand" style="string">x⁊x</e>
+          <e type="operand" style="string">204B</e>
+          <e type="operand" style="string">x⁋x</e>
+          <e type="operand" style="string">204C</e>
+          <e type="operand" style="string">x⁌x</e>
+          <e type="operand" style="string">204D</e>
+          <e type="operand" style="string">x⁍x</e>
+          <e type="operand" style="string">204E</e>
+          <e type="operand" style="string">x⁎x</e>
+          <e type="operand" style="string">204F</e>
+          <e type="operand" style="string">x⁏x</e>
+          <e type="operand" style="string">2050</e>
+          <e type="operand" style="string">x⁐x</e>
+          <e type="operand" style="string">2051</e>
+          <e type="operand" style="string">x⁑x</e>
+          <e type="operand" style="string">2052</e>
+          <e type="operand" style="string">x⁒x</e>
+          <e type="operand" style="string">2053</e>
+          <e type="operand" style="string">x⁓x</e>
+          <e type="operand" style="string">2054</e>
+          <e type="operand" style="string">x⁔x</e>
+          <e type="operand" style="string">2055</e>
+          <e type="operand" style="string">x⁕x</e>
+          <e type="operand" style="string">2056</e>
+          <e type="operand" style="string">x⁖x</e>
+          <e type="operand" style="string">2057</e>
+          <e type="operand" style="string">x⁗x</e>
+          <e type="operand" style="string">2058</e>
+          <e type="operand" style="string">x⁘x</e>
+          <e type="operand" style="string">2059</e>
+          <e type="operand" style="string">x⁙x</e>
+          <e type="operand" style="string">205A</e>
+          <e type="operand" style="string">x⁚x</e>
+          <e type="operand" style="string">205B</e>
+          <e type="operand" style="string">x⁛x</e>
+          <e type="operand" style="string">205C</e>
+          <e type="operand" style="string">x⁜x</e>
+          <e type="operand" style="string">205D</e>
+          <e type="operand" style="string">x⁝x</e>
+          <e type="operand" style="string">205E</e>
+          <e type="operand" style="string">x⁞x</e>
+          <e type="operand" style="string">205F</e>
+          <e type="operand" style="string">x x</e>
+          <e type="operand" style="string">2060</e>
+          <e type="operand" style="string">x⁠x</e>
+          <e type="operand" style="string">2061</e>
+          <e type="operand" style="string">x⁡x</e>
+          <e type="operand" style="string">2062</e>
+          <e type="operand" style="string">x⁢x</e>
+          <e type="operand" style="string">2063</e>
+          <e type="operand" style="string">x⁣x</e>
+          <e type="operand" style="string">2064</e>
+          <e type="operand" style="string">x⁤x</e>
+          <e type="operand" style="string">2065</e>
+          <e type="operand" style="string">x⁥x</e>
+          <e type="operand" style="string">2066</e>
+          <e type="operand" style="string">x⁦x</e>
+          <e type="operand" style="string">2067</e>
+          <e type="operand" style="string">x⁧x</e>
+          <e type="operand" style="string">2068</e>
+          <e type="operand" style="string">x⁨x</e>
+          <e type="operand" style="string">2069</e>
+          <e type="operand" style="string">x⁩x</e>
+          <e type="operand" style="string">206A</e>
+          <e type="operand" style="string">x⁪x</e>
+          <e type="operand" style="string">206B</e>
+          <e type="operand" style="string">x⁫x</e>
+          <e type="operand" style="string">206C</e>
+          <e type="operand" style="string">x⁬x</e>
+          <e type="operand" style="string">206D</e>
+          <e type="operand" style="string">x⁭x</e>
+          <e type="operand" style="string">206E</e>
+          <e type="operand" style="string">x⁮x</e>
+          <e type="operand" style="string">206F</e>
+          <e type="operand" style="string">x⁯x</e>
+          <e type="operand" style="string">2070</e>
+          <e type="operand" style="string">x⁰x</e>
+          <e type="operand" style="string">2071</e>
+          <e type="operand" style="string">xⁱx</e>
+          <e type="operand" style="string">2072</e>
+          <e type="operand" style="string">x⁲x</e>
+          <e type="operand" style="string">2073</e>
+          <e type="operand" style="string">x⁳x</e>
+          <e type="operand" style="string">2074</e>
+          <e type="operand" style="string">x⁴x</e>
+          <e type="operand" style="string">2075</e>
+          <e type="operand" style="string">x⁵x</e>
+          <e type="operand" style="string">2076</e>
+          <e type="operand" style="string">x⁶x</e>
+          <e type="operand" style="string">2077</e>
+          <e type="operand" style="string">x⁷x</e>
+          <e type="operand" style="string">2078</e>
+          <e type="operand" style="string">x⁸x</e>
+          <e type="operand" style="string">2079</e>
+          <e type="operand" style="string">x⁹x</e>
+          <e type="operand" style="string">207A</e>
+          <e type="operand" style="string">x⁺x</e>
+          <e type="operand" style="string">207B</e>
+          <e type="operand" style="string">x⁻x</e>
+          <e type="operand" style="string">207C</e>
+          <e type="operand" style="string">x⁼x</e>
+          <e type="operand" style="string">207D</e>
+          <e type="operand" style="string">x⁽x</e>
+          <e type="operand" style="string">207E</e>
+          <e type="operand" style="string">x⁾x</e>
+          <e type="operand" style="string">207F</e>
+          <e type="operand" style="string">xⁿx</e>
+          <e type="operand" style="string">2080</e>
+          <e type="operand" style="string">x₀x</e>
+          <e type="operand" style="string">2081</e>
+          <e type="operand" style="string">x₁x</e>
+          <e type="operand" style="string">2082</e>
+          <e type="operand" style="string">x₂x</e>
+          <e type="operand" style="string">2083</e>
+          <e type="operand" style="string">x₃x</e>
+          <e type="operand" style="string">2084</e>
+          <e type="operand" style="string">x₄x</e>
+          <e type="operand" style="string">2085</e>
+          <e type="operand" style="string">x₅x</e>
+          <e type="operand" style="string">2086</e>
+          <e type="operand" style="string">x₆x</e>
+          <e type="operand" style="string">2087</e>
+          <e type="operand" style="string">x₇x</e>
+          <e type="operand" style="string">2088</e>
+          <e type="operand" style="string">x₈x</e>
+          <e type="operand" style="string">2089</e>
+          <e type="operand" style="string">x₉x</e>
+          <e type="operand" style="string">208A</e>
+          <e type="operand" style="string">x₊x</e>
+          <e type="operand" style="string">208B</e>
+          <e type="operand" style="string">x₋x</e>
+          <e type="operand" style="string">208C</e>
+          <e type="operand" style="string">x₌x</e>
+          <e type="operand" style="string">208D</e>
+          <e type="operand" style="string">x₍x</e>
+          <e type="operand" style="string">208E</e>
+          <e type="operand" style="string">x₎x</e>
+          <e type="operand" style="string">208F</e>
+          <e type="operand" style="string">x₏x</e>
+          <e type="operand" style="string">2090</e>
+          <e type="operand" style="string">xₐx</e>
+          <e type="operand" style="string">2091</e>
+          <e type="operand" style="string">xₑx</e>
+          <e type="operand" style="string">2092</e>
+          <e type="operand" style="string">xₒx</e>
+          <e type="operand" style="string">2093</e>
+          <e type="operand" style="string">xₓx</e>
+          <e type="operand" style="string">2094</e>
+          <e type="operand" style="string">xₔx</e>
+          <e type="operand" style="string">2095</e>
+          <e type="operand" style="string">xₕx</e>
+          <e type="operand" style="string">2096</e>
+          <e type="operand" style="string">xₖx</e>
+          <e type="operand" style="string">2097</e>
+          <e type="operand" style="string">xₗx</e>
+          <e type="operand" style="string">2098</e>
+          <e type="operand" style="string">xₘx</e>
+          <e type="operand" style="string">2099</e>
+          <e type="operand" style="string">xₙx</e>
+          <e type="operand" style="string">209A</e>
+          <e type="operand" style="string">xₚx</e>
+          <e type="operand" style="string">209B</e>
+          <e type="operand" style="string">xₛx</e>
+          <e type="operand" style="string">209C</e>
+          <e type="operand" style="string">xₜx</e>
+          <e type="operand" style="string">209D</e>
+          <e type="operand" style="string">x₝x</e>
+          <e type="operand" style="string">209E</e>
+          <e type="operand" style="string">x₞x</e>
+          <e type="operand" style="string">209F</e>
+          <e type="operand" style="string">x₟x</e>
+          <e type="operand" style="string">20A0</e>
+          <e type="operand" style="string">x₠x</e>
+          <e type="operand" style="string">20A1</e>
+          <e type="operand" style="string">x₡x</e>
+          <e type="operand" style="string">20A2</e>
+          <e type="operand" style="string">x₢x</e>
+          <e type="operand" style="string">20A3</e>
+          <e type="operand" style="string">x₣x</e>
+          <e type="operand" style="string">20A4</e>
+          <e type="operand" style="string">x₤x</e>
+          <e type="operand" style="string">20A5</e>
+          <e type="operand" style="string">x₥x</e>
+          <e type="operand" style="string">20A6</e>
+          <e type="operand" style="string">x₦x</e>
+          <e type="operand" style="string">20A7</e>
+          <e type="operand" style="string">x₧x</e>
+          <e type="operand" style="string">20A8</e>
+          <e type="operand" style="string">x₨x</e>
+          <e type="operand" style="string">20A9</e>
+          <e type="operand" style="string">x₩x</e>
+          <e type="operand" style="string">20AA</e>
+          <e type="operand" style="string">x₪x</e>
+          <e type="operand" style="string">20AB</e>
+          <e type="operand" style="string">x₫x</e>
+          <e type="operand" style="string">20AC</e>
+          <e type="operand" style="string">x€x</e>
+          <e type="operand" style="string">20AD</e>
+          <e type="operand" style="string">x₭x</e>
+          <e type="operand" style="string">20AE</e>
+          <e type="operand" style="string">x₮x</e>
+          <e type="operand" style="string">20AF</e>
+          <e type="operand" style="string">x₯x</e>
+          <e type="operand" style="string">20B0</e>
+          <e type="operand" style="string">x₰x</e>
+          <e type="operand" style="string">20B1</e>
+          <e type="operand" style="string">x₱x</e>
+          <e type="operand" style="string">20B2</e>
+          <e type="operand" style="string">x₲x</e>
+          <e type="operand" style="string">20B3</e>
+          <e type="operand" style="string">x₳x</e>
+          <e type="operand" style="string">20B4</e>
+          <e type="operand" style="string">x₴x</e>
+          <e type="operand" style="string">20B5</e>
+          <e type="operand" style="string">x₵x</e>
+          <e type="operand" style="string">20B6</e>
+          <e type="operand" style="string">x₶x</e>
+          <e type="operand" style="string">20B7</e>
+          <e type="operand" style="string">x₷x</e>
+          <e type="operand" style="string">20B8</e>
+          <e type="operand" style="string">x₸x</e>
+          <e type="operand" style="string">20B9</e>
+          <e type="operand" style="string">x₹x</e>
+          <e type="operand" style="string">20BA</e>
+          <e type="operand" style="string">x₺x</e>
+          <e type="operand" style="string">20BB</e>
+          <e type="operand" style="string">x₻x</e>
+          <e type="operand" style="string">20BC</e>
+          <e type="operand" style="string">x₼x</e>
+          <e type="operand" style="string">20BD</e>
+          <e type="operand" style="string">x₽x</e>
+          <e type="operand" style="string">20BE</e>
+          <e type="operand" style="string">x₾x</e>
+          <e type="operand" style="string">20BF</e>
+          <e type="operand" style="string">x₿x</e>
+          <e type="operand" style="string">20C0</e>
+          <e type="operand" style="string">x⃀x</e>
+          <e type="operand" style="string">20C1</e>
+          <e type="operand" style="string">x⃁x</e>
+          <e type="operand" style="string">20C2</e>
+          <e type="operand" style="string">x⃂x</e>
+          <e type="operand" style="string">20C3</e>
+          <e type="operand" style="string">x⃃x</e>
+          <e type="operand" style="string">20C4</e>
+          <e type="operand" style="string">x⃄x</e>
+          <e type="operand" style="string">20C5</e>
+          <e type="operand" style="string">x⃅x</e>
+          <e type="operand" style="string">20C6</e>
+          <e type="operand" style="string">x⃆x</e>
+          <e type="operand" style="string">20C7</e>
+          <e type="operand" style="string">x⃇x</e>
+          <e type="operand" style="string">20C8</e>
+          <e type="operand" style="string">x⃈x</e>
+          <e type="operand" style="string">20C9</e>
+          <e type="operand" style="string">x⃉x</e>
+          <e type="operand" style="string">20CA</e>
+          <e type="operand" style="string">x⃊x</e>
+          <e type="operand" style="string">20CB</e>
+          <e type="operand" style="string">x⃋x</e>
+          <e type="operand" style="string">20CC</e>
+          <e type="operand" style="string">x⃌x</e>
+          <e type="operand" style="string">20CD</e>
+          <e type="operand" style="string">x⃍x</e>
+          <e type="operand" style="string">20CE</e>
+          <e type="operand" style="string">x⃎x</e>
+          <e type="operand" style="string">20CF</e>
+          <e type="operand" style="string">x⃏x</e>
+          <e type="operand" style="string">20D0</e>
+          <e type="operand" style="string">x⃐x</e>
+          <e type="operand" style="string">20D1</e>
+          <e type="operand" style="string">x⃑x</e>
+          <e type="operand" style="string">20D2</e>
+          <e type="operand" style="string">x⃒x</e>
+          <e type="operand" style="string">20D3</e>
+          <e type="operand" style="string">x⃓x</e>
+          <e type="operand" style="string">20D4</e>
+          <e type="operand" style="string">x⃔x</e>
+          <e type="operand" style="string">20D5</e>
+          <e type="operand" style="string">x⃕x</e>
+          <e type="operand" style="string">20D6</e>
+          <e type="operand" style="string">x⃖x</e>
+          <e type="operand" style="string">20D7</e>
+          <e type="operand" style="string">x⃗x</e>
+          <e type="operand" style="string">20D8</e>
+          <e type="operand" style="string">x⃘x</e>
+          <e type="operand" style="string">20D9</e>
+          <e type="operand" style="string">x⃙x</e>
+          <e type="operand" style="string">20DA</e>
+          <e type="operand" style="string">x⃚x</e>
+          <e type="operand" style="string">20DB</e>
+          <e type="operand" style="string">x⃛x</e>
+          <e type="operand" style="string">20DC</e>
+          <e type="operand" style="string">x⃜x</e>
+          <e type="operand" style="string">20DD</e>
+          <e type="operand" style="string">x⃝x</e>
+          <e type="operand" style="string">20DE</e>
+          <e type="operand" style="string">x⃞x</e>
+          <e type="operand" style="string">20DF</e>
+          <e type="operand" style="string">x⃟x</e>
+          <e type="operand" style="string">20E0</e>
+          <e type="operand" style="string">x⃠x</e>
+          <e type="operand" style="string">20E1</e>
+          <e type="operand" style="string">x⃡x</e>
+          <e type="operand" style="string">20E2</e>
+          <e type="operand" style="string">x⃢x</e>
+          <e type="operand" style="string">20E3</e>
+          <e type="operand" style="string">x⃣x</e>
+          <e type="operand" style="string">20E4</e>
+          <e type="operand" style="string">x⃤x</e>
+          <e type="operand" style="string">20E5</e>
+          <e type="operand" style="string">x⃥x</e>
+          <e type="operand" style="string">20E6</e>
+          <e type="operand" style="string">x⃦x</e>
+          <e type="operand" style="string">20E7</e>
+          <e type="operand" style="string">x⃧x</e>
+          <e type="operand" style="string">20E8</e>
+          <e type="operand" style="string">x⃨x</e>
+          <e type="operand" style="string">20E9</e>
+          <e type="operand" style="string">x⃩x</e>
+          <e type="operand" style="string">20EA</e>
+          <e type="operand" style="string">x⃪x</e>
+          <e type="operand" style="string">20EB</e>
+          <e type="operand" style="string">x⃫x</e>
+          <e type="operand" style="string">20EC</e>
+          <e type="operand" style="string">x⃬x</e>
+          <e type="operand" style="string">20ED</e>
+          <e type="operand" style="string">x⃭x</e>
+          <e type="operand" style="string">20EE</e>
+          <e type="operand" style="string">x⃮x</e>
+          <e type="operand" style="string">20EF</e>
+          <e type="operand" style="string">x⃯x</e>
+          <e type="operand" style="string">20F0</e>
+          <e type="operand" style="string">x⃰x</e>
+          <e type="operand" style="string">20F1</e>
+          <e type="operand" style="string">x⃱x</e>
+          <e type="operand" style="string">20F2</e>
+          <e type="operand" style="string">x⃲x</e>
+          <e type="operand" style="string">20F3</e>
+          <e type="operand" style="string">x⃳x</e>
+          <e type="operand" style="string">20F4</e>
+          <e type="operand" style="string">x⃴x</e>
+          <e type="operand" style="string">20F5</e>
+          <e type="operand" style="string">x⃵x</e>
+          <e type="operand" style="string">20F6</e>
+          <e type="operand" style="string">x⃶x</e>
+          <e type="operand" style="string">20F7</e>
+          <e type="operand" style="string">x⃷x</e>
+          <e type="operand" style="string">20F8</e>
+          <e type="operand" style="string">x⃸x</e>
+          <e type="operand" style="string">20F9</e>
+          <e type="operand" style="string">x⃹x</e>
+          <e type="operand" style="string">20FA</e>
+          <e type="operand" style="string">x⃺x</e>
+          <e type="operand" style="string">20FB</e>
+          <e type="operand" style="string">x⃻x</e>
+          <e type="operand" style="string">20FC</e>
+          <e type="operand" style="string">x⃼x</e>
+          <e type="operand" style="string">20FD</e>
+          <e type="operand" style="string">x⃽x</e>
+          <e type="operand" style="string">20FE</e>
+          <e type="operand" style="string">x⃾x</e>
+          <e type="operand" style="string">20FF</e>
+          <e type="operand" style="string">x⃿x</e>
+          <e type="operand">256</e>
+          <e type="operand">2</e>
+          <e type="function" args="514">mat</e>
+        </result>
+      </math>
+    </region>
+  </regions>
+</worksheet>
