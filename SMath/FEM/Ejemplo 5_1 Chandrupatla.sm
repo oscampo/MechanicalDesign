@@ -4,7 +4,7 @@
   <settings ppi="96">
     <identity>
       <id>40f36b21-7479-42a4-9366-37b05cb76b33</id>
-      <revision>88</revision>
+      <revision>89</revision>
     </identity>
     <metadata lang="eng">
       <author>Oscar Campo</author>
@@ -1933,24 +1933,24 @@
       <xyplot width="523" height="325" points="100" name="XYPlot">
         <chartstyle backcolor="White" bordercolor="Black" />
         <propertiessource index="1" sourcetype="PropertyGrid" />
-        <grid gridcolor="LightGray" gridpattern="Dash" gridthickness="1" isxgrid="false" isygrid="false" isy2grid="false" />
-        <xaxes xmin="-0.1788423" xmax="2.256516" xtick="0.4" visible="False" decimalplaces="3" numberformat="General" />
-        <yaxes ymin="-0.7407736" ymax="0.7456524" ytick="0.4" visible="False" decimalplaces="3" numberformat="General" />
-        <y2axes isy2axis="false" y2min="-1" y2max="1" y2tick="0.5" visible="True" decimalplaces="3" numberformat="General" />
+        <grid gridcolor="LightGray" gridpattern="Dash" gridthickness="1" isxgrid="true" isygrid="false" isy2grid="true" />
+        <xaxes xmin="-0.2233074" xmax="2.15956" xtick="0.4" visible="False" decimalplaces="3" numberformat="General" />
+        <yaxes ymin="-0.8242437" ymax="0.5161213" ytick="0.4" visible="False" decimalplaces="3" numberformat="General" />
+        <y2axes isy2axis="true" y2min="-0.0001" y2max="0.0001" y2tick="3E-05" visible="True" decimalplaces="3" numberformat="General" />
         <title2d title="" titlefont="Arial, 10pt" titlefontcolor="Black" />
         <xylabel labelfont="Arial, 10pt" labelfontcolor="Black" tickfont="Arial, 8pt" tickfontcolor="Black" xlabel="x" ylabel="y" y2label="y2" />
         <legend isbordervisible="true" islegendvisible="false" legendbackcolor="White" legendbordercolor="Black" legendfont="Antonio, 8.25pt, style=Bold" legendposition="NorthEast" textcolor="Black" />
         <traces>
-          <trace seriesname="" isy2data="false" isvisible="true" plotmethod="Lines" lineantialias="true" linecolor="Blue" linethickness="1" linepattern="Solid" symbolantialias="true" symbolsize="8" symboltype="None" symbolborderthickness="1" symbolbordercolor="Black" symbolfillcolor="White" />
-          <trace seriesname="" isy2data="false" isvisible="true" plotmethod="Labels" lineantialias="true" linecolor="Red" linethickness="1" linepattern="Solid" symbolantialias="true" symbolsize="8" symboltype="None" symbolborderthickness="1" symbolbordercolor="Black" symbolfillcolor="White" />
-          <trace seriesname="" isy2data="false" isvisible="true" plotmethod="Lines" lineantialias="true" linecolor="Green" linethickness="1" linepattern="Solid" symbolantialias="true" symbolsize="8" symboltype="None" symbolborderthickness="1" symbolbordercolor="Black" symbolfillcolor="White" />
+          <trace seriesname="" isy2data="true" isvisible="true" plotmethod="Lines" lineantialias="true" linecolor="Blue" linethickness="1" linepattern="Solid" symbolantialias="true" symbolsize="8" symboltype="None" symbolborderthickness="1" symbolbordercolor="Black" symbolfillcolor="White" />
+          <trace seriesname="" isy2data="true" isvisible="true" plotmethod="Labels" lineantialias="true" linecolor="Red" linethickness="1" linepattern="Solid" symbolantialias="true" symbolsize="8" symboltype="None" symbolborderthickness="1" symbolbordercolor="Black" symbolfillcolor="White" />
+          <trace seriesname="" isy2data="true" isvisible="true" plotmethod="Lines" lineantialias="true" linecolor="Green" linethickness="1" linepattern="Solid" symbolantialias="true" symbolsize="8" symboltype="None" symbolborderthickness="1" symbolbordercolor="Black" symbolfillcolor="White" />
         </traces>
         <input>
           <e type="operand">marco</e>
           <e type="operand">nodes</e>
           <e type="operand">con</e>
           <e type="operand">dfr</e>
-          <e type="operand">1000</e>
+          <e type="operand">1</e>
           <e type="function" args="4">defframe</e>
           <e type="operand">2</e>
           <e type="operand">1</e>
