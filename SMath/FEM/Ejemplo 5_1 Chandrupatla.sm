@@ -4,7 +4,7 @@
   <settings ppi="96">
     <identity>
       <id>40f36b21-7479-42a4-9366-37b05cb76b33</id>
-      <revision>87</revision>
+      <revision>88</revision>
     </identity>
     <metadata lang="eng">
       <author>Oscar Campo</author>
@@ -37,7 +37,7 @@
   </settings>
   <regions type="content">
     <region top="9" color="#000000">
-      <area collapsed="false">
+      <area collapsed="true">
         <title lang="spa">
           <content>
             <p>Beams &amp; Frames</p>
