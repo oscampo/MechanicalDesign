@@ -4,7 +4,7 @@
   <settings ppi="96">
     <identity>
       <id>40f36b21-7479-42a4-9366-37b05cb76b33</id>
-      <revision>89</revision>
+      <revision>90</revision>
     </identity>
     <metadata lang="eng">
       <author>Oscar Campo</author>
@@ -33,6 +33,7 @@
       <assembly name="TextRegion" version="1.11.8253.4763" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
       <assembly name="AreaRegion" version="1.11.8253.4763" guid="4974b228-4974-44cf-8274-bf2936b4a766" />
       <assembly name="X-Y Plot Region (JXCharts)" version="0.2.8209.38826" guid="c12231ec-4873-43c1-a7d0-a167ebd17066" />
+      <assembly name="PlotRegion" version="1.11.8253.4763" guid="c451c2b5-798b-4f08-b9ec-b90963d1ddaa" />
     </dependencies>
   </settings>
   <regions type="content">
@@ -224,7 +225,7 @@
           </input>
         </math>
       </region>
-      <region left="27" top="774" width="596" height="35" color="#000000" fontSize="10">
+      <region left="27" top="774" width="602" height="39" color="#000000" fontSize="10">
         <math>
           <input>
             <e type="operand">n1</e>
@@ -248,6 +249,9 @@
             <e type="operand">n2</e>
             <e type="function" args="2">Lframe</e>
             <e type="operator" args="2">*</e>
+            <e type="operand">1</e>
+            <e type="operand">1</e>
+            <e type="function" args="3">line</e>
             <e type="operator" args="2">:</e>
           </input>
         </math>
@@ -1842,7 +1846,7 @@
         </input>
       </math>
     </region>
-    <region left="27" top="6327" width="652" height="211" color="#000000" fontSize="10">
+    <region left="27" top="6264" width="652" height="211" color="#000000" fontSize="10">
       <math exponentialThreshold="3">
         <input>
           <e type="operand">solution</e>
@@ -1918,7 +1922,7 @@
         </result>
       </math>
     </region>
-    <region left="27" top="6498" width="131" height="33" color="#000000" fontSize="10">
+    <region left="27" top="6435" width="131" height="33" color="#000000" fontSize="10">
       <math>
         <input>
           <e type="operand">dfr</e>
@@ -1929,7 +1933,7 @@
         </input>
       </math>
     </region>
-    <region left="36" top="6597" width="533" height="333" color="#000000" bgColor="#ffffff" fontSize="12">
+    <region left="36" top="6534" width="533" height="333" color="#000000" bgColor="#ffffff" fontSize="12">
       <xyplot width="523" height="325" points="100" name="XYPlot">
         <chartstyle backcolor="White" bordercolor="Black" />
         <propertiessource index="1" sourcetype="PropertyGrid" />
@@ -1958,7 +1962,7 @@
         </input>
       </xyplot>
     </region>
-    <region left="81" top="7029" width="349" height="44" color="#000000" fontSize="12">
+    <region left="81" top="6966" width="349" height="44" color="#000000" fontSize="12">
       <math>
         <input>
           <e type="operand">0</e>
@@ -1985,6 +1989,165 @@
           <e type="function" args="3">mat</e>
         </result>
       </math>
+    </region>
+    <region left="54" top="7128" width="516" height="118" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">VM1</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">1</e>
+          <e type="operand">2</e>
+          <e type="function" args="4">mat</e>
+          <e type="operand">1</e>
+          <e type="operand">0</e>
+          <e type="operand">1</e>
+          <e type="operand">2</e>
+          <e type="function" args="4">mat</e>
+          <e type="operand">A</e>
+          <e type="operand">E</e>
+          <e type="operand">I</e>
+          <e type="function" args="5">ke</e>
+          <e type="operand">dfr</e>
+          <e type="operand">1</e>
+          <e type="operand">6</e>
+          <e type="function" args="2">range</e>
+          <e type="function" args="2">el</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">F</e>
+          <e type="operand">1</e>
+          <e type="operand">6</e>
+          <e type="function" args="2">range</e>
+          <e type="function" args="2">el</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0</e>
+          <e type="operand">1285.7143</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">428.5714</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">0</e>
+          <e type="operand">4714.2857</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">1857.1429</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">6</e>
+          <e type="operand">1</e>
+          <e type="function" args="8">mat</e>
+        </result>
+      </math>
+    </region>
+    <region left="63" top="7290" width="516" height="118" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">VM2</e>
+          <e type="operand">1</e>
+          <e type="operand">0</e>
+          <e type="operand">1</e>
+          <e type="operand">2</e>
+          <e type="function" args="4">mat</e>
+          <e type="operand">2</e>
+          <e type="operand">0</e>
+          <e type="operand">1</e>
+          <e type="operand">2</e>
+          <e type="function" args="4">mat</e>
+          <e type="operand">A</e>
+          <e type="operand">E</e>
+          <e type="operand">I</e>
+          <e type="function" args="5">ke</e>
+          <e type="operand">dfr</e>
+          <e type="operand">4</e>
+          <e type="operand">9</e>
+          <e type="function" args="2">range</e>
+          <e type="function" args="2">el</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">F</e>
+          <e type="operand">4</e>
+          <e type="operand">9</e>
+          <e type="function" args="2">range</e>
+          <e type="function" args="2">el</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0</e>
+          <e type="operand">5142.8571</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">1142.8571</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">0</e>
+          <e type="operand">6857.1429</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">2000</e>
+          <e type="operand">6</e>
+          <e type="operand">1</e>
+          <e type="function" args="8">mat</e>
+        </result>
+      </math>
+    </region>
+    <region left="63" top="7425" width="293" height="63" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">VM1</e>
+          <e type="operand">4</e>
+          <e type="operand">6</e>
+          <e type="function" args="2">range</e>
+          <e type="function" args="2">el</e>
+          <e type="operand">VM2</e>
+          <e type="operand">1</e>
+          <e type="operand">3</e>
+          <e type="function" args="2">range</e>
+          <e type="function" args="2">el</e>
+          <e type="operator" args="2">+</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0</e>
+          <e type="operand">9857.1429</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">3000</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">3</e>
+          <e type="operand">1</e>
+          <e type="function" args="5">mat</e>
+        </result>
+      </math>
+    </region>
+    <region left="72" top="7605" width="240" height="158" color="#000000" fontSize="10">
+      <plot type="2d" render="lines" scale_x="0.000358999457041099" scale_y="5.33366066636818" scale_z="5.33366066636818" rotate_x="0" rotate_y="0" rotate_z="0" transpose_x="-37" transpose_y="15" transpose_z="0">
+        <input>
+          <e type="operand">0</e>
+          <e type="operand">1285.7143</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">1</e>
+          <e type="operand">9857.1429</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">2</e>
+          <e type="operand">6857.1429</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">3</e>
+          <e type="operand">2</e>
+          <e type="function" args="8">mat</e>
+        </input>
+      </plot>
+    </region>
+    <region left="405" top="7605" width="240" height="158" color="#000000" fontSize="10">
+      <plot type="2d" render="lines" scale_x="0.000358999457041099" scale_y="5.33366066636818" scale_z="5.33366066636818" rotate_x="0" rotate_y="0" rotate_z="0" transpose_x="-37" transpose_y="15" transpose_z="0">
+        <input>
+          <e type="operand">0</e>
+          <e type="operand">428.5714</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">1</e>
+          <e type="operand">3000</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">2</e>
+          <e type="operand">2000</e>
+          <e type="operand">3</e>
+          <e type="operand">2</e>
+          <e type="function" args="8">mat</e>
+        </input>
+      </plot>
     </region>
   </regions>
 </worksheet>
