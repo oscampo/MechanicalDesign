@@ -4,7 +4,7 @@
   <settings ppi="96">
     <identity>
       <id>40f36b21-7479-42a4-9366-37b05cb76b33</id>
-      <revision>91</revision>
+      <revision>93</revision>
     </identity>
     <metadata lang="eng">
       <author>Oscar Campo</author>
@@ -38,7 +38,7 @@
   </settings>
   <regions type="content">
     <region top="9" color="#000000">
-      <area collapsed="true">
+      <area collapsed="false">
         <title lang="spa">
           <content>
             <p>Beams &amp; Frames</p>
@@ -1739,7 +1739,7 @@
         </input>
       </math>
     </region>
-    <region left="405" top="5517" width="96" height="61" color="#000000" fontSize="10">
+    <region left="405" top="5517" width="84" height="59" color="#000000" fontSize="10">
       <math>
         <input>
           <e type="operand">I</e>
@@ -1749,7 +1749,6 @@
           <e type="operator" args="2">^</e>
           <e type="operator" args="2">*</e>
           <e type="operand">1000</e>
-          <e type="bracket">(</e>
           <e type="operand">4</e>
           <e type="operator" args="2">^</e>
           <e type="operator" args="2">/</e>
