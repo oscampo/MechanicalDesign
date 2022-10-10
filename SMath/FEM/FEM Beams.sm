@@ -4,7 +4,7 @@
   <settings ppi="96">
     <identity>
       <id>d059b7a3-7b81-470e-ab2d-032f5c60e0e6</id>
-      <revision>15</revision>
+      <revision>18</revision>
     </identity>
     <calculation>
       <precision>4</precision>
@@ -34,7 +34,7 @@
   </settings>
   <regions type="content">
     <region top="0" color="#000000">
-      <area collapsed="false">
+      <area collapsed="true">
         <title lang="spa">
           <content>
             <p>FEM Beams</p>
@@ -44,11 +44,11 @@
       <region left="36" top="18" width="734" height="383" border="true" color="#000000" bgColor="#ffff00" fontSize="10" isBreakable="false">
         <text lang="eng" fontFamily="Arial" fontSize="10">
           <content>
-            <p style="font-family: Courier New; background-color: #ffff00;">FEM Utilities<br />Simple Finite Elements Method on SMath<br />Oscar Campo, PhD. oscampo@gmail.com<br /><br />Usage:<br />Define a (n x 2) nodal coordinates matrix:<br /><br />nodes=|x1 y1|<br />            | :   :|<br />            |xn yn|<br /><br />------------ Revision 7ene2019 ------------<br />Added defframe(nod,con,def,sc)) function, which let plot deformed beams and frames<br />Added femframe(nod,con,res,Forces,A,E,I) function: now you can calculate deformations (*only*) in beams and frames "on a click"<br /><br />------------ Revision 31ago2017 -----------<br />Added femtruss() function: now you can calculate stresses an deformations "on a click"<br />Added Gauss() function: Solve systems by Gauss reduction<br />Changes on δ() function: Now it's possible calculate deformatiosn by inverse of stiffness matrix<br />     or by Gauss reduction<br />------------ Revision 2sep2017 ------------<br />Updated plotfem(): Now it assign element and nodal labels<br /></p>
+            <p style="font-family: Courier New; background-color: #ffff00;">FEM Utilities<br />Simple Finite Elements Method on SMath<br />Oscar Campo, PhD. oscampo@gmail.com<br /><br />Usage:<br />Define a (n x 2) nodal coordinates matrix:<br /><br />nodes=|x1 y1|<br />            | :   :|<br />            |xn yn|<br />------------ Revision 9oct2022 <br />------------ Revision 7ene2019 <br />Added defframe(nod,con,def,sc)) function, which let plot deformed beams and frames<br />Added femframe(nod,con,res,Forces,A,E,I) function: now you can calculate deformations (*only*) in beams and frames "on a click"<br /><br />------------ Revision 31ago2017 <br />Added femtruss() function: now you can calculate stresses an deformations "on a click"<br />Added Gauss() function: Solve systems by Gauss reduction<br />Changes on δ() function: Now it's possible calculate deformatiosn by inverse of stiffness matrix<br />     or by Gauss reduction<br />------------ Revision 2sep2017 <br />Updated plotfem(): Now it assign element and nodal labels<br /></p>
           </content>
         </text>
       </region>
-      <region left="36" top="396" width="215" height="26" color="#000000" fontSize="10">
+      <region left="36" top="459" width="215" height="26" color="#000000" fontSize="10">
         <math optimize="2">
           <description active="true" position="Top" lang="eng">
             <content>
@@ -67,7 +67,7 @@
           </input>
         </math>
       </region>
-      <region left="702" top="423" width="105" height="444" color="#000000" fontSize="12">
+      <region left="702" top="486" width="105" height="444" color="#000000" fontSize="12">
         <math>
           <input>
             <e type="operand">en</e>
@@ -98,7 +98,7 @@
           </input>
         </math>
       </region>
-      <region left="36" top="477" width="202" height="52" color="#000000" fontSize="10">
+      <region left="36" top="540" width="202" height="52" color="#000000" fontSize="10">
         <math>
           <description active="true" position="Top" lang="eng">
             <content>
@@ -126,7 +126,7 @@
           </input>
         </math>
       </region>
-      <region left="261" top="477" width="202" height="52" color="#000000" fontSize="10">
+      <region left="261" top="540" width="202" height="52" color="#000000" fontSize="10">
         <math>
           <description active="true" position="Top" lang="eng">
             <content>
@@ -154,7 +154,7 @@
           </input>
         </math>
       </region>
-      <region left="63" top="594" width="521" height="126" color="#000000" fontSize="10">
+      <region left="63" top="657" width="521" height="126" color="#000000" fontSize="10">
         <math>
           <input>
             <e type="operand">n1</e>
@@ -221,7 +221,7 @@
           </input>
         </math>
       </region>
-      <region left="27" top="765" width="596" height="35" color="#000000" fontSize="10">
+      <region left="27" top="828" width="596" height="35" color="#000000" fontSize="10">
         <math>
           <input>
             <e type="operand">n1</e>
@@ -249,7 +249,7 @@
           </input>
         </math>
       </region>
-      <region left="36" top="873" width="651" height="224" color="#000000" fontSize="10">
+      <region left="36" top="936" width="673" height="224" color="#000000" fontSize="10">
         <math optimize="2">
           <description active="true" position="Top" lang="eng">
             <content>
@@ -293,7 +293,11 @@
             <e type="function" args="3">el</e>
             <e type="function" args="2">row</e>
             <e type="operand">E</e>
+            <e type="operand">e</e>
+            <e type="function" args="2">el</e>
             <e type="operand">I</e>
+            <e type="operand">e</e>
+            <e type="function" args="2">el</e>
             <e type="function" args="4">kebeam</e>
             <e type="operator" args="2">:</e>
             <e type="operand">d</e>
@@ -373,7 +377,7 @@
           </input>
         </math>
       </region>
-      <region left="36" top="1197" width="485" height="275" color="#000000" fontSize="10">
+      <region left="36" top="1260" width="485" height="275" color="#000000" fontSize="10">
         <math optimize="2">
           <description active="true" position="Top" lang="eng">
             <content>
@@ -447,7 +451,7 @@
           </input>
         </math>
       </region>
-      <region left="27" top="1503" width="690" height="323" color="#000000" fontSize="10">
+      <region left="27" top="1566" width="690" height="323" color="#000000" fontSize="10">
         <math>
           <description active="true" position="Top" lang="eng">
             <content>
@@ -576,7 +580,7 @@
           </input>
         </math>
       </region>
-      <region left="54" top="1908" width="526" height="354" color="#000000" fontSize="10">
+      <region left="54" top="1971" width="526" height="354" color="#000000" fontSize="10">
         <math>
           <description active="true" position="Top" lang="eng">
             <content>
@@ -666,7 +670,7 @@
           </input>
         </math>
       </region>
-      <region left="27" top="2367" width="535" height="213" color="#000000" fontSize="10">
+      <region left="27" top="2430" width="535" height="213" color="#000000" fontSize="10">
         <math>
           <description active="true" position="Top" lang="eng">
             <content>
@@ -732,7 +736,7 @@
           </input>
         </math>
       </region>
-      <region left="18" top="2673" width="990" height="41" color="#000000" fontSize="10">
+      <region left="18" top="2736" width="990" height="41" color="#000000" fontSize="10">
         <math>
           <description active="true" position="Top" lang="eng">
             <content>
@@ -777,7 +781,7 @@
           </input>
         </math>
       </region>
-      <region left="27" top="2790" width="974" height="273" color="#000000" fontSize="10">
+      <region left="27" top="2853" width="974" height="273" color="#000000" fontSize="10">
         <math>
           <description active="true" position="Top" lang="eng">
             <content>
@@ -902,7 +906,7 @@
           </input>
         </math>
       </region>
-      <region left="36" top="3276" width="557" height="108" color="#000000" fontSize="10">
+      <region left="36" top="3339" width="557" height="108" color="#000000" fontSize="10">
         <math>
           <input>
             <e type="operand">nod</e>
@@ -951,7 +955,7 @@
           </input>
         </math>
       </region>
-      <region left="27" top="3573" width="337" height="44" color="#000000" fontSize="10">
+      <region left="27" top="3636" width="337" height="44" color="#000000" fontSize="10">
         <math>
           <description active="true" position="Top" lang="spa">
             <content>
@@ -985,7 +989,7 @@
           </input>
         </math>
       </region>
-      <region left="36" top="3663" width="190" height="43" color="#000000" fontSize="10">
+      <region left="36" top="3726" width="190" height="43" color="#000000" fontSize="10">
         <math>
           <input>
             <e type="operand">ξ</e>
@@ -1008,7 +1012,7 @@
           </input>
         </math>
       </region>
-      <region left="36" top="3717" width="208" height="43" color="#000000" fontSize="10">
+      <region left="36" top="3780" width="208" height="43" color="#000000" fontSize="10">
         <math>
           <input>
             <e type="operand">ξ</e>
@@ -1033,7 +1037,7 @@
           </input>
         </math>
       </region>
-      <region left="36" top="3771" width="190" height="43" color="#000000" fontSize="10">
+      <region left="36" top="3834" width="190" height="43" color="#000000" fontSize="10">
         <math>
           <input>
             <e type="operand">ξ</e>
@@ -1056,7 +1060,7 @@
           </input>
         </math>
       </region>
-      <region left="36" top="3825" width="222" height="43" color="#000000" fontSize="10">
+      <region left="36" top="3888" width="222" height="43" color="#000000" fontSize="10">
         <math>
           <input>
             <e type="operand">ξ</e>
@@ -1082,7 +1086,7 @@
           </input>
         </math>
       </region>
-      <region left="27" top="3888" width="744" height="313" color="#000000" fontSize="10">
+      <region left="27" top="3951" width="744" height="313" color="#000000" fontSize="10">
         <math optimize="2">
           <description active="true" position="Top" lang="spa">
             <content>
@@ -1209,7 +1213,7 @@
           </input>
         </math>
       </region>
-      <region left="45" top="4581" width="348" height="453" color="#000000" fontSize="10">
+      <region left="45" top="4644" width="348" height="453" color="#000000" fontSize="10">
         <math optimize="2">
           <input>
             <e type="operand">M</e>
@@ -1359,7 +1363,7 @@
           </input>
         </math>
       </region>
-      <region left="27" top="5031" width="500" height="261" color="#000000" fontSize="10">
+      <region left="27" top="5094" width="500" height="261" color="#000000" fontSize="10">
         <math optimize="2">
           <input>
             <e type="operand">n1</e>
@@ -1475,7 +1479,7 @@
           </input>
         </math>
       </region>
-      <region left="639" top="5031" width="449" height="123" color="#000000" fontSize="10">
+      <region left="639" top="5094" width="449" height="123" color="#000000" fontSize="10">
         <math>
           <input>
             <e type="operand">n1</e>
@@ -1562,7 +1566,7 @@
           </input>
         </math>
       </region>
-      <region left="657" top="5220" width="522" height="296" color="#000000" fontSize="10">
+      <region left="657" top="5283" width="522" height="296" color="#000000" fontSize="10">
         <math optimize="2">
           <input>
             <e type="operand">el</e>
@@ -1669,11 +1673,11 @@
           </input>
         </math>
       </region>
-      <region top="5526" color="#000000">
+      <region top="5589" color="#000000">
         <area terminator="true" />
       </region>
     </region>
-    <region left="27" top="5607" width="107" height="63" color="#000000" fontSize="10">
+    <region left="27" top="5670" width="107" height="63" color="#000000" fontSize="10">
       <math optimize="2">
         <input>
           <e type="operand">nodes</e>
@@ -1690,7 +1694,7 @@
         </input>
       </math>
     </region>
-    <region left="180" top="5607" width="91" height="45" color="#000000" fontSize="10">
+    <region left="180" top="5670" width="91" height="45" color="#000000" fontSize="10">
       <math optimize="2">
         <input>
           <e type="operand">con</e>
@@ -1705,7 +1709,7 @@
         </input>
       </math>
     </region>
-    <region left="351" top="5607" width="96" height="33" color="#000000" fontSize="10">
+    <region left="351" top="5670" width="161" height="34" color="#000000" fontSize="10">
       <math>
         <input>
           <e type="operand">E</e>
@@ -1714,11 +1718,14 @@
           <e type="operand">9</e>
           <e type="operator" args="2">^</e>
           <e type="operator" args="2">*</e>
+          <e type="operand">2</e>
+          <e type="function" args="1">Ones</e>
+          <e type="operator" args="2">*</e>
           <e type="operator" args="2">:</e>
         </input>
       </math>
     </region>
-    <region left="522" top="5607" width="77" height="81" color="#000000" fontSize="10">
+    <region left="522" top="5670" width="77" height="81" color="#000000" fontSize="10">
       <math optimize="2">
         <input>
           <e type="operand">res</e>
@@ -1733,7 +1740,7 @@
         </input>
       </math>
     </region>
-    <region left="351" top="5661" width="62" height="24" color="#000000" fontSize="10">
+    <region left="351" top="5724" width="62" height="24" color="#000000" fontSize="10">
       <math>
         <input>
           <e type="operand">A</e>
@@ -1742,7 +1749,7 @@
         </input>
       </math>
     </region>
-    <region left="351" top="5697" width="93" height="33" color="#000000" fontSize="10">
+    <region left="351" top="5760" width="157" height="34" color="#000000" fontSize="10">
       <math optimize="2">
         <input>
           <e type="operand">I</e>
@@ -1752,11 +1759,14 @@
           <e type="operator" args="1">-</e>
           <e type="operator" args="2">^</e>
           <e type="operator" args="2">*</e>
+          <e type="operand">2</e>
+          <e type="function" args="1">Ones</e>
+          <e type="operator" args="2">*</e>
           <e type="operator" args="2">:</e>
         </input>
       </math>
     </region>
-    <region left="45" top="5787" width="243" height="26" color="#000000" fontSize="10">
+    <region left="45" top="5850" width="243" height="26" color="#000000" fontSize="10">
       <math>
         <input>
           <e type="operand">marco</e>
@@ -1768,7 +1778,7 @@
         </input>
       </math>
     </region>
-    <region left="45" top="5859" width="533" height="333" color="#000000" bgColor="#ffffff" fontSize="12">
+    <region left="45" top="5922" width="533" height="333" color="#000000" bgColor="#ffffff" fontSize="12">
       <xyplot width="523" height="325" points="100" name="XYPlot">
         <chartstyle backcolor="White" bordercolor="Black" />
         <propertiessource index="1" sourcetype="PropertyGrid" />
@@ -1788,7 +1798,7 @@
         </input>
       </xyplot>
     </region>
-    <region left="45" top="6246" width="308" height="26" color="#000000" fontSize="10">
+    <region left="45" top="6309" width="308" height="26" color="#000000" fontSize="10">
       <math>
         <input>
           <e type="operand">F</e>
@@ -1805,7 +1815,7 @@
         </input>
       </math>
     </region>
-    <region left="45" top="6291" width="96" height="118" color="#000000" fontSize="10">
+    <region left="45" top="6354" width="96" height="118" color="#000000" fontSize="10">
       <math>
         <input>
           <e type="operand">F</e>
@@ -1826,7 +1836,7 @@
         </result>
       </math>
     </region>
-    <region left="54" top="6408" width="622" height="148" color="#000000" fontSize="10">
+    <region left="54" top="6471" width="622" height="148" color="#000000" fontSize="10">
       <math exponentialThreshold="3">
         <input>
           <e type="operand">solution</e>
@@ -1889,7 +1899,7 @@
         </result>
       </math>
     </region>
-    <region left="54" top="6579" width="131" height="33" color="#000000" fontSize="10">
+    <region left="54" top="6642" width="131" height="33" color="#000000" fontSize="10">
       <math>
         <input>
           <e type="operand">dfr</e>
@@ -1900,7 +1910,7 @@
         </input>
       </math>
     </region>
-    <region left="54" top="6624" width="358" height="26" color="#000000" fontSize="10">
+    <region left="54" top="6687" width="358" height="26" color="#000000" fontSize="10">
       <math>
         <input>
           <e type="operand">1.7</e>
@@ -1916,7 +1926,7 @@
         </result>
       </math>
     </region>
-    <region left="72" top="6678" width="533" height="333" color="#000000" bgColor="#ffffff" fontSize="12">
+    <region left="72" top="6741" width="533" height="333" color="#000000" bgColor="#ffffff" fontSize="12">
       <xyplot width="523" height="325" points="100" name="XYPlot">
         <chartstyle backcolor="White" bordercolor="Black" />
         <propertiessource index="1" sourcetype="PropertyGrid" />
@@ -1938,7 +1948,7 @@
           <e type="operand">nodes</e>
           <e type="operand">con</e>
           <e type="operand">dfr</e>
-          <e type="operand">1000</e>
+          <e type="operand">500</e>
           <e type="function" args="5">defbeam</e>
           <e type="operand">2</e>
           <e type="operand">1</e>
