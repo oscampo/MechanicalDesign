@@ -4,7 +4,7 @@
   <settings ppi="96">
     <identity>
       <id>94f137da-5953-4b2d-836d-75299ebeaf8d</id>
-      <revision>11</revision>
+      <revision>12</revision>
     </identity>
     <calculation>
       <precision>4</precision>
@@ -25,10 +25,7 @@
     <dependencies>
       <assembly name="SMath Studio Desktop" version="1.0.8253.4763" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
       <assembly name="MathRegion" version="1.11.8253.4763" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
-      <assembly name="Custom Functions" version="1.1.8051.30522" guid="18dadffd-79a3-4cf9-aee1-d66deb0ea720" />
       <assembly name="SpecialFunctions" version="1.12.8253.4763" guid="2814e667-4e12-48b1-8d51-194e480eabc5" />
-      <assembly name="Matlab Runtime Library" version="1.1.8044.8489" guid="4c2faab1-4d93-4904-8d88-a4e21512d179" />
-      <assembly name="MatrixExtensions" version="1.0.8302.28555" guid="6dd7d794-eb0c-4386-8faf-64c1c9aeed27" />
     </dependencies>
   </settings>
   <regions type="content">
@@ -399,6 +396,58 @@
         </input>
       </math>
     </region>
+    <region left="774" top="585" width="427" height="222" border="true" color="#000000" bgColor="#ffffe1" fontSize="10">
+      <math optimize="2">
+        <input>
+          <e type="operand">value</e>
+          <e type="operand">table</e>
+          <e type="operand">c</e>
+          <e type="function" args="3">Multiple</e>
+          <e type="operand">k</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">j</e>
+          <e type="operand">k</e>
+          <e type="operand">table</e>
+          <e type="function" args="1">cols</e>
+          <e type="function" args="2">range</e>
+          <e type="operand">table</e>
+          <e type="operand">j</e>
+          <e type="operand">c</e>
+          <e type="function" args="3">el</e>
+          <e type="operand">value</e>
+          <e type="operator" args="2">≡</e>
+          <e type="operand">index</e>
+          <e type="operand">k</e>
+          <e type="function" args="2">el</e>
+          <e type="operand">j</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">k</e>
+          <e type="operand">k</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">2</e>
+          <e type="operand">1</e>
+          <e type="function" args="4">line</e>
+          <e type="operand">continue</e>
+          <e type="function" args="3">if</e>
+          <e type="function" args="3">for</e>
+          <e type="operand">k</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">≡</e>
+          <e type="operand">index</e>
+          <e type="operand" style="string">NO match</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">index</e>
+          <e type="function" args="3">if</e>
+          <e type="operand">3</e>
+          <e type="operand">1</e>
+          <e type="function" args="5">line</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
     <region left="27" top="864" width="192" height="154" color="#000000" fontSize="10">
       <math>
         <input>
@@ -497,7 +546,7 @@
         </input>
       </math>
     </region>
-    <region left="774" top="882" width="498" height="285" color="#000000" fontSize="10">
+    <region left="774" top="882" width="499" height="306" color="#000000" fontSize="10">
       <math>
         <input>
           <e type="operand">M</e>
@@ -513,12 +562,13 @@
           <e type="operand">1</e>
           <e type="operand">n</e>
           <e type="function" args="2">range</e>
+          <e type="operand" style="string"></e>
           <e type="operand">band</e>
           <e type="operand">band</e>
           <e type="operand">M</e>
           <e type="operand">i</e>
           <e type="function" args="2">row</e>
-          <e type="function" args="1">mwfind</e>
+          <e type="function" args="1">MWfind</e>
           <e type="operand">2</e>
           <e type="function" args="2">el</e>
           <e type="operand">i</e>
@@ -529,6 +579,9 @@
           <e type="function" args="4">mat</e>
           <e type="function" args="1">max</e>
           <e type="operator" args="2">:</e>
+          <e type="operand">2</e>
+          <e type="operand">1</e>
+          <e type="function" args="4">line</e>
           <e type="function" args="3">for</e>
           <e type="operand">Ab</e>
           <e type="operand">n</e>
@@ -603,6 +656,28 @@
           <e type="operand">7</e>
           <e type="operand">1</e>
           <e type="function" args="9">line</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="1341" top="900" width="356" height="44" color="#000000" fontSize="10">
+      <math evaluate="false">
+        <input>
+          <e type="operand">band</e>
+          <e type="operand">band</e>
+          <e type="operand">M</e>
+          <e type="operand">i</e>
+          <e type="function" args="2">row</e>
+          <e type="function" args="1">mwfind</e>
+          <e type="operand">2</e>
+          <e type="function" args="2">el</e>
+          <e type="operand">i</e>
+          <e type="operator" args="2">-</e>
+          <e type="function" args="1">max</e>
+          <e type="operand">1</e>
+          <e type="operand">2</e>
+          <e type="function" args="4">mat</e>
+          <e type="function" args="1">max</e>
           <e type="operator" args="2">:</e>
         </input>
       </math>
@@ -709,7 +784,7 @@
           <e type="operand" style="unit">ms</e>
         </contract>
         <result action="numeric">
-          <e type="operand">8</e>
+          <e type="operand">2</e>
         </result>
       </math>
     </region>
@@ -749,7 +824,7 @@
         </result>
       </math>
     </region>
-    <region left="81" top="1557" width="158" height="26" color="#000000" fontSize="10">
+    <region left="81" top="1557" width="150" height="26" color="#000000" fontSize="10">
       <math>
         <input>
           <e type="operand" style="string"></e>
@@ -761,7 +836,7 @@
           <e type="operand" style="unit">ms</e>
         </contract>
         <result action="numeric">
-          <e type="operand">13</e>
+          <e type="operand">1</e>
         </result>
       </math>
     </region>
@@ -775,8 +850,8 @@
         </input>
       </math>
     </region>
-    <region left="180" top="1665" width="377" height="154" color="#000000" fontSize="10">
-      <math decimalPlaces="7">
+    <region left="180" top="1665" width="285" height="28" color="#000000" fontSize="10">
+      <math error="9" decimalPlaces="7">
         <input>
           <e type="operand">8</e>
           <e type="operand">5</e>
@@ -786,20 +861,7 @@
           <e type="function" args="4">bndwSolver</e>
         </input>
         <result action="numeric">
-          <e type="operand">0.4489796</e>
-          <e type="operand">5.5408163</e>
-          <e type="operand">0.5816327</e>
-          <e type="operator" args="1">-</e>
-          <e type="operand">1.3548387</e>
-          <e type="operand">4.0204082</e>
-          <e type="operator" args="1">-</e>
-          <e type="operand">1.1666667</e>
-          <e type="operand">6</e>
-          <e type="operator" args="1">-</e>
-          <e type="operand">1.0967742</e>
-          <e type="operand">8</e>
-          <e type="operand">1</e>
-          <e type="function" args="10">mat</e>
+          <e type="operand">#</e>
         </result>
       </math>
     </region>
@@ -815,7 +877,7 @@
           <e type="operand" style="unit">ms</e>
         </contract>
         <result action="numeric">
-          <e type="operand">12</e>
+          <e type="operand">27</e>
         </result>
       </math>
     </region>
@@ -837,17 +899,17 @@
           <e type="function" args="2">Gauss</e>
         </input>
         <result action="numeric">
-          <e type="operand">0.6114</e>
-          <e type="operand">4.2476</e>
-          <e type="operand">0.9442</e>
+          <e type="operand">0.449</e>
+          <e type="operand">5.5408</e>
+          <e type="operand">0.5816</e>
           <e type="operator" args="1">-</e>
-          <e type="operand">0.5265</e>
-          <e type="operand">3.1289</e>
+          <e type="operand">1.3548</e>
+          <e type="operand">4.0204</e>
           <e type="operator" args="1">-</e>
-          <e type="operand">0.1944</e>
+          <e type="operand">1.1667</e>
           <e type="operand">6</e>
           <e type="operator" args="1">-</e>
-          <e type="operand">0.4662</e>
+          <e type="operand">1.0968</e>
           <e type="operand">8</e>
           <e type="operand">1</e>
           <e type="function" args="10">mat</e>
@@ -866,7 +928,7 @@
           <e type="operand" style="unit">ms</e>
         </contract>
         <result action="numeric">
-          <e type="operand">13</e>
+          <e type="operand">12</e>
         </result>
       </math>
     </region>

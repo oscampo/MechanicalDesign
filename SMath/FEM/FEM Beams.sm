@@ -4,7 +4,7 @@
   <settings ppi="96">
     <identity>
       <id>d059b7a3-7b81-470e-ab2d-032f5c60e0e6</id>
-      <revision>30</revision>
+      <revision>31</revision>
     </identity>
     <calculation>
       <precision>4</precision>
@@ -36,7 +36,7 @@
   </settings>
   <regions type="content">
     <region top="9" color="#000000">
-      <area collapsed="false">
+      <area collapsed="true">
         <title lang="spa">
           <content>
             <p>FEM Beams</p>
