@@ -1,0 +1,874 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Studio Desktop" version="1.0.8253.4763"?>
+<worksheet xmlns="http://smath.info/schemas/worksheet/1.0">
+  <settings ppi="96">
+    <identity>
+      <id>94f137da-5953-4b2d-836d-75299ebeaf8d</id>
+      <revision>11</revision>
+    </identity>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <trailingZeros>false</trailingZeros>
+      <significantDigitsMode>false</significantDigitsMode>
+      <roundingMode>0</roundingMode>
+      <approximateEqualAccuracy>0</approximateEqualAccuracy>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="false" viewMode="1" printGrid="false" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true">
+      <paper id="1" orientation="Portrait" width="850" height="1100" />
+      <margins left="39" right="39" top="49" bottom="49" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Studio Desktop" version="1.0.8253.4763" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="MathRegion" version="1.11.8253.4763" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="Custom Functions" version="1.1.8051.30522" guid="18dadffd-79a3-4cf9-aee1-d66deb0ea720" />
+      <assembly name="SpecialFunctions" version="1.12.8253.4763" guid="2814e667-4e12-48b1-8d51-194e480eabc5" />
+      <assembly name="Matlab Runtime Library" version="1.1.8044.8489" guid="4c2faab1-4d93-4904-8d88-a4e21512d179" />
+      <assembly name="MatrixExtensions" version="1.0.8302.28555" guid="6dd7d794-eb0c-4386-8faf-64c1c9aeed27" />
+    </dependencies>
+  </settings>
+  <regions type="content">
+    <region left="0" top="45" width="476" height="570" color="#000000" fontSize="10">
+      <math>
+        <description active="true" position="Top" lang="eng">
+          <content>
+            <p>Bandwidth solver</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">NN</e>
+          <e type="operand">NBW</e>
+          <e type="operand">S</e>
+          <e type="operand">F</e>
+          <e type="function" args="4">bndwSolver</e>
+          <e type="operand">n</e>
+          <e type="operand">NN</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand" style="string">Forward elimination</e>
+          <e type="operand">k</e>
+          <e type="operand">1</e>
+          <e type="operand">n</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="function" args="2">range</e>
+          <e type="operand">NBK</e>
+          <e type="operand">n</e>
+          <e type="operand">k</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">NBW</e>
+          <e type="operand">1</e>
+          <e type="operand">2</e>
+          <e type="function" args="4">mat</e>
+          <e type="function" args="1">min</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">i</e>
+          <e type="operand">k</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">+</e>
+          <e type="bracket">(</e>
+          <e type="operand">NBK</e>
+          <e type="operand">k</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="function" args="2">range</e>
+          <e type="operand">i1</e>
+          <e type="operand">i</e>
+          <e type="operand">k</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">C</e>
+          <e type="operand">S</e>
+          <e type="operand">k</e>
+          <e type="operand">i1</e>
+          <e type="function" args="3">el</e>
+          <e type="operand">S</e>
+          <e type="operand">k</e>
+          <e type="operand">1</e>
+          <e type="function" args="3">el</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">j</e>
+          <e type="operand">i</e>
+          <e type="operand">NBK</e>
+          <e type="operand">k</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="function" args="2">range</e>
+          <e type="operand">j1</e>
+          <e type="operand">j</e>
+          <e type="operand">i</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">j2</e>
+          <e type="operand">j</e>
+          <e type="operand">k</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">S</e>
+          <e type="operand">i</e>
+          <e type="operand">j1</e>
+          <e type="function" args="3">el</e>
+          <e type="operand">S</e>
+          <e type="operand">i</e>
+          <e type="operand">j1</e>
+          <e type="function" args="3">el</e>
+          <e type="operand">C</e>
+          <e type="operand">S</e>
+          <e type="operand">k</e>
+          <e type="operand">j2</e>
+          <e type="function" args="3">el</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">-</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">3</e>
+          <e type="operand">1</e>
+          <e type="function" args="5">line</e>
+          <e type="function" args="3">for</e>
+          <e type="operand">F</e>
+          <e type="operand">i</e>
+          <e type="function" args="2">el</e>
+          <e type="operand">F</e>
+          <e type="operand">i</e>
+          <e type="function" args="2">el</e>
+          <e type="operand">C</e>
+          <e type="operand">F</e>
+          <e type="operand">k</e>
+          <e type="function" args="2">el</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">-</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">4</e>
+          <e type="operand">1</e>
+          <e type="function" args="6">line</e>
+          <e type="function" args="3">for</e>
+          <e type="operand">2</e>
+          <e type="operand">1</e>
+          <e type="function" args="4">line</e>
+          <e type="function" args="3">for</e>
+          <e type="operand" style="string">Back substitution</e>
+          <e type="operand">F</e>
+          <e type="operand">n</e>
+          <e type="function" args="2">el</e>
+          <e type="operand">F</e>
+          <e type="operand">n</e>
+          <e type="function" args="2">el</e>
+          <e type="operand">S</e>
+          <e type="operand">n</e>
+          <e type="operand">1</e>
+          <e type="function" args="3">el</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">ii</e>
+          <e type="operand">1</e>
+          <e type="operand">n</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="function" args="2">range</e>
+          <e type="operand">i</e>
+          <e type="operand">n</e>
+          <e type="operand">ii</e>
+          <e type="operator" args="2">-</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">NBI</e>
+          <e type="operand">NBW</e>
+          <e type="operand">n</e>
+          <e type="operand">i</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">1</e>
+          <e type="operand">2</e>
+          <e type="function" args="4">mat</e>
+          <e type="function" args="1">min</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">sum</e>
+          <e type="operand">0</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">j</e>
+          <e type="operand">2</e>
+          <e type="operand">NBI</e>
+          <e type="function" args="2">range</e>
+          <e type="operand">sum</e>
+          <e type="operand">sum</e>
+          <e type="operand">S</e>
+          <e type="operand">i</e>
+          <e type="operand">j</e>
+          <e type="function" args="3">el</e>
+          <e type="operand">F</e>
+          <e type="operand">i</e>
+          <e type="operand">j</e>
+          <e type="operator" args="2">+</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">-</e>
+          <e type="function" args="2">el</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+          <e type="function" args="3">for</e>
+          <e type="operand">F</e>
+          <e type="operand">i</e>
+          <e type="function" args="2">el</e>
+          <e type="operand">F</e>
+          <e type="operand">i</e>
+          <e type="function" args="2">el</e>
+          <e type="operand">sum</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">S</e>
+          <e type="operand">i</e>
+          <e type="operand">1</e>
+          <e type="function" args="3">el</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">5</e>
+          <e type="operand">1</e>
+          <e type="function" args="7">line</e>
+          <e type="function" args="3">for</e>
+          <e type="operand">F</e>
+          <e type="operand">7</e>
+          <e type="operand">1</e>
+          <e type="function" args="9">line</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="675" top="63" width="348" height="453" color="#000000" fontSize="10">
+      <math optimize="2">
+        <input>
+          <e type="operand">M</e>
+          <e type="operand">b</e>
+          <e type="function" args="2">Gauss</e>
+          <e type="operand" style="string">Eliminación hacia adelante</e>
+          <e type="operand">n</e>
+          <e type="operand">M</e>
+          <e type="function" args="1">rows</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">k</e>
+          <e type="operand">1</e>
+          <e type="operand">n</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="function" args="2">range</e>
+          <e type="operand">i</e>
+          <e type="operand">k</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">+</e>
+          <e type="bracket">(</e>
+          <e type="operand">n</e>
+          <e type="function" args="2">range</e>
+          <e type="operand">c</e>
+          <e type="operand">M</e>
+          <e type="operand">i</e>
+          <e type="operand">k</e>
+          <e type="function" args="3">el</e>
+          <e type="operand">M</e>
+          <e type="operand">k</e>
+          <e type="operand">k</e>
+          <e type="function" args="3">el</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">j</e>
+          <e type="operand">k</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">+</e>
+          <e type="bracket">(</e>
+          <e type="operand">n</e>
+          <e type="function" args="2">range</e>
+          <e type="operand">M</e>
+          <e type="operand">i</e>
+          <e type="operand">j</e>
+          <e type="function" args="3">el</e>
+          <e type="operand">M</e>
+          <e type="operand">i</e>
+          <e type="operand">j</e>
+          <e type="function" args="3">el</e>
+          <e type="operand">c</e>
+          <e type="operand">M</e>
+          <e type="operand">k</e>
+          <e type="operand">j</e>
+          <e type="function" args="3">el</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">-</e>
+          <e type="operator" args="2">:</e>
+          <e type="function" args="3">for</e>
+          <e type="operand">b</e>
+          <e type="operand">i</e>
+          <e type="function" args="2">el</e>
+          <e type="operand">b</e>
+          <e type="operand">i</e>
+          <e type="function" args="2">el</e>
+          <e type="operand">c</e>
+          <e type="operand">b</e>
+          <e type="operand">k</e>
+          <e type="function" args="2">el</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">-</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">3</e>
+          <e type="operand">1</e>
+          <e type="function" args="5">line</e>
+          <e type="function" args="3">for</e>
+          <e type="function" args="3">for</e>
+          <e type="operand" style="string">Sustitución</e>
+          <e type="operand">x</e>
+          <e type="operand">n</e>
+          <e type="function" args="2">el</e>
+          <e type="operand">b</e>
+          <e type="operand">n</e>
+          <e type="function" args="2">el</e>
+          <e type="operand">M</e>
+          <e type="operand">n</e>
+          <e type="operand">n</e>
+          <e type="function" args="3">el</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">i</e>
+          <e type="operand">n</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="operand">1</e>
+          <e type="function" args="2">range</e>
+          <e type="operand">sum</e>
+          <e type="operand">0</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">j</e>
+          <e type="operand">n</e>
+          <e type="operand">i</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">+</e>
+          <e type="bracket">(</e>
+          <e type="function" args="2">range</e>
+          <e type="operand">sum</e>
+          <e type="operand">sum</e>
+          <e type="operand">M</e>
+          <e type="operand">i</e>
+          <e type="operand">j</e>
+          <e type="function" args="3">el</e>
+          <e type="operand">x</e>
+          <e type="operand">j</e>
+          <e type="function" args="2">el</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">1</e>
+          <e type="operand">1</e>
+          <e type="function" args="3">line</e>
+          <e type="function" args="3">for</e>
+          <e type="operand">x</e>
+          <e type="operand">i</e>
+          <e type="function" args="2">el</e>
+          <e type="operand">b</e>
+          <e type="operand">i</e>
+          <e type="function" args="2">el</e>
+          <e type="operand">sum</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">M</e>
+          <e type="operand">i</e>
+          <e type="operand">i</e>
+          <e type="function" args="3">el</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">3</e>
+          <e type="operand">1</e>
+          <e type="function" args="5">line</e>
+          <e type="function" args="3">for</e>
+          <e type="operand">x</e>
+          <e type="operand">7</e>
+          <e type="operand">1</e>
+          <e type="function" args="9">line</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="27" top="864" width="192" height="154" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">A</e>
+          <e type="operand">10</e>
+          <e type="operand">0</e>
+          <e type="operand">6</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">3</e>
+          <e type="operand">1</e>
+          <e type="operand">0</e>
+          <e type="operand">2</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">6</e>
+          <e type="operand">1</e>
+          <e type="operand">9</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">7</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">5</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">0</e>
+          <e type="operand">2</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">4</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">6</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">1</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">5</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">8</e>
+          <e type="operand">8</e>
+          <e type="operand">8</e>
+          <e type="function" args="66">mat</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="252" top="864" width="74" height="154" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">b</e>
+          <e type="operand">1</e>
+          <e type="operand">8</e>
+          <e type="operand">3</e>
+          <e type="operand">4</e>
+          <e type="operand">5</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">7</e>
+          <e type="operand">6</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">2</e>
+          <e type="operand">8</e>
+          <e type="operand">1</e>
+          <e type="function" args="10">mat</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="774" top="882" width="498" height="285" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">M</e>
+          <e type="function" args="1">Sym2Band</e>
+          <e type="operand">n</e>
+          <e type="operand">M</e>
+          <e type="function" args="1">rows</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">band</e>
+          <e type="operand">0</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">i</e>
+          <e type="operand">1</e>
+          <e type="operand">n</e>
+          <e type="function" args="2">range</e>
+          <e type="operand">band</e>
+          <e type="operand">band</e>
+          <e type="operand">M</e>
+          <e type="operand">i</e>
+          <e type="function" args="2">row</e>
+          <e type="function" args="1">mwfind</e>
+          <e type="operand">2</e>
+          <e type="function" args="2">el</e>
+          <e type="operand">i</e>
+          <e type="operator" args="2">-</e>
+          <e type="function" args="1">max</e>
+          <e type="operand">1</e>
+          <e type="operand">2</e>
+          <e type="function" args="4">mat</e>
+          <e type="function" args="1">max</e>
+          <e type="operator" args="2">:</e>
+          <e type="function" args="3">for</e>
+          <e type="operand">Ab</e>
+          <e type="operand">n</e>
+          <e type="operand">band</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">+</e>
+          <e type="function" args="1">eval</e>
+          <e type="function" args="2">Zeros</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">i</e>
+          <e type="operand">1</e>
+          <e type="operand">n</e>
+          <e type="operand">band</e>
+          <e type="operator" args="2">-</e>
+          <e type="bracket">(</e>
+          <e type="function" args="2">range</e>
+          <e type="operand">Ab</e>
+          <e type="operand">Ab</e>
+          <e type="operand">i</e>
+          <e type="operand">1</e>
+          <e type="function" args="3">removeRows</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">Ab</e>
+          <e type="operand">Ab</e>
+          <e type="operand">i</e>
+          <e type="operand">M</e>
+          <e type="operand">i</e>
+          <e type="operand">i</e>
+          <e type="operand">i</e>
+          <e type="operand">band</e>
+          <e type="operator" args="2">+</e>
+          <e type="bracket">(</e>
+          <e type="function" args="2">range</e>
+          <e type="function" args="3">el</e>
+          <e type="function" args="3">insertRow</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">2</e>
+          <e type="operand">1</e>
+          <e type="function" args="4">line</e>
+          <e type="function" args="3">for</e>
+          <e type="operand">i</e>
+          <e type="operand">n</e>
+          <e type="operand">band</e>
+          <e type="operator" args="2">-</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">+</e>
+          <e type="bracket">(</e>
+          <e type="operand">n</e>
+          <e type="function" args="2">range</e>
+          <e type="operand">Ab</e>
+          <e type="operand">Ab</e>
+          <e type="operand">i</e>
+          <e type="operand">1</e>
+          <e type="function" args="3">removeRows</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">Ab</e>
+          <e type="operand">Ab</e>
+          <e type="operand">i</e>
+          <e type="operand">M</e>
+          <e type="operand">i</e>
+          <e type="operand">i</e>
+          <e type="operand">i</e>
+          <e type="operand">n</e>
+          <e type="function" args="5">submatrix</e>
+          <e type="function" args="3">insertRow</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">2</e>
+          <e type="operand">1</e>
+          <e type="function" args="4">line</e>
+          <e type="function" args="3">for</e>
+          <e type="operand">Ab</e>
+          <e type="operand">7</e>
+          <e type="operand">1</e>
+          <e type="function" args="9">line</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="378" top="927" width="170" height="154" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Aband</e>
+          <e type="operand">10</e>
+          <e type="operand">0</e>
+          <e type="operand">6</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">3</e>
+          <e type="operand">1</e>
+          <e type="operand">0</e>
+          <e type="operand">2</e>
+          <e type="operand">0</e>
+          <e type="operand">9</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">7</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">5</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">4</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">6</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">1</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">8</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">8</e>
+          <e type="operand">5</e>
+          <e type="function" args="42">mat</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="72" top="1062" width="109" height="26" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">t0</e>
+          <e type="operand" style="string"></e>
+          <e type="function" args="1">time</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="180" top="1098" width="153" height="154" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">A</e>
+          <e type="operand">1</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operand">b</e>
+          <e type="operator" args="2">*</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.449</e>
+          <e type="operand">5.5408</e>
+          <e type="operand">0.5816</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">1.3548</e>
+          <e type="operand">4.0204</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">1.1667</e>
+          <e type="operand">6</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">1.0968</e>
+          <e type="operand">8</e>
+          <e type="operand">1</e>
+          <e type="function" args="10">mat</e>
+        </result>
+      </math>
+    </region>
+    <region left="72" top="1269" width="150" height="26" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand" style="string"></e>
+          <e type="function" args="1">time</e>
+          <e type="operand">t0</e>
+          <e type="operator" args="2">-</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">ms</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">8</e>
+        </result>
+      </math>
+    </region>
+    <region left="72" top="1332" width="109" height="26" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">t1</e>
+          <e type="operand" style="string"></e>
+          <e type="function" args="1">time</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="189" top="1377" width="210" height="154" color="#000000" fontSize="10">
+      <math decimalPlaces="6" exponentialThreshold="3">
+        <input>
+          <e type="operand">A</e>
+          <e type="function" args="1">invert</e>
+          <e type="operand">b</e>
+          <e type="operator" args="2">*</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.44898</e>
+          <e type="operand">5.540816</e>
+          <e type="operand">0.581633</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">1.354839</e>
+          <e type="operand">4.020408</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">1.166667</e>
+          <e type="operand">6</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">1.096774</e>
+          <e type="operand">8</e>
+          <e type="operand">1</e>
+          <e type="function" args="10">mat</e>
+        </result>
+      </math>
+    </region>
+    <region left="81" top="1557" width="158" height="26" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand" style="string"></e>
+          <e type="function" args="1">time</e>
+          <e type="operand">t1</e>
+          <e type="operator" args="2">-</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">ms</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">13</e>
+        </result>
+      </math>
+    </region>
+    <region left="81" top="1638" width="109" height="26" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">t2</e>
+          <e type="operand" style="string"></e>
+          <e type="function" args="1">time</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="180" top="1665" width="377" height="154" color="#000000" fontSize="10">
+      <math decimalPlaces="7">
+        <input>
+          <e type="operand">8</e>
+          <e type="operand">5</e>
+          <e type="operand">A</e>
+          <e type="function" args="1">Sym2Band</e>
+          <e type="operand">b</e>
+          <e type="function" args="4">bndwSolver</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.4489796</e>
+          <e type="operand">5.5408163</e>
+          <e type="operand">0.5816327</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">1.3548387</e>
+          <e type="operand">4.0204082</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">1.1666667</e>
+          <e type="operand">6</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">1.0967742</e>
+          <e type="operand">8</e>
+          <e type="operand">1</e>
+          <e type="function" args="10">mat</e>
+        </result>
+      </math>
+    </region>
+    <region left="81" top="1863" width="158" height="26" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand" style="string"></e>
+          <e type="function" args="1">time</e>
+          <e type="operand">t2</e>
+          <e type="operator" args="2">-</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">ms</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">12</e>
+        </result>
+      </math>
+    </region>
+    <region left="81" top="1935" width="109" height="26" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">t3</e>
+          <e type="operand" style="string"></e>
+          <e type="function" args="1">time</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="333" top="1962" width="191" height="154" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">A</e>
+          <e type="operand">b</e>
+          <e type="function" args="2">Gauss</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0.6114</e>
+          <e type="operand">4.2476</e>
+          <e type="operand">0.9442</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">0.5265</e>
+          <e type="operand">3.1289</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">0.1944</e>
+          <e type="operand">6</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">0.4662</e>
+          <e type="operand">8</e>
+          <e type="operand">1</e>
+          <e type="function" args="10">mat</e>
+        </result>
+      </math>
+    </region>
+    <region left="81" top="2160" width="158" height="26" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand" style="string"></e>
+          <e type="function" args="1">time</e>
+          <e type="operand">t3</e>
+          <e type="operator" args="2">-</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">ms</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">13</e>
+        </result>
+      </math>
+    </region>
+  </regions>
+</worksheet>
