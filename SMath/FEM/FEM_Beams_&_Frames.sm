@@ -4,7 +4,7 @@
   <settings ppi="96">
     <identity>
       <id>40f36b21-7479-42a4-9366-37b05cb76b33</id>
-      <revision>89</revision>
+      <revision>90</revision>
     </identity>
     <metadata lang="eng">
       <author>Oscar Campo</author>
@@ -2221,7 +2221,7 @@
         <chartstyle backcolor="White" bordercolor="Black" />
         <propertiessource index="1" sourcetype="PropertyGrid" />
         <grid gridcolor="LightGray" gridpattern="Dash" gridthickness="1" isxgrid="true" isygrid="true" isy2grid="false" />
-        <xaxes xmin="-1.011598" xmax="1.085553" xtick="1" visible="True" decimalplaces="3" numberformat="General" />
+        <xaxes xmin="-1" xmax="1" xtick="1" visible="True" decimalplaces="3" numberformat="General" />
         <yaxes ymin="-0.1748003" ymax="1.105199" ytick="0.5" visible="True" decimalplaces="3" numberformat="General" />
         <y2axes isy2axis="false" y2min="-1" y2max="1" y2tick="0.5" visible="True" decimalplaces="3" numberformat="General" />
         <title2d title="" titlefont="Arial, 10pt" titlefontcolor="Black" />
@@ -2248,7 +2248,7 @@
         <chartstyle backcolor="White" bordercolor="Black" />
         <propertiessource index="1" sourcetype="PropertyGrid" />
         <grid gridcolor="LightGray" gridpattern="Dash" gridthickness="1" isxgrid="true" isygrid="true" isy2grid="false" />
-        <xaxes xmin="-1.018589" xmax="1.078562" xtick="1" visible="True" decimalplaces="3" numberformat="General" />
+        <xaxes xmin="-1" xmax="1" xtick="1" visible="True" decimalplaces="3" numberformat="General" />
         <yaxes ymin="-0.02170663" ymax="0.3138371" ytick="0.1" visible="True" decimalplaces="3" numberformat="General" />
         <y2axes isy2axis="false" y2min="-1" y2max="1" y2tick="0.5" visible="True" decimalplaces="3" numberformat="General" />
         <title2d title="" titlefont="Arial, 10pt" titlefontcolor="Black" />
@@ -2275,7 +2275,7 @@
         <chartstyle backcolor="White" bordercolor="Black" />
         <propertiessource index="1" sourcetype="PropertyGrid" />
         <grid gridcolor="LightGray" gridpattern="Dash" gridthickness="1" isxgrid="true" isygrid="true" isy2grid="false" />
-        <xaxes xmin="-1.011598" xmax="1.085553" xtick="1" visible="True" decimalplaces="3" numberformat="General" />
+        <xaxes xmin="-1" xmax="1" xtick="1" visible="True" decimalplaces="3" numberformat="General" />
         <yaxes ymin="-0.1748003" ymax="1.105199" ytick="0.5" visible="True" decimalplaces="3" numberformat="General" />
         <y2axes isy2axis="false" y2min="-1" y2max="1" y2tick="0.5" visible="True" decimalplaces="3" numberformat="General" />
         <title2d title="" titlefont="Arial, 10pt" titlefontcolor="Black" />
@@ -2302,7 +2302,7 @@
         <chartstyle backcolor="White" bordercolor="Black" />
         <propertiessource index="1" sourcetype="PropertyGrid" />
         <grid gridcolor="LightGray" gridpattern="Dash" gridthickness="1" isxgrid="true" isygrid="true" isy2grid="false" />
-        <xaxes xmin="-1.044915" xmax="0.9683502" xtick="0.5" visible="True" decimalplaces="3" numberformat="General" />
+        <xaxes xmin="-1" xmax="1" xtick="0.5" visible="True" decimalplaces="3" numberformat="General" />
         <yaxes ymin="-0.3075319" ymax="0.02801229" ytick="0.1" visible="True" decimalplaces="3" numberformat="General" />
         <y2axes isy2axis="false" y2min="-1" y2max="1" y2tick="0.5" visible="True" decimalplaces="3" numberformat="General" />
         <title2d title="" titlefont="Arial, 10pt" titlefontcolor="Black" />
