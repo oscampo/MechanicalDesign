@@ -4,7 +4,7 @@
   <settings ppi="96">
     <identity>
       <id>d059b7a3-7b81-470e-ab2d-032f5c60e0e6</id>
-      <revision>32</revision>
+      <revision>33</revision>
     </identity>
     <calculation>
       <precision>4</precision>
@@ -36,7 +36,7 @@
   </settings>
   <regions type="content">
     <region top="9" color="#000000">
-      <area collapsed="true">
+      <area collapsed="false">
         <title lang="spa">
           <content>
             <p>FEM Beams</p>
@@ -849,7 +849,7 @@
           </input>
         </math>
       </region>
-      <region left="45" top="3150" width="1153" height="426" color="#000000" fontSize="10">
+      <region left="45" top="3150" width="1153" height="408" color="#000000" fontSize="10">
         <math>
           <description active="true" position="Top" lang="eng">
             <content>
@@ -877,7 +877,6 @@
             <e type="operand">3</e>
             <e type="function" args="5">mat</e>
             <e type="operator" args="2">:</e>
-            <e type="operand" style="string">lble:mat(el(en,1),12,"blue",1,3)</e>
             <e type="operand">lble</e>
             <e type="operand" style="string">1</e>
             <e type="operand">12</e>
@@ -1020,9 +1019,9 @@
             <e type="operator" args="2">≡</e>
             <e type="operand" style="string"></e>
             <e type="function" args="7">cases</e>
-            <e type="operand">9</e>
+            <e type="operand">8</e>
             <e type="operand">1</e>
-            <e type="function" args="11">line</e>
+            <e type="function" args="10">line</e>
             <e type="operator" args="2">:</e>
           </input>
         </math>
@@ -2298,6 +2297,23 @@
         </input>
       </math>
     </region>
+    <region left="648" top="6354" width="308" height="26" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">F</e>
+          <e type="operand">6</e>
+          <e type="function" args="1">Zeros</e>
+          <e type="operand">2</e>
+          <e type="operand">nodes</e>
+          <e type="operand">con</e>
+          <e type="operand">12000</e>
+          <e type="operator" args="1">-</e>
+          <e type="function" args="4">w</e>
+          <e type="operator" args="2">+</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
     <region left="351" top="6390" width="62" height="24" color="#000000" fontSize="10">
       <math>
         <input>
@@ -2305,6 +2321,27 @@
           <e type="operand">6.8</e>
           <e type="operator" args="2">:</e>
         </input>
+      </math>
+    </region>
+    <region left="648" top="6399" width="96" height="118" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">F</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">6000</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">1000</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">6000</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">1000</e>
+          <e type="operand">6</e>
+          <e type="operand">1</e>
+          <e type="function" args="8">mat</e>
+        </result>
       </math>
     </region>
     <region left="351" top="6426" width="157" height="34" color="#000000" fontSize="10">
@@ -2365,44 +2402,6 @@
           <e type="operand">marco</e>
         </input>
       </xyplot>
-    </region>
-    <region left="45" top="6975" width="308" height="26" color="#000000" fontSize="10">
-      <math>
-        <input>
-          <e type="operand">F</e>
-          <e type="operand">6</e>
-          <e type="function" args="1">Zeros</e>
-          <e type="operand">2</e>
-          <e type="operand">nodes</e>
-          <e type="operand">con</e>
-          <e type="operand">12000</e>
-          <e type="operator" args="1">-</e>
-          <e type="function" args="4">w</e>
-          <e type="operator" args="2">+</e>
-          <e type="operator" args="2">:</e>
-        </input>
-      </math>
-    </region>
-    <region left="45" top="7020" width="96" height="118" color="#000000" fontSize="10">
-      <math>
-        <input>
-          <e type="operand">F</e>
-        </input>
-        <result action="numeric">
-          <e type="operand">0</e>
-          <e type="operand">0</e>
-          <e type="operand">6000</e>
-          <e type="operator" args="1">-</e>
-          <e type="operand">1000</e>
-          <e type="operator" args="1">-</e>
-          <e type="operand">6000</e>
-          <e type="operator" args="1">-</e>
-          <e type="operand">1000</e>
-          <e type="operand">6</e>
-          <e type="operand">1</e>
-          <e type="function" args="8">mat</e>
-        </result>
-      </math>
     </region>
     <region left="45" top="7182" width="756" height="148" color="#000000" fontSize="10">
       <math exponentialThreshold="3">
@@ -2495,7 +2494,7 @@
         </result>
       </math>
     </region>
-    <region left="72" top="7407" width="533" height="333" color="#000000" bgColor="#ffffff" fontSize="12">
+    <region left="72" top="7407" width="533" height="333" color="#000000" fontSize="12">
       <xyplot width="523" height="325" points="100" name="XYPlot">
         <chartstyle backcolor="White" bordercolor="Black" />
         <propertiessource index="1" sourcetype="PropertyGrid" />
