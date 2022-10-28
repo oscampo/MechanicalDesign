@@ -4,7 +4,7 @@
   <settings ppi="96">
     <identity>
       <id>c87b30c3-6be8-4cca-bb48-7c72acfcd3b2</id>
-      <revision>25</revision>
+      <revision>26</revision>
     </identity>
     <calculation>
       <precision>4</precision>
@@ -37,7 +37,7 @@
   </settings>
   <regions type="content">
     <region top="18" color="#000000">
-      <area collapsed="true">
+      <area collapsed="false">
         <title lang="spa">
           <content>
             <p>Utilidades FEM</p>
@@ -1961,7 +1961,7 @@
         </input>
       </math>
     </region>
-    <region left="45" top="4563" width="188" height="35" color="#000000" fontSize="10">
+    <region left="45" top="4563" width="178" height="35" color="#000000" fontSize="10">
       <math evaluate="false" optimize="2">
         <input>
           <e type="operand">def</e>
@@ -1974,8 +1974,8 @@
         </input>
       </math>
     </region>
-    <region left="369" top="4563" width="310" height="36" color="#000000" fontSize="10">
-      <math>
+    <region left="333" top="4563" width="310" height="36" color="#000000" fontSize="10">
+      <math evaluate="false">
         <input>
           <e type="operand">def</e>
           <e type="operand">Kt</e>
@@ -1984,6 +1984,23 @@
           <e type="operand">free</e>
           <e type="function" args="2">el</e>
           <e type="function" args="2">bandSolver</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="720" top="4563" width="198" height="43" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">def</e>
+          <e type="operand">Kt</e>
+          <e type="operand">1</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="function" args="1">eval</e>
+          <e type="operand">F</e>
+          <e type="operand">free</e>
+          <e type="function" args="2">el</e>
+          <e type="operator" args="2">*</e>
           <e type="operator" args="2">:</e>
         </input>
       </math>
@@ -1997,7 +2014,7 @@
           <e type="operator" args="2">-</e>
         </input>
         <result action="numeric">
-          <e type="operand">6.554</e>
+          <e type="operand">0.398</e>
           <e type="operand" style="unit">s</e>
           <e type="operator" args="2">*</e>
         </result>
