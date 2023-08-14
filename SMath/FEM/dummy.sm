@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<?application progid="SMath Studio Desktop" version="1.0.8253.4763"?>
+<?application progid="SMath Studio Desktop" version="1.0.8348.30405"?>
 <worksheet xmlns="http://smath.info/schemas/worksheet/1.0">
   <settings ppi="96">
     <identity>
       <id>aaf4ef9a-14ec-4c20-8a38-2317c0d1155a</id>
-      <revision>16</revision>
+      <revision>17</revision>
     </identity>
     <calculation>
       <precision>4</precision>
@@ -23,10 +23,10 @@
       <backgrounds />
     </pageModel>
     <dependencies>
-      <assembly name="SMath Studio Desktop" version="1.0.8253.4763" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
-      <assembly name="MathRegion" version="1.11.8253.4763" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="SMath Studio Desktop" version="1.0.8348.30405" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="MathRegion" version="1.11.8348.30405" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
       <assembly name="Custom Functions" version="1.1.8051.30522" guid="18dadffd-79a3-4cf9-aee1-d66deb0ea720" />
-      <assembly name="SpecialFunctions" version="1.12.8253.4763" guid="2814e667-4e12-48b1-8d51-194e480eabc5" />
+      <assembly name="SpecialFunctions" version="1.12.8348.30405" guid="2814e667-4e12-48b1-8d51-194e480eabc5" />
     </dependencies>
   </settings>
   <regions type="content">
@@ -823,6 +823,189 @@
           <e type="operand">n2</e>
           <e type="function" args="2">Lframe</e>
           <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="18" top="2142" width="497" height="39" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">nm</e>
+          <e type="operand">pp</e>
+          <e type="operand">lc</e>
+          <e type="operand">w</e>
+          <e type="operand">fc</e>
+          <e type="function" args="5">shape</e>
+          <e type="operand">nm</e>
+          <e type="operand">pp</e>
+          <e type="function" args="1">transpose</e>
+          <e type="operand">1</e>
+          <e type="operand">1</e>
+          <e type="function" args="3">mat</e>
+          <e type="operand">lc</e>
+          <e type="operand" style="string">solid</e>
+          <e type="operand">w</e>
+          <e type="operand">fc</e>
+          <e type="function" args="6">stack</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="18" top="2178" width="403" height="26" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">nm</e>
+          <e type="operand">pp</e>
+          <e type="operand">lc</e>
+          <e type="operand">w</e>
+          <e type="function" args="4">shape</e>
+          <e type="operand">nm</e>
+          <e type="operand">pp</e>
+          <e type="operand">lc</e>
+          <e type="operand">w</e>
+          <e type="operand" style="string">none</e>
+          <e type="function" args="5">shape</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="18" top="2205" width="379" height="26" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">nm</e>
+          <e type="operand">pp</e>
+          <e type="operand">lc</e>
+          <e type="function" args="3">shape</e>
+          <e type="operand">nm</e>
+          <e type="operand">pp</e>
+          <e type="operand">lc</e>
+          <e type="operand">1</e>
+          <e type="operand" style="string">none</e>
+          <e type="function" args="5">shape</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="18" top="2232" width="379" height="26" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">nm</e>
+          <e type="operand">pp</e>
+          <e type="function" args="2">shape</e>
+          <e type="operand">nm</e>
+          <e type="operand">pp</e>
+          <e type="operand" style="string">blue</e>
+          <e type="operand">1</e>
+          <e type="operand" style="string">none</e>
+          <e type="function" args="5">shape</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="9" top="2286" width="1117" height="238" color="#000000" fontSize="10">
+      <math ignoreUnits="true">
+        <description active="true" position="Top" lang="eng" width="779">
+          <content>
+            <p>Crea una matriz para ser graficada.<br />nod: matriz de coordenadas nodales<br />con: matriz de conectividad <br />lblswitch: valor Booleano para indicar que se desea o no graficar las etiquetas de los nodos</p>
+          </content>
+        </description>
+        <input>
+          <e type="operand">nod</e>
+          <e type="operand">con</e>
+          <e type="operand">lblswitch</e>
+          <e type="function" args="3">plotfem</e>
+          <e type="operand" style="string">qq:el(nod,el(con,1,1),range(1,2))</e>
+          <e type="operand">i</e>
+          <e type="operand">1</e>
+          <e type="operand">con</e>
+          <e type="function" args="1">rows</e>
+          <e type="bracket">(</e>
+          <e type="function" args="2">range</e>
+          <e type="operand">j</e>
+          <e type="operand">1</e>
+          <e type="operand">1</e>
+          <e type="function" args="2">range</e>
+          <e type="operand" style="string">qq:stack(qq,el(nod,el(con,i,j),range(1,2)))</e>
+          <e type="operand">qq</e>
+          <e type="operand">i</e>
+          <e type="function" args="2">el</e>
+          <e type="operand" style="string">line</e>
+          <e type="operand">nod</e>
+          <e type="operand">con</e>
+          <e type="operand">i</e>
+          <e type="operand">j</e>
+          <e type="function" args="3">el</e>
+          <e type="operand">1</e>
+          <e type="function" args="3">el</e>
+          <e type="operand">nod</e>
+          <e type="operand">con</e>
+          <e type="operand">i</e>
+          <e type="operand">j</e>
+          <e type="function" args="3">el</e>
+          <e type="operand">2</e>
+          <e type="function" args="3">el</e>
+          <e type="operand">nod</e>
+          <e type="operand">con</e>
+          <e type="operand">i</e>
+          <e type="operand">j</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">+</e>
+          <e type="function" args="3">el</e>
+          <e type="operand">1</e>
+          <e type="function" args="3">el</e>
+          <e type="operand">nod</e>
+          <e type="operand">con</e>
+          <e type="operand">i</e>
+          <e type="operand">j</e>
+          <e type="operand">1</e>
+          <e type="operator" args="2">+</e>
+          <e type="function" args="3">el</e>
+          <e type="operand">2</e>
+          <e type="function" args="3">el</e>
+          <e type="operand">1</e>
+          <e type="operand">4</e>
+          <e type="function" args="6">mat</e>
+          <e type="operand">1</e>
+          <e type="operand">nod</e>
+          <e type="operand">2</e>
+          <e type="operand">2</e>
+          <e type="function" args="3">el</e>
+          <e type="function" args="1">UnitsOf</e>
+          <e type="operator" args="2">/</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" style="string">blue</e>
+          <e type="operand">1</e>
+          <e type="function" args="4">shape</e>
+          <e type="operator" args="2">:</e>
+          <e type="operand">2</e>
+          <e type="operand">1</e>
+          <e type="function" args="4">line</e>
+          <e type="function" args="3">for</e>
+          <e type="function" args="3">for</e>
+          <e type="operand">lblswitch</e>
+          <e type="operand">0</e>
+          <e type="operator" args="2">≠</e>
+          <e type="operand">qq</e>
+          <e type="operand">1</e>
+          <e type="operand">1</e>
+          <e type="function" args="3">mat</e>
+          <e type="operand">1</e>
+          <e type="operand">1</e>
+          <e type="function" args="3">mat</e>
+          <e type="operand">nod</e>
+          <e type="operand">con</e>
+          <e type="function" args="2">lbl</e>
+          <e type="operand">2</e>
+          <e type="operand">1</e>
+          <e type="function" args="4">sys</e>
+          <e type="operand">1</e>
+          <e type="operand">1</e>
+          <e type="function" args="3">line</e>
+          <e type="operand">qq</e>
+          <e type="function" args="3">if</e>
+          <e type="operand">3</e>
+          <e type="operand">1</e>
+          <e type="function" args="5">line</e>
           <e type="operator" args="2">:</e>
         </input>
       </math>
