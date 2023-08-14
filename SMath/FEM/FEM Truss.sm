@@ -4,7 +4,7 @@
   <settings ppi="96">
     <identity>
       <id>601b7ad6-ab01-478a-9489-5bb3a386a9bb</id>
-      <revision>12</revision>
+      <revision>13</revision>
     </identity>
     <metadata lang="spa">
       <author>Oscar Campo</author>
@@ -38,7 +38,7 @@
   </settings>
   <regions type="content">
     <region top="27" color="#000000">
-      <area collapsed="true">
+      <area collapsed="false">
         <title lang="spa">
           <content>
             <p>Utilidades FEM</p>
@@ -1174,7 +1174,7 @@
         </input>
       </math>
     </region>
-    <region left="9" top="4041" width="450" height="306" color="#000000" bgColor="#ffffff" fontSize="10">
+    <region left="9" top="4041" width="450" height="306" color="#000000" fontSize="10">
       <xyplot width="440" height="298" points="100" name="XYPlot">
         <chartstyle backcolor="White" bordercolor="Transparent" />
         <propertiessource index="1" sourcetype="PropertyGrid" />
@@ -1454,7 +1454,7 @@
         </input>
       </math>
     </region>
-    <region left="45" top="5013" width="450" height="306" color="#000000" bgColor="#ffffff" fontSize="10">
+    <region left="45" top="5013" width="450" height="306" color="#000000" fontSize="10">
       <xyplot width="440" height="298" points="100" name="XYPlot">
         <chartstyle backcolor="White" bordercolor="Transparent" />
         <propertiessource index="1" sourcetype="PropertyGrid" />
