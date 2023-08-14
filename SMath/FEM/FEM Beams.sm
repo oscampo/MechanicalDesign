@@ -4,7 +4,7 @@
   <settings ppi="96">
     <identity>
       <id>d059b7a3-7b81-470e-ab2d-032f5c60e0e6</id>
-      <revision>45</revision>
+      <revision>46</revision>
     </identity>
     <calculation>
       <precision>3</precision>
@@ -453,7 +453,7 @@
           </input>
         </math>
       </region>
-      <region left="720" top="1530" width="591" height="209" color="#000000" fontSize="10">
+      <region left="720" top="1530" width="565" height="209" color="#000000" fontSize="10">
         <math evaluate="false" optimize="2" decimalPlaces="4" significantDigitsMode="false">
           <description active="true" position="Top" lang="eng" width="330">
             <content>
