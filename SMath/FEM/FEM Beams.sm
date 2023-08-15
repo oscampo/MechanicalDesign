@@ -4,8 +4,11 @@
   <settings ppi="96">
     <identity>
       <id>d059b7a3-7b81-470e-ab2d-032f5c60e0e6</id>
-      <revision>46</revision>
+      <revision>48</revision>
     </identity>
+    <metadata lang="spa">
+      <author>Oscar Campo</author>
+    </metadata>
     <calculation>
       <precision>3</precision>
       <exponentialThreshold>5</exponentialThreshold>
