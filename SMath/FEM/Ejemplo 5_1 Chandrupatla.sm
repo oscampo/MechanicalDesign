@@ -4,8 +4,11 @@
   <settings ppi="96">
     <identity>
       <id>40f36b21-7479-42a4-9366-37b05cb76b33</id>
-      <revision>94</revision>
+      <revision>95</revision>
     </identity>
+    <metadata lang="spa">
+      <author>Oscar Campo</author>
+    </metadata>
     <metadata lang="eng">
       <author>Oscar Campo</author>
     </metadata>
@@ -779,7 +782,7 @@
           </input>
         </math>
       </region>
-      <region left="27" top="2565" width="535" height="213" color="#000000" fontSize="10">
+      <region left="27" top="2565" width="517" height="213" color="#000000" fontSize="10">
         <math evaluate="false" decimalPlaces="4" significantDigitsMode="false">
           <description active="true" position="Top" lang="eng">
             <content>
@@ -903,7 +906,7 @@
             <e type="function" args="2">lbl</e>
             <e type="operand">lbln</e>
             <e type="operand" style="string">1</e>
-            <e type="operand">12</e>
+            <e type="operand">10</e>
             <e type="operand" style="string">red</e>
             <e type="operand">1</e>
             <e type="operand">3</e>
@@ -911,7 +914,7 @@
             <e type="operator" args="2">:</e>
             <e type="operand">point</e>
             <e type="operand" style="string">.</e>
-            <e type="operand">14</e>
+            <e type="operand">10</e>
             <e type="operand" style="string">red</e>
             <e type="operand">1</e>
             <e type="operand">3</e>
@@ -921,7 +924,7 @@
             <e type="operand">en</e>
             <e type="operand">1</e>
             <e type="function" args="2">el</e>
-            <e type="operand">12</e>
+            <e type="operand">10</e>
             <e type="operand" style="string">blue</e>
             <e type="operand">1</e>
             <e type="operand">3</e>
@@ -936,7 +939,7 @@
             <e type="operand">lbln</e>
             <e type="operand">i</e>
             <e type="function" args="1">num2str</e>
-            <e type="operand">12</e>
+            <e type="operand">10</e>
             <e type="operand" style="string">red</e>
             <e type="operand">1</e>
             <e type="operand">3</e>
@@ -946,7 +949,7 @@
             <e type="operand">point</e>
             <e type="operand">point</e>
             <e type="operand" style="string">.</e>
-            <e type="operand">14</e>
+            <e type="operand">10</e>
             <e type="operand" style="string">red</e>
             <e type="operand">1</e>
             <e type="operand">3</e>
@@ -967,7 +970,7 @@
             <e type="operand">en</e>
             <e type="operand">i</e>
             <e type="function" args="2">el</e>
-            <e type="operand">12</e>
+            <e type="operand">10</e>
             <e type="operand" style="string">blue</e>
             <e type="operand">1</e>
             <e type="operand">3</e>
