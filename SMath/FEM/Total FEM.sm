@@ -4,7 +4,7 @@
   <settings ppi="96">
     <identity>
       <id>36993174-e9f4-4070-9d2c-02e44206d43e</id>
-      <revision>27</revision>
+      <revision>33</revision>
     </identity>
     <metadata lang="spa">
       <author>Oscar Campo</author>
@@ -35,7 +35,7 @@
   </settings>
   <regions type="content">
     <region top="27" color="#000000">
-      <area collapsed="true">
+      <area collapsed="false">
         <title lang="spa">
           <content>
             <p>FEM</p>
@@ -43,7 +43,7 @@
         </title>
       </area>
       <region top="54" color="#000000">
-        <area collapsed="true">
+        <area collapsed="false">
           <title lang="spa">
             <content>
               <p>Documentation</p>
@@ -493,7 +493,7 @@
         </region>
       </region>
       <region top="1971" color="#000000">
-        <area collapsed="true">
+        <area collapsed="false">
           <title lang="spa">
             <content>
               <p>Stiffness Matrix</p>
@@ -532,7 +532,7 @@
             </input>
           </math>
         </region>
-        <region left="90" top="2142" width="452" height="41" color="#000000" fontSize="10">
+        <region left="90" top="2142" width="586" height="46" color="#000000" fontSize="10">
           <math optimize="2">
             <description active="true" position="Top" lang="eng">
               <content>
@@ -542,15 +542,31 @@
             <input>
               <e type="operand">n1</e>
               <e type="operand">n2</e>
-              <e type="function" args="2">ket</e>
+              <e type="operand">AA</e>
+              <e type="operand">EE</e>
+              <e type="function" args="4">ket</e>
               <e type="operand">n1</e>
               <e type="operand">n2</e>
               <e type="function" args="2">L.truss</e>
               <e type="bracket">(</e>
               <e type="function" args="1">transpose</e>
+              <e type="operand">AA</e>
+              <e type="operand">EE</e>
+              <e type="operator" args="2">*</e>
               <e type="operand">n1</e>
               <e type="operand">n2</e>
-              <e type="function" args="2">k'</e>
+              <e type="function" args="2">Le</e>
+              <e type="operator" args="2">/</e>
+              <e type="operand">1</e>
+              <e type="operand">1</e>
+              <e type="operator" args="1">-</e>
+              <e type="operand">1</e>
+              <e type="operator" args="1">-</e>
+              <e type="operand">1</e>
+              <e type="operand">2</e>
+              <e type="operand">2</e>
+              <e type="function" args="6">mat</e>
+              <e type="operator" args="2">*</e>
               <e type="operator" args="2">*</e>
               <e type="operand">n1</e>
               <e type="operand">n2</e>
@@ -560,7 +576,7 @@
             </input>
           </math>
         </region>
-        <region left="90" top="2313" width="500" height="261" color="#000000" fontSize="10">
+        <region left="90" top="2313" width="556" height="261" color="#000000" fontSize="10">
           <math optimize="2">
             <description active="true" position="Top" lang="eng">
               <content>
@@ -570,9 +586,9 @@
             <input>
               <e type="operand">n1</e>
               <e type="operand">n2</e>
-              <e type="operand">A</e>
-              <e type="operand">E</e>
-              <e type="operand">I</e>
+              <e type="operand">Aa</e>
+              <e type="operand">Ee</e>
+              <e type="operand">Ii</e>
               <e type="function" args="5">kefr</e>
               <e type="operand">L</e>
               <e type="operand">n1</e>
@@ -580,18 +596,18 @@
               <e type="function" args="2">Le</e>
               <e type="operator" args="2">:</e>
               <e type="operand">kf</e>
-              <e type="operand">E</e>
-              <e type="operand">I</e>
+              <e type="operand">Ee</e>
+              <e type="operand">Ii</e>
               <e type="operator" args="2">*</e>
               <e type="operand">L</e>
               <e type="operator" args="2">/</e>
-              <e type="operand">A</e>
-              <e type="operand">I</e>
+              <e type="operand">Aa</e>
+              <e type="operand">Ii</e>
               <e type="operator" args="2">/</e>
               <e type="operand">0</e>
               <e type="operand">0</e>
-              <e type="operand">A</e>
-              <e type="operand">I</e>
+              <e type="operand">Aa</e>
+              <e type="operand">Ii</e>
               <e type="operator" args="2">/</e>
               <e type="operator" args="1">-</e>
               <e type="operand">0</e>
@@ -626,14 +642,14 @@
               <e type="operator" args="2">/</e>
               <e type="operator" args="1">-</e>
               <e type="operand">2</e>
-              <e type="operand">A</e>
-              <e type="operand">I</e>
+              <e type="operand">Aa</e>
+              <e type="operand">Ii</e>
               <e type="operator" args="2">/</e>
               <e type="operator" args="1">-</e>
               <e type="operand">0</e>
               <e type="operand">0</e>
-              <e type="operand">A</e>
-              <e type="operand">I</e>
+              <e type="operand">Aa</e>
+              <e type="operand">Ii</e>
               <e type="operator" args="2">/</e>
               <e type="operand">0</e>
               <e type="operand">0</e>
@@ -801,7 +817,7 @@
             </input>
           </math>
         </region>
-        <region left="99" top="2736" width="754" height="238" color="#000000" fontSize="10">
+        <region left="99" top="2736" width="840" height="238" color="#000000" fontSize="10">
           <math>
             <description active="true" position="Top" lang="eng">
               <content>
@@ -847,7 +863,13 @@
               <e type="function" args="3">el</e>
               <e type="function" args="2">row</e>
               <e type="function" args="1">eval</e>
-              <e type="function" args="2">ket</e>
+              <e type="operand">A</e>
+              <e type="operand">ee</e>
+              <e type="function" args="2">el</e>
+              <e type="operand">E</e>
+              <e type="operand">ee</e>
+              <e type="function" args="2">el</e>
+              <e type="function" args="4">ket</e>
               <e type="operator" args="2">:</e>
               <e type="operand">d</e>
               <e type="operand">2</e>
@@ -935,8 +957,8 @@
           <math optimize="2">
             <description active="true" position="Top" lang="eng">
               <content>
-            <p>Ensamblaje de la matriz de rigidez global elementos viga (BEAM)<br />nod: matriz de coordenadas de los nodos para cada elemento<br />con: matriz de conectividad de los elementos en coord nodales<br />free: vector de GDL libres</p>
-          </content>
+                <p>Ensamblaje de la matriz de rigidez global elementos viga (BEAM)<br />nod: matriz de coordenadas de los nodos para cada elemento<br />con: matriz de conectividad de los elementos en coord nodales<br />free: vector de GDL libres<br />s : vector de spoyos elásticos</p>
+              </content>
             </description>
             <input>
               <e type="operand">nod</e>
@@ -1139,8 +1161,14 @@
               <e type="function" args="3">el</e>
               <e type="function" args="2">row</e>
               <e type="operand">A</e>
+              <e type="operand">e</e>
+              <e type="function" args="2">el</e>
               <e type="operand">E</e>
+              <e type="operand">e</e>
+              <e type="function" args="2">el</e>
               <e type="operand">I</e>
+              <e type="operand">e</e>
+              <e type="function" args="2">el</e>
               <e type="function" args="5">ke</e>
               <e type="operator" args="2">:</e>
               <e type="operand">d</e>
@@ -1780,7 +1808,7 @@
             </content>
           </title>
         </area>
-        <region left="27" top="5346" width="737" height="325" color="#000000" fontSize="10">
+        <region left="27" top="5346" width="737" height="335" color="#000000" fontSize="10">
           <math>
             <description active="true" position="Top" lang="eng">
               <content>
@@ -1866,6 +1894,8 @@
               <e type="operand">i</e>
               <e type="function" args="2">el</e>
               <e type="operand">E</e>
+              <e type="operand">i</e>
+              <e type="function" args="2">el</e>
               <e type="operand">n1</e>
               <e type="operand">n2</e>
               <e type="function" args="2">Le</e>
