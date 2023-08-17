@@ -4,7 +4,7 @@
   <settings ppi="96">
     <identity>
       <id>36993174-e9f4-4070-9d2c-02e44206d43e</id>
-      <revision>33</revision>
+      <revision>34</revision>
     </identity>
     <metadata lang="spa">
       <author>Oscar Campo</author>
@@ -34,34 +34,34 @@
     </dependencies>
   </settings>
   <regions type="content">
-    <region top="27" color="#000000">
-      <area collapsed="false">
+    <region top="18" color="#000000">
+      <area collapsed="true">
         <title lang="spa">
           <content>
             <p>FEM</p>
           </content>
         </title>
       </area>
-      <region top="54" color="#000000">
-        <area collapsed="false">
+      <region top="45" color="#000000">
+        <area collapsed="true">
           <title lang="spa">
             <content>
               <p>Documentation</p>
             </content>
           </title>
         </area>
-        <region left="18" top="81" width="734" height="593" border="true" color="#000000" bgColor="#ffff00" fontSize="10" isBreakable="false">
+        <region left="18" top="72" width="734" height="593" border="true" color="#000000" bgColor="#ffff00" fontSize="10" isBreakable="false">
           <text lang="eng" fontFamily="Arial" fontSize="10">
             <content>
             <p style="font-family: Courier New; background-color: #ffff00;">FEM Utilities<br />Simple Finite Elements Method on SMath<br />Oscar Campo, PhD. oscampo@gmail.com<br /><br />Usage:<br />Define a (n x 2) nodal coordinates matrix:<br /><br />nodes=|x1 y1|<br />            | :   :|<br />            |xn yn|<br /><br />------------ Revision 14oct2022 ------------<br />Added <br />bandSolver(): Fast solver for banded Matrix<br />Sym2Band(): Transform a Symmetric Matrix to a Banded one. Rquires Matlb C++ runtime (only works if SMath is configured as 32 bit app by CorFlags.exe. See: https://en.smath.com/forum/yaf_postsm75425_Matlab-Runtime-Library.aspx#post75425)<br />            <br />------------ Revision 11oct2022<br />Added option to use elastic supports<br /><br />------------ Revision 9oct2022<br />***WARNING*** All functions here were adapted from FRAMES functions for the 2 DOF case on Beams<br />Developed new functions (fembeam(), defbeam(), kebeam(), w()) focused only on 2D beams <br /><br />------------ Revision 7ene2019 <br />Added defframe(nod,con,def,sc)) function, which let plot deformed beams and frames<br />Added femframe(nod,con,res,Forces,A,E,I) function: now you can calculate deformations (*only*) in beams and frames "on a click"<br /><br />------------ Revision 31ago2017 <br />Added femtruss() function: now you can calculate stresses an deformations "on a click"<br />Added Gauss() function: Solve systems by Gauss reduction<br />Changes on δ() function: Now it's possible calculate deformatiosn by inverse of stiffness matrix<br />     or by Gauss reduction<br />------------ Revision 2sep2017 <br />Updated plotfem(): Now it assign element and nodal labels</p>
           </content>
           </text>
         </region>
-        <region top="909" color="#000000">
+        <region top="900" color="#000000">
           <area terminator="true" />
         </region>
       </region>
-      <region top="945" color="#000000">
+      <region top="936" color="#000000">
         <area collapsed="true">
           <title lang="spa">
             <content>
@@ -69,7 +69,7 @@
             </content>
           </title>
         </area>
-        <region left="18" top="999" width="215" height="26" color="#000000" fontSize="10">
+        <region left="18" top="990" width="215" height="26" color="#000000" fontSize="10">
           <math optimize="2">
             <description active="true" position="Top" lang="eng">
               <content>
@@ -88,7 +88,7 @@
             </input>
           </math>
         </region>
-        <region left="18" top="1080" width="202" height="52" color="#000000" fontSize="10">
+        <region left="18" top="1071" width="202" height="52" color="#000000" fontSize="10">
           <math>
             <description active="true" position="Top" lang="eng">
               <content>
@@ -116,7 +116,7 @@
             </input>
           </math>
         </region>
-        <region left="324" top="1080" width="202" height="52" color="#000000" fontSize="10">
+        <region left="324" top="1071" width="202" height="52" color="#000000" fontSize="10">
           <math>
             <description active="true" position="Top" lang="eng">
               <content>
@@ -144,7 +144,7 @@
             </input>
           </math>
         </region>
-        <region left="27" top="1179" width="460" height="49" color="#000000" fontSize="10">
+        <region left="27" top="1170" width="460" height="49" color="#000000" fontSize="10">
           <math>
             <description active="true" position="Top" lang="eng">
               <content>
@@ -178,7 +178,7 @@
             </input>
           </math>
         </region>
-        <region left="27" top="1287" width="513" height="126" color="#000000" fontSize="10">
+        <region left="27" top="1278" width="513" height="126" color="#000000" fontSize="10">
           <math>
             <input>
               <e type="operand">n1</e>
@@ -245,7 +245,7 @@
             </input>
           </math>
         </region>
-        <region left="27" top="1476" width="337" height="44" color="#000000" fontSize="10">
+        <region left="27" top="1467" width="337" height="44" color="#000000" fontSize="10">
           <math>
             <description active="true" position="Top" lang="spa">
               <content>
@@ -279,7 +279,7 @@
             </input>
           </math>
         </region>
-        <region left="612" top="1485" width="522" height="296" color="#000000" fontSize="10">
+        <region left="612" top="1476" width="522" height="296" color="#000000" fontSize="10">
           <math optimize="2">
             <description active="true" position="Top" lang="eng" width="483">
               <content>
@@ -391,7 +391,7 @@
             </input>
           </math>
         </region>
-        <region left="36" top="1566" width="190" height="43" color="#000000" fontSize="10">
+        <region left="36" top="1557" width="190" height="43" color="#000000" fontSize="10">
           <math>
             <input>
               <e type="operand">ξ</e>
@@ -414,7 +414,7 @@
             </input>
           </math>
         </region>
-        <region left="36" top="1620" width="208" height="43" color="#000000" fontSize="10">
+        <region left="36" top="1611" width="208" height="43" color="#000000" fontSize="10">
           <math>
             <input>
               <e type="operand">ξ</e>
@@ -439,7 +439,7 @@
             </input>
           </math>
         </region>
-        <region left="36" top="1674" width="190" height="43" color="#000000" fontSize="10">
+        <region left="36" top="1665" width="190" height="43" color="#000000" fontSize="10">
           <math>
             <input>
               <e type="operand">ξ</e>
@@ -462,7 +462,7 @@
             </input>
           </math>
         </region>
-        <region left="36" top="1728" width="222" height="43" color="#000000" fontSize="10">
+        <region left="36" top="1719" width="222" height="43" color="#000000" fontSize="10">
           <math>
             <input>
               <e type="operand">ξ</e>
@@ -488,19 +488,19 @@
             </input>
           </math>
         </region>
-        <region top="1935" color="#000000">
+        <region top="1926" color="#000000">
           <area terminator="true" />
         </region>
       </region>
-      <region top="1971" color="#000000">
-        <area collapsed="false">
+      <region top="1962" color="#000000">
+        <area collapsed="true">
           <title lang="spa">
             <content>
               <p>Stiffness Matrix</p>
             </content>
           </title>
         </area>
-        <region left="90" top="2043" width="265" height="45" color="#000000" fontSize="10">
+        <region left="90" top="2034" width="265" height="45" color="#000000" fontSize="10">
           <math optimize="2">
             <description active="true" position="Top" lang="eng">
               <content>
@@ -532,7 +532,7 @@
             </input>
           </math>
         </region>
-        <region left="90" top="2142" width="586" height="46" color="#000000" fontSize="10">
+        <region left="90" top="2133" width="586" height="46" color="#000000" fontSize="10">
           <math optimize="2">
             <description active="true" position="Top" lang="eng">
               <content>
@@ -576,7 +576,7 @@
             </input>
           </math>
         </region>
-        <region left="90" top="2313" width="556" height="261" color="#000000" fontSize="10">
+        <region left="90" top="2304" width="556" height="261" color="#000000" fontSize="10">
           <math optimize="2">
             <description active="true" position="Top" lang="eng">
               <content>
@@ -697,7 +697,7 @@
             </input>
           </math>
         </region>
-        <region left="783" top="2331" width="449" height="123" color="#000000" fontSize="10">
+        <region left="783" top="2322" width="449" height="123" color="#000000" fontSize="10">
           <math>
             <description active="true" position="Top" lang="eng" width="328">
               <content>
@@ -789,7 +789,7 @@
             </input>
           </math>
         </region>
-        <region left="90" top="2601" width="580" height="39" color="#000000" fontSize="10">
+        <region left="90" top="2592" width="580" height="39" color="#000000" fontSize="10">
           <math>
             <input>
               <e type="operand">n1</e>
@@ -817,7 +817,7 @@
             </input>
           </math>
         </region>
-        <region left="99" top="2736" width="840" height="238" color="#000000" fontSize="10">
+        <region left="99" top="2727" width="840" height="238" color="#000000" fontSize="10">
           <math>
             <description active="true" position="Top" lang="eng">
               <content>
@@ -953,7 +953,7 @@
             </input>
           </math>
         </region>
-        <region left="99" top="3087" width="721" height="294" color="#000000" fontSize="10">
+        <region left="99" top="3078" width="721" height="294" color="#000000" fontSize="10">
           <math optimize="2">
             <description active="true" position="Top" lang="eng">
               <content>
@@ -1115,7 +1115,7 @@
             </input>
           </math>
         </region>
-        <region left="99" top="3492" width="845" height="226" color="#000000" fontSize="10">
+        <region left="99" top="3483" width="845" height="226" color="#000000" fontSize="10">
           <math optimize="2">
             <description active="true" position="Top" lang="eng">
               <content>
@@ -1264,19 +1264,19 @@
             </input>
           </math>
         </region>
-        <region top="3798" color="#000000">
+        <region top="3789" color="#000000">
           <area terminator="true" />
         </region>
       </region>
-      <region top="3834" color="#000000">
-        <area collapsed="true">
+      <region top="3825" color="#000000">
+        <area collapsed="false">
           <title lang="spa">
             <content>
               <p>Global deformation Vector</p>
             </content>
           </title>
         </area>
-        <region left="36" top="3888" width="503" height="167" color="#000000" fontSize="10">
+        <region left="36" top="3879" width="503" height="158" color="#000000" fontSize="10">
           <math>
             <description active="true" position="Top" lang="eng">
               <content>
@@ -1303,8 +1303,6 @@
               <e type="operator" args="1">-</e>
               <e type="operator" args="2">^</e>
               <e type="operand">vF</e>
-              <e type="operand">free</e>
-              <e type="function" args="2">el</e>
               <e type="operator" args="2">*</e>
               <e type="function" args="1">eval</e>
               <e type="operator" args="2">:</e>
@@ -1335,7 +1333,7 @@
             </input>
           </math>
         </region>
-        <region left="531" top="3888" width="511" height="275" color="#000000" fontSize="10">
+        <region left="531" top="3879" width="511" height="275" color="#000000" fontSize="10">
           <math optimize="2">
             <description active="true" position="Top" lang="eng">
               <content>
@@ -1410,7 +1408,7 @@
             </input>
           </math>
         </region>
-        <region left="1179" top="3888" width="636" height="209" color="#000000" fontSize="10">
+        <region left="1179" top="3879" width="636" height="209" color="#000000" fontSize="10">
           <math optimize="2">
             <description active="true" position="Top" lang="eng" width="330">
               <content>
@@ -1474,7 +1472,7 @@
             </input>
           </math>
         </region>
-        <region left="36" top="4239" width="517" height="275" color="#000000" fontSize="10">
+        <region left="36" top="4230" width="517" height="275" color="#000000" fontSize="10">
           <math optimize="2">
             <description active="true" position="Top" lang="eng" width="316">
               <content>
@@ -1549,7 +1547,7 @@
             </input>
           </math>
         </region>
-        <region left="612" top="4239" width="642" height="209" color="#000000" fontSize="10">
+        <region left="612" top="4230" width="642" height="209" color="#000000" fontSize="10">
           <math optimize="2">
             <description active="true" position="Top" lang="eng" width="610">
               <content>
@@ -1613,7 +1611,7 @@
             </input>
           </math>
         </region>
-        <region left="846" top="4644" width="534" height="356" color="#000000" fontSize="10">
+        <region left="846" top="4635" width="534" height="356" color="#000000" fontSize="10">
           <math>
             <description active="true" position="Top" lang="eng" width="416">
               <content>
@@ -1704,7 +1702,7 @@
             </input>
           </math>
         </region>
-        <region left="117" top="4662" width="540" height="356" color="#000000" fontSize="10">
+        <region left="117" top="4653" width="540" height="356" color="#000000" fontSize="10">
           <math>
             <description active="true" position="Top" lang="eng" width="425">
               <content>
@@ -1796,11 +1794,11 @@
             </input>
           </math>
         </region>
-        <region top="5220" color="#000000">
+        <region top="5211" color="#000000">
           <area terminator="true" />
         </region>
       </region>
-      <region top="5256" color="#000000">
+      <region top="5247" color="#000000">
         <area collapsed="true">
           <title lang="spa">
             <content>
@@ -1808,7 +1806,7 @@
             </content>
           </title>
         </area>
-        <region left="27" top="5346" width="737" height="335" color="#000000" fontSize="10">
+        <region left="27" top="5337" width="737" height="335" color="#000000" fontSize="10">
           <math>
             <description active="true" position="Top" lang="eng">
               <content>
@@ -1940,11 +1938,11 @@
             </input>
           </math>
         </region>
-        <region top="5832" color="#000000">
+        <region top="5823" color="#000000">
           <area terminator="true" />
         </region>
       </region>
-      <region top="5868" color="#000000">
+      <region top="5859" color="#000000">
         <area collapsed="true">
           <title lang="spa">
             <content>
@@ -1952,7 +1950,7 @@
             </content>
           </title>
         </area>
-        <region left="1692" top="5922" width="519" height="370" color="#000000" fontSize="10">
+        <region left="1692" top="5913" width="519" height="370" color="#000000" fontSize="10">
           <math ignoreUnits="true">
             <description active="true" position="Top" lang="eng" width="779">
               <content>
@@ -2041,7 +2039,7 @@
             </input>
           </math>
         </region>
-        <region left="36" top="5958" width="519" height="370" color="#000000" fontSize="10">
+        <region left="36" top="5949" width="519" height="370" color="#000000" fontSize="10">
           <math ignoreUnits="true">
             <description active="true" position="Top" lang="eng" width="779">
               <content>
@@ -2130,7 +2128,7 @@
             </input>
           </math>
         </region>
-        <region left="855" top="5958" width="625" height="217" color="#000000" fontSize="10">
+        <region left="855" top="5949" width="625" height="217" color="#000000" fontSize="10">
           <math>
             <description active="true" position="Top" lang="eng" width="619">
               <content>
@@ -2199,7 +2197,7 @@
             </input>
           </math>
         </region>
-        <region left="1179" top="6417" width="1498" height="814" color="#000000" fontSize="10">
+        <region left="1179" top="6408" width="1498" height="814" color="#000000" fontSize="10">
           <math optimize="2">
             <description active="true" position="Top" lang="eng">
               <content>
@@ -2541,7 +2539,7 @@
             </input>
           </math>
         </region>
-        <region left="45" top="6444" width="902" height="325" color="#000000" fontSize="10">
+        <region left="45" top="6435" width="902" height="325" color="#000000" fontSize="10">
           <math evaluate="false">
             <description active="true" position="Top" lang="eng">
               <content>
@@ -2691,7 +2689,7 @@
             </input>
           </math>
         </region>
-        <region left="36" top="6849" width="1153" height="390" color="#000000" fontSize="10">
+        <region left="36" top="6840" width="1153" height="390" color="#000000" fontSize="10">
           <math>
             <description active="true" position="Top" lang="eng">
               <content>
@@ -2867,7 +2865,7 @@
             </input>
           </math>
         </region>
-        <region left="45" top="7290" width="982" height="41" color="#000000" fontSize="10">
+        <region left="45" top="7281" width="982" height="41" color="#000000" fontSize="10">
           <math>
             <description active="true" position="Top" lang="eng">
               <content>
@@ -2912,7 +2910,7 @@
             </input>
           </math>
         </region>
-        <region left="45" top="7407" width="738" height="313" color="#000000" fontSize="10">
+        <region left="45" top="7398" width="738" height="313" color="#000000" fontSize="10">
           <math optimize="2">
             <description active="true" position="Top" lang="spa">
               <content>
@@ -3039,7 +3037,7 @@
             </input>
           </math>
         </region>
-        <region left="1233" top="7407" width="1192" height="545" color="#000000" fontSize="10">
+        <region left="1233" top="7398" width="1192" height="545" color="#000000" fontSize="10">
           <math optimize="2">
             <description active="true" position="Top" lang="spa">
               <content>
@@ -3282,11 +3280,11 @@
             </input>
           </math>
         </region>
-        <region top="8010" color="#000000">
+        <region top="8001" color="#000000">
           <area terminator="true" />
         </region>
       </region>
-      <region top="8046" color="#000000">
+      <region top="8037" color="#000000">
         <area collapsed="true">
           <title lang="spa">
             <content>
@@ -3294,7 +3292,7 @@
             </content>
           </title>
         </area>
-        <region left="9" top="8082" width="362" height="490" color="#000000" fontSize="10">
+        <region left="9" top="8073" width="362" height="490" color="#000000" fontSize="10">
           <math optimize="2">
             <description active="true" position="Top" lang="eng">
               <content>
@@ -3458,7 +3456,7 @@
             </input>
           </math>
         </region>
-        <region left="468" top="8082" width="498" height="285" color="#000000" fontSize="10">
+        <region left="468" top="8073" width="498" height="285" color="#000000" fontSize="10">
           <math>
             <description active="true" position="Top" lang="eng" width="666">
               <content>
@@ -3573,7 +3571,7 @@
             </input>
           </math>
         </region>
-        <region left="9" top="8595" width="408" height="592" color="#000000" fontSize="10">
+        <region left="9" top="8586" width="408" height="592" color="#000000" fontSize="10">
           <math>
             <description active="true" position="Top" lang="eng">
               <content>
@@ -3793,19 +3791,19 @@
             </input>
           </math>
         </region>
-        <region top="9225" color="#000000">
+        <region top="9216" color="#000000">
           <area terminator="true" />
         </region>
       </region>
-      <region top="9261" color="#000000">
-        <area collapsed="true">
+      <region top="9252" color="#000000">
+        <area collapsed="false">
           <title lang="spa">
             <content>
               <p>General Workflow</p>
             </content>
           </title>
         </area>
-        <region left="54" top="9297" width="642" height="126" color="#000000" fontSize="10">
+        <region left="54" top="9288" width="642" height="126" color="#000000" fontSize="10">
           <math optimize="2">
             <input>
               <e type="operand">nod</e>
@@ -3859,7 +3857,7 @@
             </input>
           </math>
         </region>
-        <region left="54" top="9486" width="617" height="116" color="#000000" fontSize="10">
+        <region left="54" top="9477" width="617" height="116" color="#000000" fontSize="10">
           <math>
             <input>
               <e type="operand">nod</e>
@@ -3911,7 +3909,7 @@
             </input>
           </math>
         </region>
-        <region left="54" top="9693" width="631" height="120" color="#000000" fontSize="10">
+        <region left="54" top="9684" width="631" height="120" color="#000000" fontSize="10">
           <math optimize="2">
             <input>
               <e type="operand">nod</e>
@@ -3961,11 +3959,11 @@
             </input>
           </math>
         </region>
-        <region top="9990" color="#000000">
+        <region top="9981" color="#000000">
           <area terminator="true" />
         </region>
       </region>
-      <region top="10170" color="#000000">
+      <region top="10161" color="#000000">
         <area terminator="true" />
       </region>
     </region>
