@@ -4,16 +4,16 @@
   <settings ppi="96">
     <identity>
       <id>36993174-e9f4-4070-9d2c-02e44206d43e</id>
-      <revision>38</revision>
+      <revision>40</revision>
     </identity>
     <metadata lang="spa">
       <author>Oscar Campo</author>
     </metadata>
     <calculation>
-      <precision>4</precision>
+      <precision>3</precision>
       <exponentialThreshold>5</exponentialThreshold>
       <trailingZeros>false</trailingZeros>
-      <significantDigitsMode>false</significantDigitsMode>
+      <significantDigitsMode>true</significantDigitsMode>
       <roundingMode>0</roundingMode>
       <approximateEqualAccuracy>0</approximateEqualAccuracy>
       <fractions>decimal</fractions>
@@ -28,6 +28,7 @@
     <dependencies>
       <assembly name="SMath Studio Desktop" version="1.0.8348.30405" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
       <assembly name="MathRegion" version="1.11.8348.30405" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="Custom Functions" version="1.1.8051.30522" guid="18dadffd-79a3-4cf9-aee1-d66deb0ea720" />
       <assembly name="SpecialFunctions" version="1.12.8348.30405" guid="2814e667-4e12-48b1-8d51-194e480eabc5" />
       <assembly name="TextRegion" version="1.11.8348.30405" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
       <assembly name="AreaRegion" version="1.11.8348.30405" guid="4974b228-4974-44cf-8274-bf2936b4a766" />
@@ -69,8 +70,8 @@
             </content>
           </title>
         </area>
-        <region left="18" top="990" width="215" height="26" color="#000000" fontSize="10">
-          <math optimize="2">
+        <region left="18" top="990" width="205" height="26" color="#000000" fontSize="10">
+          <math optimize="2" decimalPlaces="4" significantDigitsMode="false">
             <description active="true" position="Top" lang="eng">
               <content>
               <p>Calculates element length</p>
@@ -88,8 +89,8 @@
             </input>
           </math>
         </region>
-        <region left="18" top="1071" width="202" height="52" color="#000000" fontSize="10">
-          <math>
+        <region left="18" top="1071" width="192" height="52" color="#000000" fontSize="10">
+          <math decimalPlaces="4" significantDigitsMode="false">
             <description active="true" position="Top" lang="eng">
               <content>
             <p>coseno del ángulo del elemento </p>
@@ -116,8 +117,8 @@
             </input>
           </math>
         </region>
-        <region left="324" top="1071" width="202" height="52" color="#000000" fontSize="10">
-          <math>
+        <region left="324" top="1071" width="192" height="52" color="#000000" fontSize="10">
+          <math decimalPlaces="4" significantDigitsMode="false">
             <description active="true" position="Top" lang="eng">
               <content>
             <p>seno del ángulo del elemento</p>
@@ -144,8 +145,8 @@
             </input>
           </math>
         </region>
-        <region left="27" top="1170" width="460" height="49" color="#000000" fontSize="10">
-          <math>
+        <region left="27" top="1170" width="430" height="49" color="#000000" fontSize="10">
+          <math decimalPlaces="4" significantDigitsMode="false">
             <description active="true" position="Top" lang="eng">
               <content>
             <p>matrices de transformación</p>
@@ -178,8 +179,8 @@
             </input>
           </math>
         </region>
-        <region left="27" top="1278" width="513" height="126" color="#000000" fontSize="10">
-          <math>
+        <region left="27" top="1278" width="483" height="126" color="#000000" fontSize="10">
+          <math decimalPlaces="4" significantDigitsMode="false">
             <input>
               <e type="operand">n1</e>
               <e type="operand">n2</e>
@@ -245,8 +246,8 @@
             </input>
           </math>
         </region>
-        <region left="27" top="1467" width="337" height="44" color="#000000" fontSize="10">
-          <math>
+        <region left="27" top="1467" width="311" height="44" color="#000000" fontSize="10">
+          <math decimalPlaces="4" significantDigitsMode="false">
             <description active="true" position="Top" lang="spa">
               <content>
               <p>Funciones de forma para vigas y marcos</p>
@@ -279,8 +280,8 @@
             </input>
           </math>
         </region>
-        <region left="612" top="1476" width="522" height="296" color="#000000" fontSize="10">
-          <math optimize="2">
+        <region left="612" top="1476" width="496" height="296" color="#000000" fontSize="10">
+          <math optimize="2" decimalPlaces="4" significantDigitsMode="false">
             <description active="true" position="Top" lang="eng" width="483">
               <content>
               <p>Generación de vector de carga a partir de una carga distribuída p</p>
@@ -391,8 +392,8 @@
             </input>
           </math>
         </region>
-        <region left="36" top="1557" width="190" height="43" color="#000000" fontSize="10">
-          <math>
+        <region left="36" top="1557" width="182" height="43" color="#000000" fontSize="10">
+          <math decimalPlaces="4" significantDigitsMode="false">
             <input>
               <e type="operand">ξ</e>
               <e type="function" args="1">H1</e>
@@ -414,8 +415,8 @@
             </input>
           </math>
         </region>
-        <region left="36" top="1611" width="208" height="43" color="#000000" fontSize="10">
-          <math>
+        <region left="36" top="1611" width="198" height="43" color="#000000" fontSize="10">
+          <math decimalPlaces="4" significantDigitsMode="false">
             <input>
               <e type="operand">ξ</e>
               <e type="function" args="1">H2</e>
@@ -439,8 +440,8 @@
             </input>
           </math>
         </region>
-        <region left="36" top="1665" width="190" height="43" color="#000000" fontSize="10">
-          <math>
+        <region left="36" top="1665" width="182" height="43" color="#000000" fontSize="10">
+          <math decimalPlaces="4" significantDigitsMode="false">
             <input>
               <e type="operand">ξ</e>
               <e type="function" args="1">H3</e>
@@ -462,8 +463,8 @@
             </input>
           </math>
         </region>
-        <region left="36" top="1719" width="222" height="43" color="#000000" fontSize="10">
-          <math>
+        <region left="36" top="1719" width="212" height="43" color="#000000" fontSize="10">
+          <math decimalPlaces="4" significantDigitsMode="false">
             <input>
               <e type="operand">ξ</e>
               <e type="function" args="1">H4</e>
@@ -500,8 +501,8 @@
             </content>
           </title>
         </area>
-        <region left="90" top="2034" width="265" height="45" color="#000000" fontSize="10">
-          <math optimize="2">
+        <region left="90" top="2034" width="253" height="45" color="#000000" fontSize="10">
+          <math optimize="2" decimalPlaces="4" significantDigitsMode="false">
             <description active="true" position="Top" lang="eng">
               <content>
               <p>matriz de rigidez lineal</p>
@@ -532,8 +533,8 @@
             </input>
           </math>
         </region>
-        <region left="90" top="2133" width="586" height="46" color="#000000" fontSize="10">
-          <math optimize="2">
+        <region left="90" top="2133" width="558" height="46" color="#000000" fontSize="10">
+          <math optimize="2" decimalPlaces="4" significantDigitsMode="false">
             <description active="true" position="Top" lang="eng">
               <content>
               <p>matriz de rigidez 2D para elementos tipo cercha</p>
@@ -576,8 +577,8 @@
             </input>
           </math>
         </region>
-        <region left="90" top="2304" width="556" height="261" color="#000000" fontSize="10">
-          <math optimize="2">
+        <region left="90" top="2304" width="526" height="261" color="#000000" fontSize="10">
+          <math optimize="2" decimalPlaces="4" significantDigitsMode="false">
             <description active="true" position="Top" lang="eng">
               <content>
             <p>matriz de rigidez para elementos frame</p>
@@ -697,8 +698,8 @@
             </input>
           </math>
         </region>
-        <region left="783" top="2322" width="449" height="123" color="#000000" fontSize="10">
-          <math>
+        <region left="783" top="2322" width="427" height="123" color="#000000" fontSize="10">
+          <math decimalPlaces="4" significantDigitsMode="false">
             <description active="true" position="Top" lang="eng" width="328">
               <content>
             <p>Matríz de rigidez para elemento tipo viga (BEAM). También incluye Restricciones Multipunto (apoyos elásticos) si los hubiere</p>
@@ -789,8 +790,8 @@
             </input>
           </math>
         </region>
-        <region left="90" top="2592" width="580" height="39" color="#000000" fontSize="10">
-          <math>
+        <region left="90" top="2592" width="544" height="39" color="#000000" fontSize="10">
+          <math decimalPlaces="4" significantDigitsMode="false">
             <input>
               <e type="operand">n1</e>
               <e type="operand">n2</e>
@@ -817,8 +818,8 @@
             </input>
           </math>
         </region>
-        <region left="99" top="2727" width="840" height="238" color="#000000" fontSize="10">
-          <math>
+        <region left="99" top="2727" width="804" height="238" color="#000000" fontSize="10">
+          <math decimalPlaces="4" significantDigitsMode="false">
             <description active="true" position="Top" lang="eng">
               <content>
               <p>Ensamblaje de la matriz de rigidez global<br />nod: matriz de coordenadas de los nodos para cada elemento<br />con: matriz de conectividad de los elementos en coord nodales<br />free: vector de GDL libres</p>
@@ -953,8 +954,8 @@
             </input>
           </math>
         </region>
-        <region left="99" top="3078" width="721" height="294" color="#000000" fontSize="10">
-          <math optimize="2">
+        <region left="99" top="3078" width="691" height="294" color="#000000" fontSize="10">
+          <math optimize="2" decimalPlaces="4" significantDigitsMode="false">
             <description active="true" position="Top" lang="eng">
               <content>
                 <p>Ensamblaje de la matriz de rigidez global elementos viga (BEAM)<br />nod: matriz de coordenadas de los nodos para cada elemento<br />con: matriz de conectividad de los elementos en coord nodales<br />free: vector de GDL libres<br />s : vector de spoyos elásticos</p>
@@ -1115,8 +1116,8 @@
             </input>
           </math>
         </region>
-        <region left="99" top="3483" width="845" height="226" color="#000000" fontSize="10">
-          <math optimize="2">
+        <region left="99" top="3483" width="817" height="226" color="#000000" fontSize="10">
+          <math optimize="2" decimalPlaces="4" significantDigitsMode="false">
             <description active="true" position="Top" lang="eng">
               <content>
               <p>Ensamblaje de la matriz de rigidez global para 3GDL<br />nod: matriz de coordenadas de los nodos para cada elemento<br />con: matriz de conectividad de los elementos en coord nodales<br />free: vector de GDL libres</p>
@@ -1276,8 +1277,8 @@
             </content>
           </title>
         </area>
-        <region left="36" top="3879" width="503" height="158" color="#000000" fontSize="10">
-          <math>
+        <region left="36" top="3879" width="455" height="188" color="#000000" fontSize="10">
+          <math decimalPlaces="4" significantDigitsMode="false">
             <description active="true" position="Top" lang="eng">
               <content>
             <p> Cálculo del vector global de deformaciones para TRUSS</p>
@@ -1305,11 +1306,11 @@
               <e type="operand">vF</e>
               <e type="operator" args="2">*</e>
               <e type="function" args="1">eval</e>
+              <e type="operand">Ktruss</e>
+              <e type="operand">vF</e>
+              <e type="function" args="2">Gauss</e>
+              <e type="function" args="2">try</e>
               <e type="operator" args="2">:</e>
-              <e type="operand" style="string">vd:Gauss(Ktruss,el(vF,free))</e>
-              <e type="operand">2</e>
-              <e type="operand">1</e>
-              <e type="function" args="4">line</e>
               <e type="operand">i</e>
               <e type="operand">1</e>
               <e type="operand">vd</e>
@@ -1333,8 +1334,8 @@
             </input>
           </math>
         </region>
-        <region left="531" top="3879" width="511" height="275" color="#000000" fontSize="10">
-          <math optimize="2">
+        <region left="531" top="3879" width="487" height="275" color="#000000" fontSize="10">
+          <math optimize="2" decimalPlaces="4" significantDigitsMode="false">
             <description active="true" position="Top" lang="eng">
               <content>
             <p>Cálculo del vector global de deformaciones para BEAM</p>
@@ -1408,8 +1409,8 @@
             </input>
           </math>
         </region>
-        <region left="1179" top="3879" width="636" height="209" color="#000000" fontSize="10">
-          <math optimize="2">
+        <region left="1179" top="3879" width="610" height="209" color="#000000" fontSize="10">
+          <math optimize="2" decimalPlaces="4" significantDigitsMode="false">
             <description active="true" position="Top" lang="eng" width="330">
               <content>
             <p>Cálculo del vector global de deformaciones para BEAM usando bandSolver().</p>
@@ -1472,8 +1473,8 @@
             </input>
           </math>
         </region>
-        <region left="36" top="4230" width="517" height="275" color="#000000" fontSize="10">
-          <math optimize="2">
+        <region left="36" top="4230" width="493" height="275" color="#000000" fontSize="10">
+          <math optimize="2" decimalPlaces="4" significantDigitsMode="false">
             <description active="true" position="Top" lang="eng" width="316">
               <content>
             <p>Cálculo del vector global de deformaciones para FRAME</p>
@@ -1547,8 +1548,8 @@
             </input>
           </math>
         </region>
-        <region left="612" top="4230" width="642" height="209" color="#000000" fontSize="10">
-          <math optimize="2">
+        <region left="612" top="4230" width="616" height="209" color="#000000" fontSize="10">
+          <math optimize="2" decimalPlaces="4" significantDigitsMode="false">
             <description active="true" position="Top" lang="eng" width="610">
               <content>
             <p>Cálculo del vector global de deformaciones para FRAME usando bandSolver.  <br />**** WARNING ***<br />Sym2Band() Transform a Symmetric Matrix to a Banded one. Rquires Matlb C++ runtime (only works if SMath is configured as 32 bit app by CorFlags.exe. See: https://en.smath.com/forum/yaf_postsm75425_Matlab-Runtime-Library.aspx#post75425)</p>
@@ -1611,8 +1612,8 @@
             </input>
           </math>
         </region>
-        <region left="846" top="4635" width="534" height="356" color="#000000" fontSize="10">
-          <math>
+        <region left="846" top="4635" width="520" height="356" color="#000000" fontSize="10">
+          <math decimalPlaces="4" significantDigitsMode="false">
             <description active="true" position="Top" lang="eng" width="416">
               <content>
               <p>Halla los grados de libertad libres a partir de un <br />vector de restricciones y el número total de gdl de <br />la estructura</p>
@@ -1702,8 +1703,8 @@
             </input>
           </math>
         </region>
-        <region left="117" top="4653" width="540" height="356" color="#000000" fontSize="10">
-          <math>
+        <region left="117" top="4653" width="524" height="356" color="#000000" fontSize="10">
+          <math decimalPlaces="4" significantDigitsMode="false">
             <description active="true" position="Top" lang="eng" width="425">
               <content>
             <p>Halla los grados de libertad libres a partir de un <br />vector de restricciones y el número total de gdl de <br />la estructura</p>
@@ -1806,8 +1807,8 @@
             </content>
           </title>
         </area>
-        <region left="27" top="5337" width="737" height="335" color="#000000" fontSize="10">
-          <math>
+        <region left="27" top="5337" width="693" height="335" color="#000000" fontSize="10">
+          <math decimalPlaces="4" significantDigitsMode="false">
             <description active="true" position="Top" lang="eng">
               <content>
             <p>Cálculo de esfuerzos en todos los elementos TRUSS, BEAM, FRAME.<br />δ: vector global de deformaciones</p>
@@ -1950,8 +1951,8 @@
             </content>
           </title>
         </area>
-        <region left="1692" top="5913" width="519" height="370" color="#000000" fontSize="10">
-          <math ignoreUnits="true">
+        <region left="1692" top="5913" width="501" height="370" color="#000000" fontSize="10">
+          <math decimalPlaces="4" significantDigitsMode="false" ignoreUnits="true">
             <description active="true" position="Top" lang="eng" width="779">
               <content>
             <p>Crea una matriz para ser graficada.<br />nod: matriz de coordenadas nodales<br />con: matriz de conectividad <br />lblswitch: valor Booleano para indicar que se desea o no graficar las etiquetas de los nodos</p>
@@ -2039,8 +2040,8 @@
             </input>
           </math>
         </region>
-        <region left="36" top="5949" width="557" height="370" color="#000000" fontSize="10">
-          <math ignoreUnits="true">
+        <region left="36" top="5949" width="537" height="370" color="#000000" fontSize="10">
+          <math decimalPlaces="4" significantDigitsMode="false" ignoreUnits="true">
             <description active="true" position="Top" lang="eng" width="779">
               <content>
             <p>Crea una matriz para ser graficada.<br />nod: matriz de coordenadas nodales<br />con: matriz de conectividad <br />lblswitch: valor Booleano para indicar que se desea o no graficar las etiquetas de los nodos</p>
@@ -2129,8 +2130,8 @@
             </input>
           </math>
         </region>
-        <region left="855" top="5949" width="625" height="217" color="#000000" fontSize="10">
-          <math>
+        <region left="855" top="5949" width="605" height="217" color="#000000" fontSize="10">
+          <math decimalPlaces="4" significantDigitsMode="false">
             <description active="true" position="Top" lang="eng" width="619">
               <content>
               <p>Crea una matriz para ser graficada.<br />nod: matriz de coordenadas nodales<br />con: matriz de conectividad <br />lblswitch: valor Booleano para indicar que se desea o no<br />        graficar las etiquetas de los nodos</p>
@@ -2198,8 +2199,8 @@
             </input>
           </math>
         </region>
-        <region left="1179" top="6408" width="1498" height="814" color="#000000" fontSize="10">
-          <math optimize="2">
+        <region left="1179" top="6408" width="1464" height="814" color="#000000" fontSize="10">
+          <math optimize="2" decimalPlaces="4" significantDigitsMode="false">
             <description active="true" position="Top" lang="eng">
               <content>
               <p>crea etiquetas para cada nodo que se grafica con plotfem. Versión 11oct2022</p>
@@ -2541,7 +2542,7 @@
           </math>
         </region>
         <region left="45" top="6435" width="902" height="325" color="#000000" fontSize="10">
-          <math evaluate="false">
+          <math evaluate="false" decimalPlaces="4" significantDigitsMode="false">
             <description active="true" position="Top" lang="eng">
               <content>
             <p>crea etiquetas para cada nodo que se grafica con plotfem, para usar con TRUSS</p>
@@ -2690,8 +2691,8 @@
             </input>
           </math>
         </region>
-        <region left="36" top="6840" width="1191" height="390" color="#000000" fontSize="10">
-          <math>
+        <region left="36" top="6840" width="1163" height="390" color="#000000" fontSize="10">
+          <math decimalPlaces="4" significantDigitsMode="false">
             <description active="true" position="Top" lang="eng">
               <content>
             <p>crea etiquetas para cada nodo que se grafica con plotfem, para usar con FRAME</p>
@@ -2867,8 +2868,8 @@
             </input>
           </math>
         </region>
-        <region left="45" top="7281" width="982" height="41" color="#000000" fontSize="10">
-          <math>
+        <region left="45" top="7281" width="958" height="41" color="#000000" fontSize="10">
+          <math decimalPlaces="4" significantDigitsMode="false">
             <description active="true" position="Top" lang="eng">
               <content>
               <p>Modifica las coordenadas nodales según las deformaciones contenidas en el vector def.<br />La deformación es incrementada por el valor scale</p>
@@ -2912,8 +2913,8 @@
             </input>
           </math>
         </region>
-        <region left="45" top="7398" width="738" height="313" color="#000000" fontSize="10">
-          <math optimize="2">
+        <region left="45" top="7398" width="710" height="313" color="#000000" fontSize="10">
+          <math optimize="2" decimalPlaces="4" significantDigitsMode="false">
             <description active="true" position="Top" lang="spa">
               <content>
               <p>Modifica las coordenadas nodales de una viga o marco según las deformaciones contenidas en el vector def.<br />La deformación es incrementada por el valor sc</p>
@@ -3039,8 +3040,8 @@
             </input>
           </math>
         </region>
-        <region left="1233" top="7398" width="1192" height="545" color="#000000" fontSize="10">
-          <math optimize="2">
+        <region left="1233" top="7398" width="1150" height="545" color="#000000" fontSize="10">
+          <math optimize="2" decimalPlaces="4" significantDigitsMode="false">
             <description active="true" position="Top" lang="spa">
               <content>
               <p>Modifica las coordenadas nodales de una viga o marco según las deformaciones contenidas en el vector def.<br />La deformación es incrementada por el valor sc</p>
@@ -3294,8 +3295,8 @@
             </content>
           </title>
         </area>
-        <region left="9" top="8073" width="362" height="490" color="#000000" fontSize="10">
-          <math optimize="2">
+        <region left="9" top="8073" width="344" height="490" color="#000000" fontSize="10">
+          <math optimize="2" decimalPlaces="4" significantDigitsMode="false">
             <description active="true" position="Top" lang="eng">
               <content>
             <p>Gauss solver</p>
@@ -3458,8 +3459,8 @@
             </input>
           </math>
         </region>
-        <region left="468" top="8073" width="498" height="285" color="#000000" fontSize="10">
-          <math>
+        <region left="468" top="8073" width="486" height="285" color="#000000" fontSize="10">
+          <math decimalPlaces="4" significantDigitsMode="false">
             <description active="true" position="Top" lang="eng" width="666">
               <content>
               <p>Transform a Symmetric matrix to a Banded one.<br />**** WARNING ***<br />Sym2Band() Requires Matlb C++ runtime (only works if SMath is configured as 32 bit app by CorFlags.exe.<br />See: https://en.smath.com/forum/yaf_postsm75425_Matlab-Runtime-Library.aspx#post75425)</p>
@@ -3573,8 +3574,8 @@
             </input>
           </math>
         </region>
-        <region left="9" top="8586" width="408" height="592" color="#000000" fontSize="10">
-          <math>
+        <region left="9" top="8586" width="396" height="592" color="#000000" fontSize="10">
+          <math decimalPlaces="4" significantDigitsMode="false">
             <description active="true" position="Top" lang="eng">
               <content>
             <p>Bandwidth solver</p>
@@ -3805,8 +3806,8 @@
             </content>
           </title>
         </area>
-        <region left="54" top="9288" width="642" height="126" color="#000000" fontSize="10">
-          <math optimize="2">
+        <region left="54" top="9288" width="614" height="126" color="#000000" fontSize="10">
+          <math optimize="2" decimalPlaces="4" significantDigitsMode="false">
             <input>
               <e type="operand">nod</e>
               <e type="operand">con</e>
@@ -3859,8 +3860,8 @@
             </input>
           </math>
         </region>
-        <region left="54" top="9477" width="617" height="116" color="#000000" fontSize="10">
-          <math>
+        <region left="54" top="9477" width="585" height="116" color="#000000" fontSize="10">
+          <math decimalPlaces="4" significantDigitsMode="false">
             <input>
               <e type="operand">nod</e>
               <e type="operand">con</e>
@@ -3911,8 +3912,8 @@
             </input>
           </math>
         </region>
-        <region left="54" top="9684" width="631" height="120" color="#000000" fontSize="10">
-          <math optimize="2">
+        <region left="54" top="9684" width="599" height="120" color="#000000" fontSize="10">
+          <math optimize="2" decimalPlaces="4" significantDigitsMode="false">
             <input>
               <e type="operand">nod</e>
               <e type="operand">con</e>
