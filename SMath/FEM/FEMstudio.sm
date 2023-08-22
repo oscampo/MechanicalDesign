@@ -4,7 +4,7 @@
   <settings ppi="96">
     <identity>
       <id>36993174-e9f4-4070-9d2c-02e44206d43e</id>
-      <revision>45</revision>
+      <revision>46</revision>
     </identity>
     <metadata lang="spa">
       <author>Oscar Campo</author>
@@ -35,7 +35,7 @@
   </settings>
   <regions type="content">
     <region top="9" color="#000000">
-      <area collapsed="false">
+      <area collapsed="true">
         <title lang="spa">
           <content>
             <p>FEM</p>
@@ -4469,7 +4469,7 @@
         </region>
       </region>
       <region top="10827" color="#000000">
-        <area collapsed="false">
+        <area collapsed="true">
           <title lang="spa">
             <content>
               <p>General Workflow</p>

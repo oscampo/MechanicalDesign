@@ -4,7 +4,7 @@
   <settings ppi="96">
     <identity>
       <id>a5d61643-8295-41fe-b433-f3693e80813d</id>
-      <revision>17</revision>
+      <revision>18</revision>
     </identity>
     <metadata lang="spa">
       <author>Oscar Campo</author>
@@ -51,7 +51,7 @@
       </math>
     </region>
     <region top="63" color="#000000">
-      <area collapsed="false">
+      <area collapsed="true">
         <title lang="spa">
           <content>
             <p>FEM</p>
@@ -59,7 +59,7 @@
         </title>
       </area>
       <region top="90" color="#000000">
-        <area collapsed="false">
+        <area collapsed="true">
           <title lang="spa">
             <content>
               <p>_Documentation</p>
@@ -5052,23 +5052,26 @@
         </result>
       </math>
     </region>
-    <region left="45" top="12852" width="408" height="263" color="#000000" bgColor="#ffffff" fontSize="10">
+    <region left="36" top="12843" width="408" height="263" color="#000000" bgColor="#ffffff" fontSize="10">
       <xyplot width="398" height="255" points="100" name="XYPlot">
         <chartstyle backcolor="White" bordercolor="Black" />
         <propertiessource index="1" sourcetype="PropertyGrid" />
         <grid gridcolor="LightGray" gridpattern="Dash" gridthickness="1" isxgrid="true" isygrid="true" isy2grid="false" />
-        <xaxes xmin="-42.03902" xmax="655.5065" xtick="100" visible="True" decimalplaces="3" numberformat="General" />
-        <yaxes ymin="-0.6057258" ymax="0.2067321" ytick="0.1" visible="True" decimalplaces="3" numberformat="General" />
+        <xaxes xmin="-0.1098096" xmax="0.7537093" xtick="0.2" visible="True" decimalplaces="3" numberformat="General" />
+        <yaxes ymin="-0.6192864" ymax="0.5007656" ytick="0.4" visible="True" decimalplaces="3" numberformat="General" />
         <y2axes isy2axis="false" y2min="-1" y2max="1" y2tick="0.5" visible="True" decimalplaces="3" numberformat="General" />
         <title2d title="" titlefont="Arial, 10pt" titlefontcolor="Black" />
         <xylabel labelfont="Arial, 10pt" labelfontcolor="Black" tickfont="Arial, 8pt" tickfontcolor="Black" xlabel="x" ylabel="y" y2label="y2" />
         <legend isbordervisible="true" islegendvisible="false" legendbackcolor="White" legendbordercolor="Black" legendfont="Arial, 8pt" legendposition="NorthEast" textcolor="Black" />
         <traces>
-          <trace seriesname="" isy2data="false" isvisible="true" plotmethod="Lines" lineantialias="true" linecolor="Blue" linethickness="1" linepattern="Solid" symbolantialias="true" symbolsize="8" symboltype="None" symbolborderthickness="1" symbolbordercolor="Black" symbolfillcolor="White" />
+          <trace seriesname="" isy2data="false" isvisible="true" plotmethod="Shapes" lineantialias="true" linecolor="Blue" linethickness="1" linepattern="Solid" symbolantialias="true" symbolsize="8" symboltype="None" symbolborderthickness="1" symbolbordercolor="Black" symbolfillcolor="White" />
+          <trace seriesname="" isy2data="false" isvisible="true" plotmethod="Labels" lineantialias="true" linecolor="Red" linethickness="1" linepattern="Solid" symbolantialias="true" symbolsize="8" symboltype="None" symbolborderthickness="1" symbolbordercolor="Black" symbolfillcolor="White" />
+          <trace seriesname="" isy2data="false" isvisible="true" plotmethod="Lines" lineantialias="true" linecolor="Green" linethickness="1" linepattern="Solid" symbolantialias="true" symbolsize="8" symboltype="None" symbolborderthickness="1" symbolbordercolor="Black" symbolfillcolor="White" />
         </traces>
         <input>
+          <e type="operand">sist</e>
           <e type="operand">x</e>
-          <e type="operand" style="unit">mm</e>
+          <e type="operand" style="unit">m</e>
           <e type="operator" args="2">*</e>
           <e type="operand">nod</e>
           <e type="operand">con</e>
@@ -5077,6 +5080,9 @@
           <e type="function" args="2">el</e>
           <e type="operand">100</e>
           <e type="function" args="5">def.beam</e>
+          <e type="operand">2</e>
+          <e type="operand">1</e>
+          <e type="function" args="4">sys</e>
         </input>
       </xyplot>
     </region>
