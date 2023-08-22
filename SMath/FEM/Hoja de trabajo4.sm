@@ -1,0 +1,179 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Studio Desktop" version="1.0.8348.30405"?>
+<worksheet xmlns="http://smath.info/schemas/worksheet/1.0">
+  <settings ppi="96">
+    <identity>
+      <id>a5d61643-8295-41fe-b433-f3693e80813d</id>
+      <revision>2</revision>
+    </identity>
+    <metadata lang="spa">
+      <author>Oscar Campo</author>
+    </metadata>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <trailingZeros>false</trailingZeros>
+      <significantDigitsMode>false</significantDigitsMode>
+      <roundingMode>0</roundingMode>
+      <approximateEqualAccuracy>0</approximateEqualAccuracy>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="false" viewMode="2" printGrid="false" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true">
+      <paper id="1" orientation="Portrait" width="850" height="1100" />
+      <margins left="39" right="39" top="49" bottom="49" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Studio Desktop" version="1.0.8348.30405" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="MathRegion" version="1.11.8348.30405" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="Custom Functions" version="1.1.8051.30522" guid="18dadffd-79a3-4cf9-aee1-d66deb0ea720" />
+      <assembly name="Mathcad Toolbox" version="0.4.8520.34563" guid="ddc09821-49f1-4c21-a829-6499de0a8f06" />
+    </dependencies>
+  </settings>
+  <regions type="content">
+    <region left="9" top="18" width="460" height="30" color="#000000" fontSize="10">
+      <math error="9">
+        <input>
+          <e type="operand" style="string"></e>
+          <e type="function" args="1">CurrentDirectory</e>
+          <e type="operand" style="string">FEMstudio.sm</e>
+          <e type="function" args="2">strjoin</e>
+          <e type="function" args="1">include</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">#</e>
+        </result>
+      </math>
+    </region>
+    <region left="198" top="63" width="489" height="26" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand" style="string"></e>
+          <e type="function" args="1">CurrentDirectory</e>
+        </input>
+        <result action="numeric">
+          <e type="operand" style="string">C:\Program Files (x86)\SMath Studio\</e>
+        </result>
+      </math>
+    </region>
+    <region left="18" top="117" width="143" height="81" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">nod</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">300</e>
+          <e type="operand">0</e>
+          <e type="operand">600</e>
+          <e type="operand">0</e>
+          <e type="operand">300</e>
+          <e type="operand">200</e>
+          <e type="operand">4</e>
+          <e type="operand">2</e>
+          <e type="function" args="10">mat</e>
+          <e type="operand" style="unit">mm</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="180" top="117" width="91" height="63" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">con</e>
+          <e type="operand">1</e>
+          <e type="operand">2</e>
+          <e type="operand">2</e>
+          <e type="operand">3</e>
+          <e type="operand">2</e>
+          <e type="operand">4</e>
+          <e type="operand">3</e>
+          <e type="operand">2</e>
+          <e type="function" args="8">mat</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="315" top="117" width="105" height="63" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">E</e>
+          <e type="operand">207</e>
+          <e type="operand">207</e>
+          <e type="operand">69</e>
+          <e type="operand">3</e>
+          <e type="operand">1</e>
+          <e type="function" args="5">mat</e>
+          <e type="operand" style="unit">GPa</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="450" top="117" width="135" height="72" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">A</e>
+          <e type="operand">40</e>
+          <e type="operand" style="unit">mm</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">40</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">mm</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">40</e>
+          <e type="operand" style="unit">mm</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">40</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">mm</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">78.54</e>
+          <e type="operand" style="unit">mm</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">3</e>
+          <e type="operand">1</e>
+          <e type="function" args="5">mat</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="612" top="117" width="109" height="26" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">F</e>
+          <e type="operand">12</e>
+          <e type="function" args="1">Zeros</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="612" top="162" width="98" height="33" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">F</e>
+          <e type="operand">8</e>
+          <e type="function" args="2">el</e>
+          <e type="operand">10</e>
+          <e type="operand" style="unit">kN</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="27" top="270" width="96" height="24" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">sist</e>
+          <e type="operand">plot</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+  </regions>
+</worksheet>
