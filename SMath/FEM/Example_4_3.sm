@@ -4,7 +4,7 @@
   <settings ppi="96">
     <identity>
       <id>a5d61643-8295-41fe-b433-f3693e80813d</id>
-      <revision>18</revision>
+      <revision>23</revision>
     </identity>
     <metadata lang="spa">
       <author>Oscar Campo</author>
@@ -33,6 +33,8 @@
       <assembly name="TextRegion" version="1.11.8348.30405" guid="485d28c5-349a-48b6-93be-12a35a1c1e39" />
       <assembly name="AreaRegion" version="1.11.8348.30405" guid="4974b228-4974-44cf-8274-bf2936b4a766" />
       <assembly name="X-Y Plot Region (JXCharts)" version="0.2.8209.38826" guid="c12231ec-4873-43c1-a7d0-a167ebd17066" />
+      <assembly name="Mathcad Toolbox" version="0.4.8520.34563" guid="ddc09821-49f1-4c21-a829-6499de0a8f06" />
+      <assembly name="include" version="0.2.8085.37792" guid="dfdcd1f7-5005-45f1-8bf8-016fb072ccf3" />
     </dependencies>
   </settings>
   <regions type="content">
@@ -864,15 +866,10 @@
               <e type="operand">L</e>
               <e type="operator" args="2">/</e>
               <e type="operand">1</e>
-              <e type="operand">1</e>
-              <e type="operator" args="1">-</e>
-              <e type="operand">0</e>
-              <e type="operand">0</e>
               <e type="operand">0</e>
               <e type="operand">0</e>
               <e type="operand">1</e>
               <e type="operator" args="1">-</e>
-              <e type="operand">1</e>
               <e type="operand">0</e>
               <e type="operand">0</e>
               <e type="operand">0</e>
@@ -883,19 +880,22 @@
               <e type="operand">0</e>
               <e type="operand">0</e>
               <e type="operand">0</e>
-              <e type="operand">0</e>
-              <e type="operand">0</e>
-              <e type="operand">0</e>
-              <e type="operand">1</e>
-              <e type="operand">1</e>
-              <e type="operator" args="1">-</e>
               <e type="operand">0</e>
               <e type="operand">0</e>
               <e type="operand">0</e>
               <e type="operand">0</e>
               <e type="operand">1</e>
               <e type="operator" args="1">-</e>
+              <e type="operand">0</e>
+              <e type="operand">0</e>
               <e type="operand">1</e>
+              <e type="operand">0</e>
+              <e type="operand">0</e>
+              <e type="operand">0</e>
+              <e type="operand">0</e>
+              <e type="operand">0</e>
+              <e type="operand">0</e>
+              <e type="operand">0</e>
               <e type="operand">0</e>
               <e type="operand">0</e>
               <e type="operand">0</e>
@@ -3274,8 +3274,8 @@
             </input>
           </math>
         </region>
-        <region left="63" top="8082" width="902" height="325" color="#000000" fontSize="10">
-          <math evaluate="false">
+        <region left="63" top="8082" width="924" height="325" color="#000000" fontSize="10">
+          <math>
             <description active="true" position="Top" lang="eng">
               <content>
             <p>crea etiquetas para cada nodo que se grafica con plotfem, para usar con TRUSS</p>
@@ -5032,7 +5032,7 @@
     <region left="117" top="12708" width="363" height="35" color="#000000" fontSize="10">
       <math>
         <input>
-          <e type="operand">300</e>
+          <e type="operand">600</e>
           <e type="operand" style="unit">mm</e>
           <e type="operator" args="2">*</e>
           <e type="operand">nod</e>
@@ -5047,7 +5047,7 @@
           <e type="operand" style="unit">mm</e>
         </contract>
         <result action="numeric">
-          <e type="operand">0.3691</e>
+          <e type="operand">4.8142</e>
           <e type="operator" args="1">-</e>
         </result>
       </math>
