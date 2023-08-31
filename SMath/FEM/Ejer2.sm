@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?application progid="SMath Studio Desktop" version="1.0.8348.30405"?>
+<worksheet xmlns="http://smath.info/schemas/worksheet/1.0">
+  <settings ppi="96">
+    <identity>
+      <id>605b0986-2818-4e81-af58-6985f0c15c5e</id>
+      <revision>22</revision>
+    </identity>
+    <metadata lang="spa">
+      <author>Oscar Campo</author>
+    </metadata>
+    <calculation>
+      <precision>4</precision>
+      <exponentialThreshold>5</exponentialThreshold>
+      <trailingZeros>false</trailingZeros>
+      <significantDigitsMode>false</significantDigitsMode>
+      <roundingMode>0</roundingMode>
+      <approximateEqualAccuracy>0</approximateEqualAccuracy>
+      <fractions>decimal</fractions>
+    </calculation>
+    <pageModel active="true" viewMode="0" printGrid="false" printAreas="true" simpleEqualsOnly="false" printBackgroundImages="true">
+      <paper id="1" orientation="Portrait" width="850" height="1100" />
+      <margins left="39" right="39" top="49" bottom="49" />
+      <header alignment="Center" color="#a9a9a9">&amp;[DATE] &amp;[TIME] - &amp;[FILENAME]</header>
+      <footer alignment="Center" color="#a9a9a9">&amp;[PAGENUM] / &amp;[COUNT]</footer>
+      <backgrounds />
+    </pageModel>
+    <dependencies>
+      <assembly name="SMath Studio Desktop" version="1.0.8348.30405" guid="a37cba83-b69c-4c71-9992-55ff666763bd" />
+      <assembly name="MathRegion" version="1.11.8348.30405" guid="02f1ab51-215b-466e-a74d-5d8b1cf85e8d" />
+      <assembly name="Custom Functions" version="1.1.8051.30522" guid="18dadffd-79a3-4cf9-aee1-d66deb0ea720" />
+      <assembly name="SpecialFunctions" version="1.12.8348.30405" guid="2814e667-4e12-48b1-8d51-194e480eabc5" />
+      <assembly name="X-Y Plot Region (JXCharts)" version="0.2.8209.38826" guid="c12231ec-4873-43c1-a7d0-a167ebd17066" />
+      <assembly name="Mathcad Toolbox" version="0.4.8520.34563" guid="ddc09821-49f1-4c21-a829-6499de0a8f06" />
+      <assembly name="include" version="0.2.8085.37792" guid="dfdcd1f7-5005-45f1-8bf8-016fb072ccf3" />
+    </dependencies>
+  </settings>
+  <regions type="content">
+    <region left="0" top="0" width="468" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand" style="string"></e>
+          <e type="function" args="1">CurrentDirectory</e>
+          <e type="operand" style="string">Total FEM.sm</e>
+          <e type="function" args="2">strjoin</e>
+          <e type="function" args="1">include</e>
+        </input>
+        <result action="numeric">
+          <e type="operand">41</e>
+        </result>
+      </math>
+    </region>
+    <region left="54" top="90" width="127" height="81" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">nod</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">40</e>
+          <e type="operand">0</e>
+          <e type="operand">40</e>
+          <e type="operand">30</e>
+          <e type="operand">0</e>
+          <e type="operand">30</e>
+          <e type="operand">4</e>
+          <e type="operand">2</e>
+          <e type="function" args="10">mat</e>
+          <e type="operand" style="unit">in</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="243" top="108" width="91" height="81" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">con</e>
+          <e type="operand">1</e>
+          <e type="operand">2</e>
+          <e type="operand">2</e>
+          <e type="operand">3</e>
+          <e type="operand">3</e>
+          <e type="operand">1</e>
+          <e type="operand">3</e>
+          <e type="operand">4</e>
+          <e type="operand">4</e>
+          <e type="operand">2</e>
+          <e type="function" args="10">mat</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="414" top="135" width="124" height="34" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">A</e>
+          <e type="operand">4</e>
+          <e type="function" args="1">Ones</e>
+          <e type="operand" style="unit">in</e>
+          <e type="operand">2</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="549" top="135" width="197" height="34" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">E</e>
+          <e type="operand">4</e>
+          <e type="function" args="1">Ones</e>
+          <e type="operand">29.5</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">10</e>
+          <e type="operand">6</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">psi</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="54" top="216" width="319" height="30" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">barras</e>
+          <e type="operand">nod</e>
+          <e type="operand">con</e>
+          <e type="operand" style="string">blue</e>
+          <e type="operand" style="string">n</e>
+          <e type="function" args="4">plot.truss</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+      <metadata>
+        <value name="Knovel Equations Solver: Equation">1</value>
+      </metadata>
+    </region>
+    <region left="396" top="279" width="77" height="100" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">res</e>
+          <e type="operand">1</e>
+          <e type="operand">2</e>
+          <e type="operand">4</e>
+          <e type="operand">7</e>
+          <e type="operand">8</e>
+          <e type="operand">5</e>
+          <e type="operand">1</e>
+          <e type="function" args="7">mat</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="513" top="279" width="101" height="26" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">F</e>
+          <e type="operand">8</e>
+          <e type="function" args="1">Zeros</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="36" top="297" width="310" height="236" color="#000000" bgColor="#ffffff" fontSize="10">
+      <xyplot width="300" height="228" points="100" name="XYPlot">
+        <chartstyle backcolor="White" bordercolor="Black" />
+        <propertiessource index="1" sourcetype="PropertyGrid" />
+        <grid gridcolor="LightGray" gridpattern="Dash" gridthickness="1" isxgrid="true" isygrid="true" isy2grid="false" />
+        <xaxes xmin="-0.4127896" xmax="1.639164" xtick="1" visible="True" decimalplaces="3" numberformat="General" />
+        <yaxes ymin="-0.4586701" ymax="1.011834" ytick="0.5" visible="True" decimalplaces="3" numberformat="General" />
+        <y2axes isy2axis="false" y2min="-1" y2max="1" y2tick="0.5" visible="True" decimalplaces="3" numberformat="General" />
+        <title2d title="" titlefont="Arial, 10pt" titlefontcolor="Black" />
+        <xylabel labelfont="Arial, 10pt" labelfontcolor="Black" tickfont="Arial, 8pt" tickfontcolor="Black" xlabel="x" ylabel="y" y2label="y2" />
+        <legend isbordervisible="true" islegendvisible="false" legendbackcolor="White" legendbordercolor="Black" legendfont="Arial, 8pt" legendposition="NorthEast" textcolor="Black" />
+        <traces>
+          <trace seriesname="" isy2data="false" isvisible="true" plotmethod="Shapes" lineantialias="true" linecolor="Blue" linethickness="1" linepattern="Solid" symbolantialias="true" symbolsize="8" symboltype="None" symbolborderthickness="1" symbolbordercolor="Black" symbolfillcolor="White" />
+          <trace seriesname="" isy2data="false" isvisible="true" plotmethod="Labels" lineantialias="true" linecolor="Red" linethickness="1" linepattern="Solid" symbolantialias="true" symbolsize="8" symboltype="None" symbolborderthickness="1" symbolbordercolor="Black" symbolfillcolor="White" />
+        </traces>
+        <input>
+          <e type="operand">barras</e>
+        </input>
+      </xyplot>
+    </region>
+    <region left="513" top="306" width="93" height="33" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">F</e>
+          <e type="operand">3</e>
+          <e type="function" args="2">el</e>
+          <e type="operand">20</e>
+          <e type="operand" style="unit">kip</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="513" top="342" width="106" height="33" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">F</e>
+          <e type="operand">6</e>
+          <e type="function" args="2">el</e>
+          <e type="operand">25</e>
+          <e type="operand" style="unit">kip</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="36" top="630" width="262" height="31" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">K</e>
+          <e type="operand">nod</e>
+          <e type="operand">con</e>
+          <e type="operand">A</e>
+          <e type="operand">E</e>
+          <e type="operand">1</e>
+          <e type="operand">8</e>
+          <e type="function" args="2">range</e>
+          <e type="function" args="5">K.truss</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+      <metadata>
+        <value name="Knovel Equations Solver: Equation">2</value>
+      </metadata>
+    </region>
+    <region left="18" top="684" width="303" height="26" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">sol</e>
+          <e type="operand">nod</e>
+          <e type="operand">con</e>
+          <e type="operand">res</e>
+          <e type="operand">F</e>
+          <e type="operand">A</e>
+          <e type="operand">E</e>
+          <e type="function" args="6">femtruss</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="234" top="774" width="206" height="181" color="#000000" fontSize="10">
+      <math exponentialThreshold="0">
+        <input>
+          <e type="operand">sol</e>
+          <e type="operand">2</e>
+          <e type="function" args="2">el</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">in</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">2.7119</e>
+          <e type="operand">10</e>
+          <e type="operand">2</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">0</e>
+          <e type="operand">5.6497</e>
+          <e type="operand">10</e>
+          <e type="operand">3</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">2.2246</e>
+          <e type="operand">10</e>
+          <e type="operand">2</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">8</e>
+          <e type="operand">1</e>
+          <e type="function" args="10">mat</e>
+        </result>
+      </math>
+    </region>
+    <region left="18" top="783" width="191" height="81" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">sol</e>
+          <e type="operand">1</e>
+          <e type="function" args="2">el</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">psi</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">20000</e>
+          <e type="operand">21875</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">5208.3333</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">4166.6667</e>
+          <e type="operand">4</e>
+          <e type="operand">1</e>
+          <e type="function" args="6">mat</e>
+        </result>
+      </math>
+    </region>
+    <region left="9" top="981" width="272" height="163" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">Reac</e>
+          <e type="operand">K</e>
+          <e type="operand">sol</e>
+          <e type="operand">2</e>
+          <e type="function" args="2">el</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="2">:</e>
+        </input>
+        <contract>
+          <e type="operand" style="unit">lbf</e>
+        </contract>
+        <result action="numeric">
+          <e type="operand">15833.3333</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">3125</e>
+          <e type="operand">20000</e>
+          <e type="operand">21875</e>
+          <e type="operand">1.4637</e>
+          <e type="operand">10</e>
+          <e type="operand">8</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">25000</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">4166.6667</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">0</e>
+          <e type="operand">8</e>
+          <e type="operand">1</e>
+          <e type="function" args="10">mat</e>
+        </result>
+      </math>
+    </region>
+    <region left="36" top="1233" width="518" height="37" color="#000000" fontSize="10">
+      <math>
+        <input>
+          <e type="operand">deform</e>
+          <e type="operand">nod</e>
+          <e type="operand">sol</e>
+          <e type="operand">2</e>
+          <e type="function" args="2">el</e>
+          <e type="operand">200</e>
+          <e type="function" args="3">def.truss</e>
+          <e type="operand">con</e>
+          <e type="operand" style="string">#600000FF</e>
+          <e type="operand" style="string">n</e>
+          <e type="function" args="4">plot.truss</e>
+          <e type="operator" args="2">:</e>
+        </input>
+      </math>
+    </region>
+    <region left="27" top="1350" width="310" height="236" color="#000000" fontSize="10">
+      <xyplot width="300" height="228" points="100" name="XYPlot">
+        <chartstyle backcolor="White" bordercolor="Black" />
+        <propertiessource index="1" sourcetype="PropertyGrid" />
+        <grid gridcolor="LightGray" gridpattern="Dash" gridthickness="1" isxgrid="true" isygrid="true" isy2grid="false" />
+        <xaxes xmin="-0.4127896" xmax="1.639164" xtick="1" visible="True" decimalplaces="3" numberformat="General" />
+        <yaxes ymin="-0.4586701" ymax="1.011834" ytick="0.5" visible="True" decimalplaces="3" numberformat="General" />
+        <y2axes isy2axis="false" y2min="-1" y2max="1" y2tick="0.5" visible="True" decimalplaces="3" numberformat="General" />
+        <title2d title="" titlefont="Arial, 10pt" titlefontcolor="Black" />
+        <xylabel labelfont="Arial, 10pt" labelfontcolor="Black" tickfont="Arial, 8pt" tickfontcolor="Black" xlabel="x" ylabel="y" y2label="y2" />
+        <legend isbordervisible="true" islegendvisible="false" legendbackcolor="White" legendbordercolor="Black" legendfont="Arial, 8pt" legendposition="NorthEast" textcolor="Black" />
+        <traces>
+          <trace seriesname="" isy2data="false" isvisible="true" plotmethod="Shapes" lineantialias="true" linecolor="Blue" linethickness="1" linepattern="Solid" symbolantialias="true" symbolsize="8" symboltype="None" symbolborderthickness="1" symbolbordercolor="Black" symbolfillcolor="White" />
+          <trace seriesname="" isy2data="false" isvisible="true" plotmethod="Labels" lineantialias="true" linecolor="Red" linethickness="1" linepattern="Solid" symbolantialias="true" symbolsize="8" symboltype="None" symbolborderthickness="1" symbolbordercolor="Black" symbolfillcolor="White" />
+          <trace seriesname="" isy2data="false" isvisible="true" plotmethod="Shapes" lineantialias="true" linecolor="Green" linethickness="1" linepattern="Solid" symbolantialias="true" symbolsize="8" symboltype="None" symbolborderthickness="1" symbolbordercolor="Black" symbolfillcolor="White" />
+          <trace seriesname="" isy2data="false" isvisible="true" plotmethod="Labels" lineantialias="true" linecolor="Fuchsia" linethickness="1" linepattern="Solid" symbolantialias="true" symbolsize="8" symboltype="None" symbolborderthickness="1" symbolbordercolor="Black" symbolfillcolor="White" />
+        </traces>
+        <input>
+          <e type="operand">barras</e>
+          <e type="operand">deform</e>
+          <e type="operand">2</e>
+          <e type="operand">1</e>
+          <e type="function" args="4">sys</e>
+        </input>
+      </xyplot>
+    </region>
+  </regions>
+</worksheet>
