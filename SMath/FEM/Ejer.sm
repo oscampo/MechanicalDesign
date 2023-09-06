@@ -4,7 +4,7 @@
   <settings ppi="96">
     <identity>
       <id>605b0986-2818-4e81-af58-6985f0c15c5e</id>
-      <revision>16</revision>
+      <revision>17</revision>
     </identity>
     <metadata lang="spa">
       <author>Oscar Campo</author>
@@ -37,17 +37,17 @@
     </dependencies>
   </settings>
   <regions type="content">
-    <region left="0" top="0" width="468" height="30" color="#000000" fontSize="10">
+    <region left="0" top="0" width="480" height="30" color="#000000" fontSize="10">
       <math>
         <input>
           <e type="operand" style="string"></e>
           <e type="function" args="1">CurrentDirectory</e>
-          <e type="operand" style="string">Total FEM.sm</e>
+          <e type="operand" style="string">FEMstudio.sm</e>
           <e type="function" args="2">strjoin</e>
           <e type="function" args="1">include</e>
         </input>
         <result action="numeric">
-          <e type="operand">41</e>
+          <e type="operand">46</e>
         </result>
       </math>
     </region>
@@ -367,8 +367,8 @@
         </result>
       </math>
     </region>
-    <region left="36" top="2547" width="411" height="262" color="#000000" bgColor="#ffffff" fontSize="10">
-      <xyplot error="25" width="401" height="254" points="100" name="XYPlot">
+    <region left="36" top="2547" width="411" height="262" color="#000000" fontSize="10">
+      <xyplot width="401" height="254" points="100" name="XYPlot">
         <chartstyle backcolor="White" bordercolor="Black" />
         <propertiessource index="1" sourcetype="PropertyGrid" />
         <grid gridcolor="LightGray" gridpattern="Dash" gridthickness="1" isxgrid="true" isygrid="true" isy2grid="false" />

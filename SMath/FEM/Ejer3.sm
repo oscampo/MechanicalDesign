@@ -4,16 +4,16 @@
   <settings ppi="96">
     <identity>
       <id>605b0986-2818-4e81-af58-6985f0c15c5e</id>
-      <revision>30</revision>
+      <revision>31</revision>
     </identity>
     <metadata lang="spa">
       <author>Oscar Campo</author>
     </metadata>
     <calculation>
-      <precision>3</precision>
+      <precision>4</precision>
       <exponentialThreshold>5</exponentialThreshold>
       <trailingZeros>false</trailingZeros>
-      <significantDigitsMode>true</significantDigitsMode>
+      <significantDigitsMode>false</significantDigitsMode>
       <roundingMode>0</roundingMode>
       <approximateEqualAccuracy>0</approximateEqualAccuracy>
       <fractions>decimal</fractions>
@@ -36,22 +36,22 @@
     </dependencies>
   </settings>
   <regions type="content">
-    <region left="0" top="0" width="468" height="30" color="#000000" fontSize="10">
-      <math decimalPlaces="4" significantDigitsMode="false">
+    <region left="0" top="0" width="480" height="30" color="#000000" fontSize="10">
+      <math>
         <input>
           <e type="operand" style="string"></e>
           <e type="function" args="1">CurrentDirectory</e>
-          <e type="operand" style="string">Total FEM.sm</e>
+          <e type="operand" style="string">FEMstudio.sm</e>
           <e type="function" args="2">strjoin</e>
           <e type="function" args="1">include</e>
         </input>
         <result action="numeric">
-          <e type="operand">41</e>
+          <e type="operand">46</e>
         </result>
       </math>
     </region>
     <region left="252" top="90" width="83" height="136" color="#000000" fontSize="10">
-      <math decimalPlaces="4" significantDigitsMode="false">
+      <math>
         <description active="true" position="Top" lang="eng">
           <content>
             <p>Member CONNECTIVITY</p>
@@ -81,7 +81,7 @@
       </math>
     </region>
     <region left="18" top="99" width="176" height="154" color="#000000" fontSize="10">
-      <math>
+      <math decimalPlaces="3" significantDigitsMode="true">
         <input>
           <e type="operand">Points</e>
           <e type="operand">3.09</e>
@@ -111,7 +111,7 @@
       </math>
     </region>
     <region left="414" top="117" width="149" height="118" color="#000000" fontSize="10">
-      <math>
+      <math decimalPlaces="3" significantDigitsMode="true">
         <input>
           <e type="operand">Restrictions</e>
           <e type="operand">1</e>
@@ -128,7 +128,7 @@
       </math>
     </region>
     <region left="621" top="144" width="117" height="26" color="#000000" fontSize="10">
-      <math>
+      <math decimalPlaces="3" significantDigitsMode="true">
         <input>
           <e type="operand">Area</e>
           <e type="operand">7</e>
@@ -138,7 +138,7 @@
       </math>
     </region>
     <region left="621" top="189" width="161" height="34" color="#000000" fontSize="10">
-      <math>
+      <math decimalPlaces="3" significantDigitsMode="true">
         <input>
           <e type="operand">E</e>
           <e type="operand">7</e>
@@ -154,7 +154,7 @@
       </math>
     </region>
     <region left="630" top="234" width="93" height="26" color="#000000" fontSize="10">
-      <math>
+      <math decimalPlaces="3" significantDigitsMode="true">
         <input>
           <e type="operand">I</e>
           <e type="operand">7</e>
@@ -164,7 +164,7 @@
       </math>
     </region>
     <region left="576" top="306" width="119" height="31" color="#000000" fontSize="10">
-      <math decimalPlaces="4" significantDigitsMode="false">
+      <math>
         <input>
           <e type="operand">θ.F</e>
           <e type="operand">1</e>
@@ -177,7 +177,7 @@
       </math>
     </region>
     <region left="36" top="324" width="399" height="30" color="#000000" fontSize="10">
-      <math>
+      <math decimalPlaces="3" significantDigitsMode="true">
         <input>
           <e type="operand">structure</e>
           <e type="operand">Points</e>
@@ -190,7 +190,7 @@
       </math>
     </region>
     <region left="720" top="342" width="62" height="24" color="#000000" fontSize="10">
-      <math decimalPlaces="4" significantDigitsMode="false">
+      <math>
         <input>
           <e type="operand">MD</e>
           <e type="operand">10</e>
@@ -199,7 +199,7 @@
       </math>
     </region>
     <region left="585" top="351" width="62" height="24" color="#000000" fontSize="10">
-      <math decimalPlaces="4" significantDigitsMode="false">
+      <math>
         <input>
           <e type="operand">F</e>
           <e type="operand">100</e>
@@ -228,7 +228,7 @@
       </xyplot>
     </region>
     <region left="567" top="405" width="320" height="99" color="#000000" fontSize="10">
-      <math>
+      <math decimalPlaces="3" significantDigitsMode="true">
         <input>
           <e type="operand">Forces</e>
           <e type="operand">21</e>
@@ -255,7 +255,7 @@
       </math>
     </region>
     <region left="54" top="711" width="46" height="24" color="#000000" fontSize="10">
-      <math>
+      <math decimalPlaces="3" significantDigitsMode="true">
         <input>
           <e type="operand">j</e>
           <e type="operand">1</e>
@@ -264,7 +264,7 @@
       </math>
     </region>
     <region left="45" top="738" width="509" height="74" color="#000000" fontSize="10">
-      <math>
+      <math decimalPlaces="3" significantDigitsMode="true">
         <input>
           <e type="operand">k</e>
           <e type="operand">52</e>
@@ -298,7 +298,7 @@
       </math>
     </region>
     <region left="45" top="927" width="200" height="431" color="#000000" fontSize="10">
-      <math>
+      <math decimalPlaces="3" significantDigitsMode="true">
         <input>
           <e type="operand">sol</e>
           <e type="operand">1</e>
@@ -388,7 +388,7 @@
       </math>
     </region>
     <region left="342" top="981" width="169" height="46" color="#000000" fontSize="10">
-      <math>
+      <math decimalPlaces="3" significantDigitsMode="true">
         <input>
           <e type="operand">sol</e>
           <e type="operand">1</e>

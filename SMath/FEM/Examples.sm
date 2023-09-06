@@ -4,7 +4,7 @@
   <settings ppi="96">
     <identity>
       <id>36993174-e9f4-4070-9d2c-02e44206d43e</id>
-      <revision>21</revision>
+      <revision>22</revision>
     </identity>
     <metadata lang="spa">
       <author>Oscar Campo</author>
@@ -44,12 +44,12 @@
         <input>
           <e type="operand" style="string"></e>
           <e type="function" args="1">CurrentDirectory</e>
-          <e type="operand" style="string">Total FEM.sm</e>
+          <e type="operand" style="string">FEMstudio.sm</e>
           <e type="function" args="2">strjoin</e>
           <e type="function" args="1">include</e>
         </input>
         <result action="numeric">
-          <e type="operand">41</e>
+          <e type="operand">46</e>
         </result>
       </math>
     </region>
@@ -354,7 +354,7 @@
           </input>
         </math>
       </region>
-      <region left="63" top="1629" width="292" height="466" border="true" color="#000000" bgColor="#ffff80" fontSize="10">
+      <region left="63" top="1629" width="262" height="33" border="true" color="#000000" bgColor="#ffff80" fontSize="10">
         <math>
           <input>
             <e type="operand">F.FB</e>
@@ -362,124 +362,28 @@
             <e type="operand">11</e>
             <e type="function" args="2">el</e>
             <e type="operand">A</e>
+            <e type="operand">1</e>
+            <e type="function" args="2">el</e>
             <e type="operator" args="2">*</e>
             <e type="operator" args="2">:</e>
           </input>
+          <contract>
+            <e type="operand" style="unit">N</e>
+          </contract>
           <result action="numeric">
-            <e type="operand">1936.7014</e>
-            <e type="operand" style="unit">kg</e>
-            <e type="operand" style="unit">m</e>
-            <e type="operator" args="2">*</e>
-            <e type="operand" style="unit">s</e>
-            <e type="operand">2</e>
-            <e type="operator" args="2">^</e>
-            <e type="operator" args="2">/</e>
-            <e type="operator" args="2">*</e>
+            <e type="operand">1936.7013</e>
             <e type="operator" args="1">-</e>
-            <e type="operand">1936.7014</e>
-            <e type="operand" style="unit">kg</e>
-            <e type="operand" style="unit">m</e>
-            <e type="operator" args="2">*</e>
-            <e type="operand" style="unit">s</e>
-            <e type="operand">2</e>
-            <e type="operator" args="2">^</e>
-            <e type="operator" args="2">/</e>
-            <e type="operator" args="2">*</e>
-            <e type="operator" args="1">-</e>
-            <e type="operand">1936.7014</e>
-            <e type="operand" style="unit">kg</e>
-            <e type="operand" style="unit">m</e>
-            <e type="operator" args="2">*</e>
-            <e type="operand" style="unit">s</e>
-            <e type="operand">2</e>
-            <e type="operator" args="2">^</e>
-            <e type="operator" args="2">/</e>
-            <e type="operator" args="2">*</e>
-            <e type="operator" args="1">-</e>
-            <e type="operand">1936.7014</e>
-            <e type="operand" style="unit">kg</e>
-            <e type="operand" style="unit">m</e>
-            <e type="operator" args="2">*</e>
-            <e type="operand" style="unit">s</e>
-            <e type="operand">2</e>
-            <e type="operator" args="2">^</e>
-            <e type="operator" args="2">/</e>
-            <e type="operator" args="2">*</e>
-            <e type="operator" args="1">-</e>
-            <e type="operand">1936.7014</e>
-            <e type="operand" style="unit">kg</e>
-            <e type="operand" style="unit">m</e>
-            <e type="operator" args="2">*</e>
-            <e type="operand" style="unit">s</e>
-            <e type="operand">2</e>
-            <e type="operator" args="2">^</e>
-            <e type="operator" args="2">/</e>
-            <e type="operator" args="2">*</e>
-            <e type="operator" args="1">-</e>
-            <e type="operand">1936.7014</e>
-            <e type="operand" style="unit">kg</e>
-            <e type="operand" style="unit">m</e>
-            <e type="operator" args="2">*</e>
-            <e type="operand" style="unit">s</e>
-            <e type="operand">2</e>
-            <e type="operator" args="2">^</e>
-            <e type="operator" args="2">/</e>
-            <e type="operator" args="2">*</e>
-            <e type="operator" args="1">-</e>
-            <e type="operand">1936.7014</e>
-            <e type="operand" style="unit">kg</e>
-            <e type="operand" style="unit">m</e>
-            <e type="operator" args="2">*</e>
-            <e type="operand" style="unit">s</e>
-            <e type="operand">2</e>
-            <e type="operator" args="2">^</e>
-            <e type="operator" args="2">/</e>
-            <e type="operator" args="2">*</e>
-            <e type="operator" args="1">-</e>
-            <e type="operand">1936.7014</e>
-            <e type="operand" style="unit">kg</e>
-            <e type="operand" style="unit">m</e>
-            <e type="operator" args="2">*</e>
-            <e type="operand" style="unit">s</e>
-            <e type="operand">2</e>
-            <e type="operator" args="2">^</e>
-            <e type="operator" args="2">/</e>
-            <e type="operator" args="2">*</e>
-            <e type="operator" args="1">-</e>
-            <e type="operand">1936.7014</e>
-            <e type="operand" style="unit">kg</e>
-            <e type="operand" style="unit">m</e>
-            <e type="operator" args="2">*</e>
-            <e type="operand" style="unit">s</e>
-            <e type="operand">2</e>
-            <e type="operator" args="2">^</e>
-            <e type="operator" args="2">/</e>
-            <e type="operator" args="2">*</e>
-            <e type="operator" args="1">-</e>
-            <e type="operand">1936.7014</e>
-            <e type="operand" style="unit">kg</e>
-            <e type="operand" style="unit">m</e>
-            <e type="operator" args="2">*</e>
-            <e type="operand" style="unit">s</e>
-            <e type="operand">2</e>
-            <e type="operator" args="2">^</e>
-            <e type="operator" args="2">/</e>
-            <e type="operator" args="2">*</e>
-            <e type="operator" args="1">-</e>
-            <e type="operand">10</e>
-            <e type="operand">1</e>
-            <e type="function" args="12">mat</e>
           </result>
         </math>
       </region>
-      <region left="63" top="1701" width="262" height="23" color="#000000" fontSize="10" isBreakable="false">
+      <region left="54" top="1692" width="262" height="23" color="#000000" fontSize="10" isBreakable="false">
         <text lang="eng" fontFamily="Arial" fontSize="10">
           <content>
           <p style="font-family: Courier New;">Graficando estructura deformada</p>
         </content>
         </text>
       </region>
-      <region left="63" top="1755" width="338" height="39" color="#000000" fontSize="10">
+      <region left="54" top="1746" width="338" height="39" color="#000000" fontSize="10">
         <math>
           <input>
             <e type="operand">DefNodos</e>
@@ -494,7 +398,7 @@
           </input>
         </math>
       </region>
-      <region left="63" top="1818" width="367" height="30" color="#000000" fontSize="10">
+      <region left="54" top="1809" width="367" height="30" color="#000000" fontSize="10">
         <math>
           <input>
             <e type="operand">Deformed</e>
@@ -507,7 +411,7 @@
           </input>
         </math>
       </region>
-      <region left="81" top="1908" width="450" height="306" color="#000000" fontSize="10">
+      <region left="27" top="1890" width="450" height="306" color="#000000" bgColor="#ffffff" fontSize="10">
         <xyplot width="440" height="298" points="100" name="XYPlot">
           <chartstyle backcolor="White" bordercolor="Transparent" />
           <propertiessource index="1" sourcetype="PropertyGrid" />
@@ -694,7 +598,7 @@
           </input>
         </math>
       </region>
-      <region left="36" top="2583" width="533" height="333" color="#000000" fontSize="12">
+      <region left="36" top="2583" width="533" height="333" color="#000000" bgColor="#ffffff" fontSize="12">
         <xyplot width="523" height="325" points="100" name="XYPlot">
           <chartstyle backcolor="White" bordercolor="Black" />
           <propertiessource index="1" sourcetype="PropertyGrid" />
@@ -805,7 +709,7 @@
           </result>
         </math>
       </region>
-      <region left="54" top="3195" width="533" height="333" color="#000000" fontSize="12">
+      <region left="54" top="3195" width="533" height="333" color="#000000" bgColor="#ffffff" fontSize="12">
         <xyplot width="523" height="325" points="100" name="XYPlot">
           <chartstyle backcolor="White" bordercolor="Black" />
           <propertiessource index="1" sourcetype="PropertyGrid" />
@@ -818,10 +722,11 @@
           <legend isbordervisible="true" islegendvisible="false" legendbackcolor="White" legendbordercolor="Black" legendfont="Microsoft Sans Serif, 8.25pt, style=Bold" legendposition="NorthEast" textcolor="Black" />
           <traces>
             <trace seriesname="" isy2data="false" isvisible="true" plotmethod="Lines" lineantialias="true" linecolor="Blue" linethickness="1" linepattern="Solid" symbolantialias="true" symbolsize="8" symboltype="None" symbolborderthickness="1" symbolbordercolor="Black" symbolfillcolor="White" />
-            <trace seriesname="" isy2data="false" isvisible="true" plotmethod="Lines" lineantialias="true" linecolor="Red" linethickness="1" linepattern="Solid" symbolantialias="true" symbolsize="8" symboltype="None" symbolborderthickness="1" symbolbordercolor="Black" symbolfillcolor="White" />
+            <trace seriesname="" isy2data="false" isvisible="true" plotmethod="Labels" lineantialias="true" linecolor="Red" linethickness="1" linepattern="Solid" symbolantialias="true" symbolsize="8" symboltype="None" symbolborderthickness="1" symbolbordercolor="Black" symbolfillcolor="White" />
+            <trace seriesname="" isy2data="false" isvisible="true" plotmethod="Lines" lineantialias="true" linecolor="Green" linethickness="1" linepattern="Solid" symbolantialias="true" symbolsize="8" symboltype="None" symbolborderthickness="1" symbolbordercolor="Black" symbolfillcolor="White" />
           </traces>
           <input>
-            <e type="operand">marco</e>
+            <e type="operand">BEAM</e>
             <e type="operand">x</e>
             <e type="operand">nodes</e>
             <e type="operand">con</e>
@@ -1086,7 +991,7 @@
           </input>
         </math>
       </region>
-      <region left="36" top="4887" width="533" height="333" color="#000000" fontSize="12">
+      <region left="36" top="4887" width="533" height="333" color="#000000" bgColor="#ffffff" fontSize="12">
         <xyplot width="523" height="325" points="100" name="XYPlot">
           <chartstyle backcolor="White" bordercolor="Black" />
           <propertiessource index="1" sourcetype="PropertyGrid" />
@@ -1100,7 +1005,7 @@
           <traces>
             <trace seriesname="" isy2data="false" isvisible="true" plotmethod="Shapes" lineantialias="true" linecolor="Blue" linethickness="1" linepattern="Solid" symbolantialias="true" symbolsize="8" symboltype="None" symbolborderthickness="1" symbolbordercolor="Black" symbolfillcolor="White" />
             <trace seriesname="" isy2data="false" isvisible="true" plotmethod="Labels" lineantialias="true" linecolor="Red" linethickness="1" linepattern="Solid" symbolantialias="true" symbolsize="8" symboltype="None" symbolborderthickness="1" symbolbordercolor="Black" symbolfillcolor="White" />
-            <trace seriesname="" isy2data="false" isvisible="true" plotmethod="Lines" lineantialias="true" linecolor="Green" linethickness="1" linepattern="Solid" symbolantialias="true" symbolsize="8" symboltype="None" symbolborderthickness="1" symbolbordercolor="Black" symbolfillcolor="White" />
+            <trace seriesname="" isy2data="false" isvisible="true" plotmethod="Shapes" lineantialias="true" linecolor="Green" linethickness="1" linepattern="Solid" symbolantialias="true" symbolsize="8" symboltype="None" symbolborderthickness="1" symbolbordercolor="Black" symbolfillcolor="White" />
           </traces>
           <input>
             <e type="operand">FRAME</e>
