@@ -4,7 +4,7 @@
   <settings ppi="96">
     <identity>
       <id>a5d61643-8295-41fe-b433-f3693e80813d</id>
-      <revision>7</revision>
+      <revision>9</revision>
     </identity>
     <metadata lang="spa">
       <author>Oscar Campo</author>
@@ -38,7 +38,7 @@
   </settings>
   <regions type="content">
     <region top="18" color="#000000">
-      <area collapsed="true">
+      <area collapsed="false">
         <title lang="spa">
           <content>
             <p>FEM</p>
@@ -569,7 +569,7 @@
         </region>
       </region>
       <region top="1962" color="#000000">
-        <area collapsed="true">
+        <area collapsed="false">
           <title lang="spa">
             <content>
               <p>Stiffness Matrix</p>
@@ -2551,8 +2551,8 @@
           <math optimize="2" decimalPlaces="4">
             <description active="true" position="Top" lang="eng" width="610">
               <content>
-            <p>Cálculo del vector global de deformaciones para FRAME usando bandSolver.  <br />**** WARNING ***<br />Sym2Band() Transform a Symmetric Matrix to a Banded one. Rquires Matlb C++ runtime (only works if SMath is configured as 32 bit app by CorFlags.exe. See: https://en.smath.com/forum/yaf_postsm75425_Matlab-Runtime-Library.aspx#post75425)</p>
-          </content>
+                <p>Cálculo del vector global de deformaciones para FRAME usando bandSolver.  <br />**** WARNING ***<br />Sym2Band() Transform a Symmetric Matrix to a Banded one. Rquires Matlab C++ runtime (only works if SMath is configured as 32 bit app by CorFlags.exe. See: https://en.smath.com/forum/yaf_postsm75425_Matlab-Runtime-Library.aspx#post75425)</p>
+              </content>
             </description>
             <input>
               <e type="operand">Rig</e>
@@ -4821,7 +4821,7 @@
         </region>
       </region>
       <region top="11475" color="#000000">
-        <area collapsed="false">
+        <area collapsed="true">
           <title lang="spa">
             <content>
               <p>General Workflow</p>
@@ -5218,10 +5218,10 @@
       <math significantDigitsMode="true">
         <input>
           <e type="operand">cnx</e>
-          <e type="operand">0</e>
+          <e type="operand" style="string">ox</e>
           <e type="operand">0</e>
           <e type="operand" style="string">oo</e>
-          <e type="operand" style="string">ox</e>
+          <e type="operand">0</e>
           <e type="operand">4</e>
           <e type="operand">1</e>
           <e type="function" args="6">mat</e>
@@ -5277,7 +5277,7 @@
       </xyplot>
     </region>
     <region left="36" top="13491" width="363" height="26" color="#000000" fontSize="10">
-      <math error="57" significantDigitsMode="true">
+      <math significantDigitsMode="true">
         <input>
           <e type="operand">sol</e>
           <e type="operand">nod</e>
@@ -5293,7 +5293,7 @@
         </input>
       </math>
     </region>
-    <region left="36" top="13554" width="276" height="35" color="#000000" fontSize="10">
+    <region left="36" top="13554" width="299" height="44" color="#000000" fontSize="10">
       <math significantDigitsMode="true">
         <input>
           <e type="operand">def</e>
@@ -5302,21 +5302,75 @@
           <e type="operand">sol</e>
           <e type="operand">1</e>
           <e type="function" args="2">el</e>
-          <e type="operand">100</e>
+          <e type="operand">10</e>
+          <e type="operand">10</e>
+          <e type="operator" args="1">-</e>
+          <e type="operator" args="2">^</e>
           <e type="function" args="4">def.frame</e>
           <e type="operator" args="2">:</e>
         </input>
       </math>
     </region>
-    <region left="27" top="13653" width="71" height="33" color="#000000" fontSize="10">
-      <math error="2" errorLocation="0" significantDigitsMode="true">
+    <region left="27" top="13653" width="162" height="290" color="#000000" fontSize="10">
+      <math significantDigitsMode="true">
         <input>
           <e type="operand">sol</e>
           <e type="operand">1</e>
           <e type="function" args="2">el</e>
         </input>
         <result action="numeric">
-          <e type="operand">#</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">3.9</e>
+          <e type="operand">10</e>
+          <e type="operand">8</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">0</e>
+          <e type="operand">9.52</e>
+          <e type="operand">10</e>
+          <e type="operand">8</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">m</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">7.81</e>
+          <e type="operand">10</e>
+          <e type="operand">8</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">0</e>
+          <e type="operand">0</e>
+          <e type="operand">7.81</e>
+          <e type="operand">10</e>
+          <e type="operand">8</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">5.5</e>
+          <e type="operand">10</e>
+          <e type="operand">8</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">m</e>
+          <e type="operator" args="2">*</e>
+          <e type="operator" args="1">-</e>
+          <e type="operand">9.52</e>
+          <e type="operand">10</e>
+          <e type="operand">8</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand" style="unit">m</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">3.9</e>
+          <e type="operand">10</e>
+          <e type="operand">8</e>
+          <e type="operator" args="2">^</e>
+          <e type="operator" args="2">*</e>
+          <e type="operand">12</e>
+          <e type="operand">1</e>
+          <e type="function" args="14">mat</e>
         </result>
       </math>
     </region>
@@ -5332,7 +5386,7 @@
         <xylabel labelfont="Arial, 10pt" labelfontcolor="Black" tickfont="Arial, 8pt" tickfontcolor="Black" xlabel="x" ylabel="y" y2label="y2" />
         <legend isbordervisible="true" islegendvisible="false" legendbackcolor="White" legendbordercolor="Black" legendfont="Arial, 8pt" legendposition="NorthEast" textcolor="Black" />
         <traces>
-          <trace seriesname="" isy2data="false" isvisible="true" plotmethod="Lines" lineantialias="true" linecolor="Blue" linethickness="1" linepattern="Solid" symbolantialias="true" symbolsize="8" symboltype="None" symbolborderthickness="1" symbolbordercolor="Black" symbolfillcolor="White" />
+          <trace seriesname="" isy2data="false" isvisible="true" plotmethod="Shapes" lineantialias="true" linecolor="Blue" linethickness="1" linepattern="Solid" symbolantialias="true" symbolsize="8" symboltype="None" symbolborderthickness="1" symbolbordercolor="Black" symbolfillcolor="White" />
         </traces>
         <input>
           <e type="operand">def</e>
